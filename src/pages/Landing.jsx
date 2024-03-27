@@ -9,7 +9,7 @@ const Landing = () => {
         {/* ---------------------------------------------------- */}
         {/* Hero Section*/}
         <div>
-          <p className="text-5xl mt-40 font-semibold font-dmSans text-heading text-center">
+          <p className="text-5xl pt-40 font-semibold font-dmSans text-heading text-center">
             Hey, I am Roshith Prakash
           </p>
           <p className="text-2xl mt-5 font-semibold font-dmSans text-heading text-center">
