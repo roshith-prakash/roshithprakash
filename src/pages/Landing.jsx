@@ -49,7 +49,11 @@ const Landing = () => {
             </p>
           </div>
           <div className="w-full pt-14 lg:pt-0 lg:flex-1 flex justify-center items-center">
-            <img src={hero} className="w-[80%] pointer-events-none" />
+            <img
+              src={hero}
+              alt="Programmer"
+              className="w-[80%] pointer-events-none"
+            />
           </div>
         </div>
 

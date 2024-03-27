@@ -16,7 +16,7 @@ const Navbar = () => {
         } lg:shadow-md flex justify-between items-center px-10 py-5`}
       >
         <Link to="/">
-          <img src={logo} className="h-12 w-12 cursor-pointer"></img>
+          <img src={logo} alt="Logo" className="h-12 w-12 cursor-pointer"></img>
         </Link>
         <div className="hidden lg:flex gap-x-8 font-medium items-center">
           <Link

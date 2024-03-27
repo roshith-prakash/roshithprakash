@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Footer, Navbar, OutlineButton } from "../components";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import contact from "../assets/contact.svg";
@@ -6,15 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Contact = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
-  const [error, setError] = useState({
-    name: 0,
-    email: 0,
-    message: 0,
-  });
-
   useEffect(() => {
     AOS.init({
       easing: "ease-in-sine",
@@ -101,7 +92,11 @@ const Contact = () => {
 
         {/* Illustration */}
         <div className="hidden lg:w-[40%] lg:flex justify-center items-start pt-5">
-          <img src={contact} className="w-[70%] pointer-events-none" />
+          <img
+            src={contact}
+            alt="Contact"
+            className="w-[70%] pointer-events-none"
+          />
         </div>
       </div>
       <Footer />
