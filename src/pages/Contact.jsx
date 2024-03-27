@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className=" pt-20 pb-32 flex">
+      <div className=" pt-20 pb-48 flex">
         <div className="w-full lg:w-[60%]">
           {/* Title and Subtitle */}
           <div data-aos="fade-up">
