@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { Navbar, Footer, OutlineButton } from "../components";
+import { Navbar, Footer, OutlineButton, CTAButton } from "../components";
 import { Typewriter } from "react-simple-typewriter";
+import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -15,6 +16,8 @@ import whatcode from "../assets/whatcode.png";
 import cypher from "../assets/cypher.jpeg";
 
 const Landing = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({
       easing: "ease-in-sine",
@@ -53,7 +56,16 @@ const Landing = () => {
             </p>
             <p className="text-2xl mt-5 font-semibold font-dmSans text-heading text-center">
               A Full Stack Web Developer specializing in the MERN Stack.
+              <br />I turn coffee into code.
             </p>
+            <div className="mt-8 flex justify-center">
+              <CTAButton
+                onClick={() => {
+                  navigate("/about");
+                }}
+                text="Know More About Me"
+              />
+            </div>
           </div>
           <div className="w-full pt-14 lg:pt-0 lg:flex-1 flex justify-center items-center">
             <img

@@ -29,7 +29,7 @@ const Navbar = () => {
             to="/about"
             className="hover:text-cta cursor-pointer  transition-all"
           >
-            About
+            About Me
           </Link>
           <Link
             to="/projects"
@@ -85,7 +85,7 @@ const Navbar = () => {
               to="/about"
               className="hover:text-cta cursor-pointer transition-all"
             >
-              About
+              About Me
             </Link>
           </p>
           <p className="my-2">

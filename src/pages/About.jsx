@@ -5,6 +5,8 @@ import read from "../assets/read.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import whatcode from "../assets/whatcode.png";
+
 const About = () => {
   useEffect(() => {
     document.title = "About | Roshith Prakash";
@@ -21,7 +23,9 @@ const About = () => {
     <>
       <Navbar />
       <div className="pt-14 pb-48">
+        {/* Title */}
         <p className="text-3xl text-center font-semibold">About Me</p>
+        {/* Subtitle */}
         <p className="text-lg text-center px-5 md:px-10 mt-8 lg:max-w-[90%] mx-auto">
           Hi, I am Roshith Prakash - an avid learner and full stack developer. I
           use the MERN (Mongo, Express, React, NodeJS) Stack to learn and to
@@ -31,6 +35,64 @@ const About = () => {
           resourceful and attaining professional growth.
         </p>
 
+        <div
+          data-aos="fade-up"
+          className="mt-14 md:mt-28 flex lg:max-w-[90%] mx-auto"
+        >
+          <div className="w-full py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 lg:flex-1 px-8  ">
+            <p className="text-2xl font-semibold">Experience 👨‍💻</p>
+
+            <div className="mt-10 border-y-[1px] py-5">
+              {/* WhatCode */}
+              <div className="flex flex-wrap">
+                <div className="w-full md:w-fit flex justify-center items-start px-14">
+                  <img
+                    src={whatcode}
+                    alt="WhatCode"
+                    className="max-h-60 md:max-h-44 lg:max-h-52 pointer-events-none"
+                  />
+                </div>
+                <div className="flex-1">
+                  <p className="text-xl font-medium">
+                    MERN Developer - WhatCode
+                  </p>
+                  <p className="text-lg mt-3">October 2023 - Present</p>
+                  <div className="m-5">
+                    <ul className="list-disc">
+                      <li>
+                        Developed interactive and responsive front-end
+                        applications using React and Tailwind.{" "}
+                      </li>
+                      <li>
+                        Developed web servers for implementing business logic
+                        using Node JS and Express.
+                      </li>{" "}
+                      <li>
+                        {" "}
+                        Debugged various logical and UI based bugs and
+                        reimplemented logic.
+                      </li>
+                      <li>
+                        Worked with third-party authentication providers like
+                        Firebase.
+                      </li>{" "}
+                      <li>
+                        Implemented data storage and retrieval using MongoDB and
+                        Prisma ORM.
+                      </li>
+                      <li>
+                        Contributed to various projects, including Web3 and AI
+                        based projects.{" "}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Education */}
         <div
           data-aos="fade-up"
           className="mt-14 md:mt-28 flex lg:max-w-[90%] mx-auto"
@@ -69,6 +131,7 @@ const About = () => {
           </div>
         </div>
 
+        {/* Personal Info */}
         <div
           data-aos="fade-up"
           className="mt-14 md:mt-28 flex lg:max-w-[90%] mx-auto"
