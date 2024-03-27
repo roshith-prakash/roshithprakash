@@ -4,6 +4,7 @@ import logo from "../assets/logo.jpg";
 import CTAButton from "./CTAButton";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { GoDownload } from "react-icons/go";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,22 +13,46 @@ const Navbar = () => {
       <div
         className={`font-inter ${
           !open && "shadow-md"
-        } flex justify-between items-center px-10 py-5`}
+        } lg:shadow-md flex justify-between items-center px-10 py-5`}
       >
         <Link to="/">
           <img src={logo} className="h-12 w-12 cursor-pointer"></img>
         </Link>
         <div className="hidden lg:flex gap-x-8 font-medium items-center">
-          <p className="hover:text-cta cursor-pointer  transition-all">Home</p>
-          <p className="hover:text-cta cursor-pointer  transition-all">About</p>
-          <p className="hover:text-cta cursor-pointer  transition-all">
+          <Link
+            to="/"
+            className="hover:text-cta cursor-pointer  transition-all"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="hover:text-cta cursor-pointer  transition-all"
+          >
+            About
+          </Link>
+          <Link
+            to="/projects"
+            className="hover:text-cta cursor-pointer  transition-all"
+          >
             Projects
-          </p>
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-cta cursor-pointer  transition-all"
+          >
+            Contact
+          </Link>
           <OutlineButton
             onClick={() => {
-              window.open("Roshith_Prakash_Resume.pdf");
+              window.open("roshithprakash_resume.pdf");
             }}
-            text="Resume"
+            text={
+              <div className="flex gap-x-2 items-center">
+                Resume
+                <GoDownload className="text-lg" />
+              </div>
+            }
           />
         </div>
         <div className="lg:hidden">
@@ -46,20 +71,43 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden absolute w-full z-10 bg-white px-5 pb-6 text-center shadow-md">
-          <p className="hover:text-cta cursor-pointer my-2 transition-all">
-            Home
+        <div className="lg:hidden text-xl md:text-lg absolute w-full z-10 bg-white px-5 pb-6 text-center shadow-md">
+          <p>
+            <Link
+              to="/"
+              className="hover:text-cta cursor-pointer my-2 transition-all"
+            >
+              Home
+            </Link>
           </p>
-          <p className="hover:text-cta cursor-pointer my-2 transition-all">
-            About
+          <p>
+            <Link
+              to="/about"
+              className="hover:text-cta cursor-pointer my-2 transition-all"
+            >
+              About
+            </Link>
           </p>
-          <p className="hover:text-cta cursor-pointer my-2 transition-all">
-            Projects
+          <p>
+            <Link
+              to="/projects"
+              className="hover:text-cta cursor-pointer my-2 transition-all"
+            >
+              Projects
+            </Link>
+          </p>
+          <p>
+            <Link
+              to="/contact"
+              className="hover:text-cta cursor-pointer my-2 transition-all"
+            >
+              Contact
+            </Link>
           </p>
           <br />
           <CTAButton
             onClick={() => {
-              window.open("Roshith_Prakash_Resume.pdf");
+              window.open("roshithprakash_resume.pdf");
             }}
             text="Resume"
           />

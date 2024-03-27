@@ -51,7 +51,7 @@ const Footer = () => {
             <p className="mt-3 text-center">2024.</p>
           </div>
           <div className="hidden flex-1 lg:flex justify-center items-center">
-            <img src={dev} className="h-60" />
+            <img src={dev} className="h-60 pointer-events-none" />
           </div>
         </div>
       </div>
