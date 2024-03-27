@@ -15,17 +15,26 @@ const Landing = () => {
     });
   }, []);
 
+  useEffect(() => {
+    document.title = "Roshith Prakash - Full Stack Developer";
+  }, []);
+
   return (
     <>
       <Navbar />
       <div className="font-inter pb-32 relative">
+        {/* ---------------------------------------------------- */}
+
+        {/* Scroll to Top button */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
         >
           <FaRegArrowAltCircleUp className="text-cta text-2xl" />
         </div>
+
         {/* ---------------------------------------------------- */}
+
         {/* Hero Section*/}
         <div data-aos="fade-up" className="lg:flex min-h-[80vh] lg:pt-20 pb-32">
           <div className="w-full lg:flex-1 px-5">
@@ -49,24 +58,25 @@ const Landing = () => {
         {/* Text Section*/}
         <div
           data-aos="fade-up"
-          className="bg-gradient-to-tr from-cta to-hovercta min-h-screen text-white  pt-20"
+          className="bg-gradient-to-tr from-cta to-hovercta  text-white py-20"
         >
-          <p className="text-center font-semibold mx-auto px-5 lg:max-w-[60%] text-3xl">
+          <p className="text-center font-semibold mx-auto px-5 lg:max-w-[60%] text-2xl">
             Hi, I am Roshith. Pleasure to meet you.
           </p>
-          <p className="text-center font-medium mx-auto mt-8 px-5 md:max-w-[90%] lg:max-w-[70%] text-grey text-xl">
-            I am Full Stack Web Developer based out of Mumbai, India. Driven by
-            a relentless pursuit of excellence, I am poised to make meaningful
-            contributions in the realm of Full Stack Development, leveraging my
-            diverse skill set, attention to detail, and unwavering commitment to
-            innovation and growth. Since starting my career, I have contributed
-            to a range of projects including Web3 and AI based projects,
-            applying myself to fulfill the product requirements.
+          <p className="text-center font-medium mx-auto mt-8 px-5 md:max-w-[90%] lg:max-w-[70%] text-grey text-lg">
+            I am a Full Stack Web Developer based out of Mumbai, India. Driven
+            by a relentless pursuit of excellence, I am poised to make
+            meaningful contributions in the realm of Full Stack Development,
+            leveraging my diverse skill set, attention to detail, and unwavering
+            commitment to innovation and growth. Since starting my career, I
+            have contributed to a range of projects including Web3 and AI based
+            projects, applying myself to fulfill the product requirements.
           </p>
         </div>
 
         {/* ---------------------------------------------------- */}
 
+        {/* Linkedin Section */}
         <div data-aos="fade-up" className="bg-white pt-36 pb-16">
           <p className="text-center font-medium text-2xl">
             Interested in working with me?
@@ -88,6 +98,8 @@ const Landing = () => {
             />
           </div>
         </div>
+
+        {/* ---------------------------------------------------- */}
       </div>
       <Footer />
     </>
