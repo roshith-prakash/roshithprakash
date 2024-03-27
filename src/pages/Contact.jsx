@@ -30,9 +30,10 @@ const Contact = () => {
           </p>
 
           <div className="px-10 max-w-[90%] flex flex-wrap justify-center gap-8 mt-20 mx-auto">
+            {/* Linkedin */}
             <div className="shadow-xl p-6 rounded-lg w-full md:w-52">
-              <p className="text-hovercta text-2xl flex gap-x-3 justify-center items-center">
-                <FaLinkedin className="text-3xl" />
+              <p className="text-2xl flex gap-x-3 justify-center items-center">
+                <FaLinkedin className="text-3xl text-[#0077B5]" />
                 LinkedIn
               </p>
               <br />
@@ -46,9 +47,10 @@ const Contact = () => {
               </div>
             </div>
 
+            {/* Email */}
             <div className="shadow-xl  p-6 rounded-lg w-full md:w-52">
-              <p className="text-hovercta text-2xl flex gap-x-3 justify-center items-center">
-                <FaEnvelope />
+              <p className=" text-2xl flex gap-x-3 justify-center items-center">
+                <FaEnvelope className="text-3xl text-hovercta" />
                 Email
               </p>
               <br />
@@ -62,9 +64,10 @@ const Contact = () => {
               </div>
             </div>
 
+            {/* Github */}
             <div className="shadow-xl p-6 rounded-lg w-full md:w-52">
-              <p className="text-hovercta text-2xl flex gap-x-3 justify-center items-center">
-                <FaGithub />
+              <p className=" text-2xl flex gap-x-3 justify-center items-center">
+                <FaGithub className="text-3xl text-[#171515]" />
                 Github
               </p>
               <br />
