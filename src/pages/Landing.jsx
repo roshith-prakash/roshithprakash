@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-      <div className="font-inter min-h-screen bg-gradient-to-br from-white to-grey">
+      <div className="font-inter min-h-screen">
         {/* ---------------------------------------------------- */}
         {/* Hero Section*/}
         <div>
