@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import { About, Contact, Landing, Projects } from './pages';
+import { About, Contact, Landing, NotFound, Projects } from './pages';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
