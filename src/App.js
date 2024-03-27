@@ -1,6 +1,18 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom'
+
+import { Landing } from './pages';
+
 function App() {
   return (
-    <p className="text-xl text-red-500">Hello</p>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
