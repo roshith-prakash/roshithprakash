@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, Footer, OutlineButton, CTAButton } from "../components";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
@@ -15,8 +15,12 @@ import hero from "../assets/hero.svg";
 import whatcode from "../assets/whatcode.png";
 import cypher from "../assets/cypher.jpeg";
 
+import { languages } from "../data/languages.js";
+
 const Landing = () => {
   const navigate = useNavigate();
+
+  const [desc, setDesc] = useState("");
 
   useEffect(() => {
     AOS.init({
@@ -176,19 +180,45 @@ const Landing = () => {
         {/* ---------------------------------------------------- */}
 
         {/* Languages / Libraries Section */}
-        {/* <div
+        <div
           data-aos="fade-up"
-          className="bg-white pt-24 pb-10 border-b-[1px] border-[#cfd1d1]"
+          className="text-black py-24 border-b-[1px] border-[#cfd1d1]"
         >
-          <p className="text-center px-3 font-medium text-2xl flex justify-center items-center gap-x-3">
-            <LuCode2 /> The Things that I use :
+          <p className="text-heading text-center px-3 font-semibold text-4xl flex justify-center items-center gap-x-3">
+            <LuCode2 /> My Repository of Tools:
           </p>
 
-          <div className=" flex flex-wrap justify-center gap-x-10">
-            <img src={whatcode} alt="WhatCode" className="max-w-60 pointer-events-none" />
-            <img src={cypher} alt="Cypher Blockchain" className="max-w-60 pointer-events-none" />
+          <div className="mt-14 py-10 logos">
+            <div className="logos-slide">
+              {languages.map((item) => {
+                return (
+                  <img
+                    onMouseEnter={() => setDesc(item.description)}
+                    src={item.image}
+                    alt={item.name}
+                    key={item.id}
+                    className="max-h-32 inline-block mx-5"
+                  />
+                );
+              })}
+            </div>
+            <div className="logos-slide">
+              {languages.map((item) => {
+                return (
+                  <img
+                    onMouseEnter={() => setDesc(item.description)}
+                    src={item.image}
+                    alt={item.name}
+                    key={item.id}
+                    className="max-h-32 inline-block mx-5"
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div> */}
+
+          <p className="px-5 mt-10 text-center text-lg text-cta">{desc}</p>
+        </div>
 
         {/* ---------------------------------------------------- */}
 
