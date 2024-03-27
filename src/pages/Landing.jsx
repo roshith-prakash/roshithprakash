@@ -27,7 +27,7 @@ const Landing = () => {
         </div>
         {/* ---------------------------------------------------- */}
         {/* Hero Section*/}
-        <div data-aos="fade-up" className="lg:flex lg:pt-20 pb-32">
+        <div data-aos="fade-up" className="lg:flex min-h-[80vh] lg:pt-20 pb-32">
           <div className="w-full lg:flex-1 px-5">
             <p className="text-5xl pt-20 lg:pt-40 font-semibold font-dmSans text-heading text-center">
               Hey, I am{" "}
@@ -67,7 +67,7 @@ const Landing = () => {
 
         {/* ---------------------------------------------------- */}
 
-        <div className="bg-white pt-36 pb-16">
+        <div data-aos="fade-up" className="bg-white pt-36 pb-16">
           <p className="text-center font-medium text-2xl">
             Interested in working with me?
           </p>

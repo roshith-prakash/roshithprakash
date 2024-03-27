@@ -10,8 +10,9 @@ const Footer = () => {
           <p className="text-xl font-medium">Let's Talk!</p>
           <a
             href="mailto:roshithprakash07@gmail.com"
-            className="px-5 py-2 font-medium text-white hover:bg-white hover:text-black transition-all cursor-pointer rounded-full border-2 border-white"
+            className="px-5 flex items-center gap-x-2 py-2 font-medium text-white hover:bg-white hover:text-black transition-all cursor-pointer rounded-full border-2 border-white"
           >
+            <FaEnvelope className="text-lg" />
             Email Me!
           </a>
         </div>
