@@ -3,11 +3,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "cta": "#942ce8",
+      "cta": "#9b0ced",
       "hovercta": "#7123b0",
       "black": "#000000",
       "white": "#ffffff",
-      "heading": "#1e1e1f"
+      "heading": "#1e1e1f",
+      "grey": "#f5f5f5"
     },
     fontFamily: {
       'inter': ['Inter', 'system-ui'],

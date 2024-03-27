@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import OutlineButton from "./OutlineButton";
 import logo from "../assets/logo.jpg";
-import { useNavigate } from "react-router-dom";
 import CTAButton from "./CTAButton";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
   return (
     <>
       <div
@@ -15,11 +14,9 @@ const Navbar = () => {
           !open && "shadow-md"
         } flex justify-between items-center px-10 py-5`}
       >
-        <img
-          src={logo}
-          onClick={() => navigate("/")}
-          className="h-12 w-12 cursor-pointer"
-        ></img>
+        <Link to="/">
+          <img src={logo} className="h-12 w-12 cursor-pointer"></img>
+        </Link>
         <div className="hidden lg:flex gap-x-8 font-medium items-center">
           <p className="hover:text-cta cursor-pointer  transition-all">Home</p>
           <p className="hover:text-cta cursor-pointer  transition-all">About</p>

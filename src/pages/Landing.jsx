@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "../components";
+import { Navbar, Footer } from "../components";
 
 const Landing = () => {
   return (
     <>
       <Navbar />
-      <div className="font-inter min-h-screen">
+      <div className="font-inter min-h-screen bg-gradient-to-br from-white to-grey">
         {/* ---------------------------------------------------- */}
         {/* Hero Section*/}
         <div>
@@ -19,6 +19,7 @@ const Landing = () => {
 
         {/* ---------------------------------------------------- */}
       </div>
+      <Footer />
     </>
   );
 };
