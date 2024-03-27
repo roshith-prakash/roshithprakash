@@ -15,7 +15,7 @@ const NotFound = () => {
       <Navbar />
       <div className="min-h-[60vh] flex items-center justify-center pt-20 pb-32">
         <div>
-          <img src={notfound} className="w-[40vw] mx-auto" />
+          <img src={notfound} alt="Not Found" className="w-[40vw] mx-auto" />
           <p className="text-4xl px-5 text-center mt-14">
             I think we are lost. Let's go back?
           </p>

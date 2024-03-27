@@ -39,7 +39,7 @@ const About = () => {
             <img src={education} alt="Education" className="w-[60%]" />
           </div>
           <div className="w-full py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 md:w-[60%] lg:flex-1 px-8  ">
-            <p className="text-2xl font-semibold">Education</p>
+            <p className="text-2xl font-semibold">Education 🎓</p>
 
             <div className="mt-10">
               {/* Bsc IT */}
