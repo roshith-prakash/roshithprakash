@@ -191,7 +191,7 @@ const Landing = () => {
 
           {/* DO NOT CHANGE */}
           <div className="mt-14 py-10 overflow-hidden">
-            <div className="flex flex-nowrap gap-x-12 logos-slide w-max">
+            <div className="flex flex-nowrap gap-x-[4rem] logos-slide w-max">
               {languages.map((item) => {
                 return (
                   <img
