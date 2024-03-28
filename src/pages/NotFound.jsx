@@ -7,6 +7,10 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
     document.title = "Page Not Found";
   }, []);
 

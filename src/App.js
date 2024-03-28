@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import { About, Contact, Landing, NotFound, Projects } from './pages';
+import { About, Contact, Gallery, GridBox, Landing, NotFound, Projects, SmartPower } from './pages';
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/smartpower" element={<SmartPower />} />
+        <Route path="/projects/gridbox" element={<GridBox />} />
+        <Route path="/projects/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

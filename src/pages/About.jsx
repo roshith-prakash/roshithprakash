@@ -9,6 +9,10 @@ import whatcode from "../assets/whatcode.png";
 
 const About = () => {
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
     document.title = "About | Roshith Prakash";
   }, []);
 

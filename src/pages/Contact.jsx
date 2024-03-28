@@ -7,6 +7,10 @@ import "aos/dist/aos.css";
 
 const Contact = () => {
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
     AOS.init({
       easing: "ease-in-sine",
       delay: 100,
