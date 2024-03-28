@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import { Footer, Navbar, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
-import smartpower from "../assets/sm3.png";
-import gridbox from "../assets/gridbox.png";
-import gallery from "../assets/gallery.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -45,7 +42,7 @@ const Projects = () => {
             className="group overflow-hidden rounded-xl border-2 shadow-md relative h-96 w-full md:w-[45%] lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img
-              src={smartpower}
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627110/portfolio/smartpower.png"
               alt="SmartPower"
               className="h-full w-full rounded-xl"
             />
@@ -74,7 +71,7 @@ const Projects = () => {
             className="group rounded-xl border-2 shadow-md relative h-96 w-full md:w-[45%] lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img
-              src={gridbox}
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627111/portfolio/gridbox.png"
               alt="The Gridbox"
               className="h-full w-full rounded-xl"
             />
@@ -105,7 +102,7 @@ const Projects = () => {
             className="group rounded-xl border-2 shadow-md relative h-96 w-full md:w-[45%] lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img
-              src={gallery}
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627110/portfolio/gallery.png"
               alt="The Gallery"
               className="h-full w-full rounded-xl"
             />

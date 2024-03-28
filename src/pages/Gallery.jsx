@@ -4,6 +4,7 @@ import { CTAButton, Footer, Navbar } from "../components";
 import gallery from "../assets/gallery.png";
 
 const Gallery = () => {
+  
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
