@@ -13,7 +13,13 @@ const GridBox = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-14 pb-48">GridBox</div>
+      <div className="pt-14 pb-48">
+        GridBox
+        <video
+          src="https://res.cloudinary.com/do8rpl9l4/video/upload/v1711613929/portfolio/gridbox.mp4"
+          controls
+        />
+      </div>
       <Footer />
     </>
   );
