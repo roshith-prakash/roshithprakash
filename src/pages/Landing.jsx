@@ -14,13 +14,14 @@ import { FiDatabase } from "react-icons/fi";
 import hero from "../assets/hero.svg";
 import whatcode from "../assets/whatcode.png";
 import cypher from "../assets/cypher.jpeg";
+import work from "../assets/working.svg";
 
 import { languages } from "../data/languages.js";
 
 const Landing = () => {
   const navigate = useNavigate();
 
-  const [desc, setDesc] = useState("");
+  const [desc, setDesc] = useState("Hover over a tool to know more!");
 
   useEffect(() => {
     AOS.init({
@@ -184,12 +185,13 @@ const Landing = () => {
           data-aos="fade-up"
           className="text-black py-24 border-b-[1px] border-[#cfd1d1]"
         >
-          <p className="text-heading text-center px-3 font-semibold text-4xl flex justify-center items-center gap-x-3">
+          <p className="text-heading text-center px-3 font-semibold text-2xl lg:text-4xl flex justify-center items-center gap-x-3">
             <LuCode2 /> My Repository of Tools:
           </p>
 
-          <div className="mt-14 py-10 logos">
-            <div className="logos-slide">
+          {/* DO NOT CHANGE */}
+          <div className="mt-14 py-10 overflow-hidden">
+            <div className="flex flex-nowrap gap-x-12 logos-slide w-max">
               {languages.map((item) => {
                 return (
                   <img
@@ -197,12 +199,10 @@ const Landing = () => {
                     src={item.image}
                     alt={item.name}
                     key={item.id}
-                    className="max-h-32 inline-block mx-5"
+                    className="max-h-32 inline-block"
                   />
                 );
               })}
-            </div>
-            <div className="logos-slide">
               {languages.map((item) => {
                 return (
                   <img
@@ -210,7 +210,7 @@ const Landing = () => {
                     src={item.image}
                     alt={item.name}
                     key={item.id}
-                    className="max-h-32 inline-block mx-5"
+                    className="max-h-32 inline-block"
                   />
                 );
               })}
@@ -223,25 +223,33 @@ const Landing = () => {
         {/* ---------------------------------------------------- */}
 
         {/* Linkedin Section */}
-        <div data-aos="fade-up" className="bg-white pt-36 pb-16">
-          <p className="text-center font-medium text-2xl">
-            Interested in working with me?
-          </p>
-          <p className="text-center mt-4 text-xl">
-            Let's connect and talk more.
-          </p>
-          <div className="mt-10 flex justify-center">
-            <OutlineButton
-              onClick={() => {
-                window.open("https://www.linkedin.com/in/roshith-prakash/");
-              }}
-              text={
-                <div className="flex items-center gap-x-3">
-                  <MdOutlineChat className="text-xl" />
-                  <span>Let's Connect</span>
-                </div>
-              }
-            />
+        <div
+          data-aos="fade-up"
+          className="bg-white pt-20 md:pt-36 pb-16 flex flex-wrap"
+        >
+          <div className="w-full md:flex-1 flex justify-center items-center">
+            <img src={work} alt="Work with me" className="w-[70%]" />
+          </div>
+          <div className="w-full md:flex-1 pt-14 md:pt-8">
+            <p className="text-center font-medium text-2xl">
+              Interested in working with me?
+            </p>
+            <p className="text-center mt-4 text-xl">
+              Let's connect and talk more.
+            </p>
+            <div className="mt-10 flex justify-center">
+              <OutlineButton
+                onClick={() => {
+                  window.open("https://www.linkedin.com/in/roshith-prakash/");
+                }}
+                text={
+                  <div className="flex items-center gap-x-3">
+                    <MdOutlineChat className="text-xl" />
+                    <span>Let's Connect</span>
+                  </div>
+                }
+              />
+            </div>
           </div>
         </div>
 
