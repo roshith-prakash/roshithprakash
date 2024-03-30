@@ -3,6 +3,7 @@ import { Footer, Navbar, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -25,7 +26,19 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-14 pb-32">
+      <div className="relative pt-14 pb-32">
+        {/* ---------------------------------------------------- */}
+
+        {/* Scroll to Top button */}
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+        >
+          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+        </div>
+
+        {/* ---------------------------------------------------- */}
+
         <p className="text-3xl text-center font-semibold">Projects</p>
         <p className="text-lg text-center px-5 md:px-10 mt-8 lg:max-w-[90%] mx-auto">
           To live is to learn, and to learn is to develop. Let's take a look at

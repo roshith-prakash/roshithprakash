@@ -3,6 +3,7 @@ import { Footer, Navbar } from "../components";
 
 import smart1 from "../assets/smartpower1.png";
 import smart2 from "../assets/smartpower2.png";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const SmartPower = () => {
   useEffect(() => {
@@ -16,7 +17,18 @@ const SmartPower = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-14 pb-48">
+      <div className="relative pt-14 pb-48">
+        {/* ---------------------------------------------------- */}
+
+        {/* Scroll to Top button */}
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+        >
+          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+        </div>
+
+        {/* ---------------------------------------------------- */}
         <p className="text-3xl text-center font-semibold">
           SmartPower (Final Year Project)
         </p>

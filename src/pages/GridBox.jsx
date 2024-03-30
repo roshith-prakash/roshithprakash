@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { CTAButton, Footer, Navbar } from "../components";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const GridBox = () => {
   useEffect(() => {
@@ -13,7 +14,19 @@ const GridBox = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-14 pb-48">
+      <div className="relative pt-14 pb-48">
+        {/* ---------------------------------------------------- */}
+
+        {/* Scroll to Top button */}
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+        >
+          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+        </div>
+
+        {/* ---------------------------------------------------- */}
+
         <p className="text-3xl text-center font-semibold">The Gridbox</p>
         <p className="mt-8 text-lg px-5 lg:px-10 text-center">
           The popularity of Formula 1 has been on a meteoric rise in recent

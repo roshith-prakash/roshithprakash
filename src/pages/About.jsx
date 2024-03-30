@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import whatcode from "../assets/whatcode.png";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const About = () => {
   useEffect(() => {
@@ -26,7 +27,19 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-14 pb-48">
+      <div className="relative pt-14 pb-48">
+        {/* ---------------------------------------------------- */}
+
+        {/* Scroll to Top button */}
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+        >
+          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+        </div>
+
+        {/* ---------------------------------------------------- */}
+
         {/* Title */}
         <p className="text-3xl text-center font-semibold">About Me</p>
         {/* Subtitle */}

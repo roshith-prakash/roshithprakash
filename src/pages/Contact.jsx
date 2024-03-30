@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import contact from "../assets/contact.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Contact = () => {
   useEffect(() => {
@@ -24,7 +25,19 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className=" pt-20 pb-48 flex">
+      <div className="relative pt-20 pb-48 flex">
+        {/* ---------------------------------------------------- */}
+
+        {/* Scroll to Top button */}
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+        >
+          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+        </div>
+
+        {/* ---------------------------------------------------- */}
+
         <div className="w-full lg:w-[60%]">
           {/* Title and Subtitle */}
           <div data-aos="fade-up">
