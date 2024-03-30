@@ -79,6 +79,7 @@ const GridBox = () => {
 
         <div className="mt-24 px-5 lg:px-10">
           <video
+            alt="Gridbox"
             src="https://res.cloudinary.com/do8rpl9l4/video/upload/v1711613929/portfolio/gridbox.mp4"
             controls
             className="w-full"

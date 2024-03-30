@@ -51,7 +51,7 @@ const Projects = () => {
         >
           {/* SmartPower */}
           <div
-            onClick={() => navigate("/projects/smartpower")}
+            // onClick={() => navigate("/projects/smartpower")}
             className="group overflow-hidden rounded-xl border-2 shadow-md relative h-96 w-full md:w-[45%] lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img
@@ -80,7 +80,7 @@ const Projects = () => {
 
           {/* The GridBox */}
           <div
-            onClick={() => navigate("/projects/gridbox")}
+            // onClick={() => navigate("/projects/gridbox")}
             className="group rounded-xl border-2 shadow-md relative h-96 w-full md:w-[45%] lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img
@@ -111,7 +111,7 @@ const Projects = () => {
 
           {/* Gallery */}
           <div
-            onClick={() => navigate("/projects/gallery")}
+            // onClick={() => navigate("/projects/gallery")}
             className="group rounded-xl border-2 shadow-md relative h-96 w-full md:w-[45%] lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img

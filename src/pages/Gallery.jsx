@@ -56,7 +56,7 @@ const Gallery = () => {
         </div>
 
         <div className="mt-24 px-5 lg:px-10 flex justify-center">
-          <img src={gallery} className="w-auto max-h-96 " />
+          <img src={gallery} lt="Gallery" a className="w-auto max-h-96 " />
         </div>
       </div>
       <Footer />

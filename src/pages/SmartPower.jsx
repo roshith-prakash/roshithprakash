@@ -109,11 +109,11 @@ const SmartPower = () => {
 
         <div className="mt-24 px-5 lg:px-10 flex flex-wrap max-w-screen gap-10">
           <div className="w-full lg:flex-1">
-            <img src={smart1} className="w-full" />
+            <img src={smart1} alt="High level design" className="w-full" />
           </div>
 
           <div className="w-full lg:flex-1">
-            <img src={smart2} className="w-full" />
+            <img src={smart2} alt="Circuit design" className="w-full" />
           </div>
         </div>
       </div>
