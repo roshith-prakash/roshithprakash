@@ -18,6 +18,9 @@ import mui from '../assets/mui.png'
 import axios from '../assets/axios.png'
 import firebase from '../assets/firebase.png'
 import socket from '../assets/socket.png'
+import graphql from '../assets/graphql.png'
+import docker from '../assets/docker.png'
+import nest from '../assets/nest.png'
 
 export const languages = [
   {
@@ -67,6 +70,18 @@ export const languages = [
     name: "Express JS",
     image: express,
     description: "Express JS - the library used for creating web servers.",
+  },
+  {
+    id: 21,
+    name: "GraphQL",
+    image: graphql,
+    description: "GraphQL - a query language to eliminate under/overfetching.",
+  },
+  {
+    id: 23,
+    name: "NestJS",
+    image: nest,
+    description: "NestJS - a web framework for creating servers.",
   },
   {
     id: 9,
@@ -139,5 +154,11 @@ export const languages = [
     name: "Socket IO",
     image: socket,
     description: "Socket IO - A library for establishing real time socket communication channels.",
+  },
+  {
+    id: 22,
+    name: "Docker",
+    image: docker,
+    description: "Docker - to containerize applications.",
   },
 ];
