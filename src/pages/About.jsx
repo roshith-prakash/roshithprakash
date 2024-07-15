@@ -73,7 +73,7 @@ const About = () => {
                   <p className="text-xl font-medium">
                     MERN Developer - WhatCode
                   </p>
-                  <p className="text-lg mt-3">October 2023 - Present</p>
+                  <p className="text-lg mt-3">October 2023 - March 2024</p>
                   <div className="m-5">
                     <ul className="list-disc">
                       <li>
