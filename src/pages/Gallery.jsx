@@ -33,12 +33,14 @@ const Gallery = () => {
         <p className="mt-8 text-lg px-5 lg:px-10 text-center">
           Developed a Single Page App (SPA) React JS application to search and
           display images from the Internet as required by the user. Technologies
-          used for developing the project: HTML, CSS, React, React Query,
-          Material UI, Axios. Powered by the Pexels API.
+          used for developing the project: React, Tanstack Query, Tailwind CSS,
+          Axios, React Masonry, ShadCN. Powered by the Pexels API.
         </p>
         <div className="mt-10 flex justify-center">
           <CTAButton
-            onClick={() => window.open("https://gallery-rp.vercel.app/")}
+            onClick={() =>
+              window.open("https://gallery-roshithprakash.vercel.app/")
+            }
             text="Visit the Site!"
           />
         </div>

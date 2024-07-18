@@ -115,7 +115,7 @@ const Projects = () => {
             className="group rounded-xl border-2 shadow-md relative h-96 w-full lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all cursor-pointer"
           >
             <img
-              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627110/portfolio/gallery.png"
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png"
               alt="The Gallery"
               className="h-full w-full rounded-xl"
             />
