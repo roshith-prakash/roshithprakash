@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import { About, Contact, Gallery, GridBox, Landing, NotFound, Projects, SmartPower, ThoughtJournal } from './pages';
+import { About, Contact, Gallery, GridBox, Landing, NotFound, Projects, SmartPower, ThoughtJournal, Quizzer } from './pages';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
           <Route path="/projects/gridbox" element={<GridBox />} />
           <Route path="/projects/gallery" element={<Gallery />} />
           <Route path="/projects/thoughtjournal" element={<ThoughtJournal />} />
+          <Route path="/projects/quizzer" element={<Quizzer />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
