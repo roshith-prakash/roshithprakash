@@ -27,19 +27,17 @@ const Quizzer = () => {
 
         {/* ---------------------------------------------------- */}
 
-        <p className="text-3xl text-center font-semibold">
-          Quizzer - FlashCard Quiz
-        </p>
+        <p className="text-3xl text-center font-semibold">Quizzer AI</p>
         <p className="mt-8 text-lg px-5 lg:px-10 text-center">
-          Quizzer - FlashCard Quiz is a interactive quiz platform where a user
-          can quiz themselves on any topic. Questions are generated using
-          Generative AI.. Technologies used for developing the project: React
-          JS, Gemini, Tanstack Query, Tailwind CSS, Axios, Node JS, Express JS.
-          Powered by the Pexels API.
+          Quizzer AI is a interactive quiz platform where a user can quiz
+          themselves on any topic. Questions are generated using Generative AI..
+          Technologies used for developing the project: React JS, Gemini,
+          Tanstack Query, Tailwind CSS, Axios, Node JS, Express JS. Powered by
+          the Pexels API.
         </p>
         <div className="mt-10 flex justify-center">
           <CTAButton
-            onClick={() => window.open("https://flashcardquiz.vercel.app/")}
+            onClick={() => window.open("https://quizzer-ai.vercel.app/")}
             text="Visit the Site!"
           />
         </div>
@@ -56,8 +54,8 @@ const Quizzer = () => {
 
         <div className="mt-24 px-5 lg:px-10 flex justify-center">
           <img
-            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1721642206/quizzer_SS_supyz1.png"
-            alt="Quizzer - FlashCardQuiz"
+            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png"
+            alt="Quizzer AI"
             a
             className="w-auto max-h-96 "
           />

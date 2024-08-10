@@ -115,19 +115,17 @@ const Projects = () => {
             className="group rounded-xl border-2 shadow-md relative h-96 w-full lg:flex-1 hover:scale-105 hover:shadow-2xl transition-all"
           >
             <img
-              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1721642206/quizzer_SS_supyz1.png"
-              alt="Quizzer - FlashCard Quiz"
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png"
+              alt="Quizzer AI"
               className="h-full w-full rounded-xl"
             />
             <div className="absolute w-full h-full px-5 bg-grey top-0 left-0 rounded-xl opacity-80 lg:opacity-0 group-hover:opacity-90 transition-all flex justify-center items-center">
               <div>
-                <p className="text-3xl text-center font-semibold">
-                  Quizzer - FlashCard Quiz
-                </p>
+                <p className="text-3xl text-center font-semibold">Quizzer AI</p>
                 <p className="text-lg text-center mt-5">
-                  Quizzer - FlashCard Quiz is a interactive quiz platform where
-                  a user can quiz themselves on any topic. Questions are
-                  generated using Generative AI.
+                  Quizzer AI is a interactive quiz platform where a user can
+                  quiz themselves on any topic. Questions are generated using
+                  Generative AI.
                 </p>
                 <div className="mt-5 flex justify-center">
                   <OutlineButton
