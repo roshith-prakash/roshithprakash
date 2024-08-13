@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1553e026.css",
+    "main.js": "/static/js/main.614cc83c.js",
+    "static/media/gallery.png": "/static/media/gallery.3584d0f47d8f91ebf122.png",
+    "static/media/smartpower2.png": "/static/media/smartpower2.896ce19718523d193e02.png",
+    "static/media/smartpower1.png": "/static/media/smartpower1.86c11add04160dc7fbdc.png",
+    "static/media/mongo.png": "/static/media/mongo.bf8042403d8797a7ff1b.png",
+    "static/media/hero.svg": "/static/media/hero.176e876548711bff8a4df85433fb08f8.svg",
+    "static/media/dev.svg": "/static/media/dev.88d997ef3b8d0a1628dff598198fec36.svg",
+    "static/media/working.svg": "/static/media/working.4bf65d4ce9f46b020130a6c19ef3d3db.svg",
+    "static/media/whatcode.png": "/static/media/whatcode.8c9fd2e51efb683318b9.png",
+    "static/media/read.svg": "/static/media/read.b8a0f446f0f729612fa41b355a9b1a7c.svg",
+    "static/media/express.png": "/static/media/express.e3d4f9e5c8b469e45838.png",
+    "static/media/contact.svg": "/static/media/contact.2651b60238022b8faacb60b429a24e23.svg",
+    "static/media/education.svg": "/static/media/education.2fa26269cdc0bcbede24f872d81f7fd0.svg",
+    "static/media/notfound.svg": "/static/media/notfound.75c7c9620fd39e1347d42d47ec7fc5f1.svg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1553e026.css",
+    "static/js/main.614cc83c.js"
+  ]
+}
