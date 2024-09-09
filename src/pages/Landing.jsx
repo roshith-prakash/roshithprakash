@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, Footer, OutlineButton, CTAButton } from "../components";
+import { Footer, OutlineButton, CTAButton } from "../components";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
@@ -40,14 +40,13 @@ const Landing = () => {
 
   return (
     <>
-      <Navbar />
       <div className="font-inter pb-32 relative">
         {/* ---------------------------------------------------- */}
 
         {/* Scroll to Top button */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
         >
           <FaRegArrowAltCircleUp className="text-cta text-2xl" />
         </div>

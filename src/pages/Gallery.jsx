@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { CTAButton, Footer, Navbar } from "../components";
+import { CTAButton, Footer } from "../components";
 
 import gallery from "../assets/gallery.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
@@ -15,14 +15,13 @@ const Gallery = () => {
 
   return (
     <>
-      <Navbar />
       <div className="relative pt-14 pb-48">
         {/* ---------------------------------------------------- */}
 
         {/* Scroll to Top button */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
         >
           <FaRegArrowAltCircleUp className="text-cta text-2xl" />
         </div>

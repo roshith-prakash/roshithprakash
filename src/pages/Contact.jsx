@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Footer, Navbar, OutlineButton } from "../components";
+import { Footer, OutlineButton } from "../components";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import contact from "../assets/contact.svg";
 import AOS from "aos";
@@ -24,14 +24,13 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
       <div className="relative pt-20 pb-48 flex">
         {/* ---------------------------------------------------- */}
 
         {/* Scroll to Top button */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
         >
           <FaRegArrowAltCircleUp className="text-cta text-2xl" />
         </div>

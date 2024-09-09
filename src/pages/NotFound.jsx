@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Footer, Navbar, OutlineButton } from "../components";
+import { Footer, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
 import notfound from "../assets/notfound.svg";
 
@@ -16,7 +16,6 @@ const NotFound = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-[60vh] flex items-center justify-center pt-20 pb-32">
         <div>
           <img src={notfound} alt="Not Found" className="w-[40vw] mx-auto" />

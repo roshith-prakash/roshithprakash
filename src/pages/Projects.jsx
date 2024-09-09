@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Footer, Navbar, OutlineButton } from "../components";
+import { Footer, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,14 +25,13 @@ const Projects = () => {
 
   return (
     <>
-      <Navbar />
       <div className="relative pt-14 pb-32">
         {/* ---------------------------------------------------- */}
 
         {/* Scroll to Top button */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-50"
+          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
         >
           <FaRegArrowAltCircleUp className="text-cta text-2xl" />
         </div>

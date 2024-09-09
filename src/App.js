@@ -6,12 +6,15 @@ import {
 
 import { About, Contact, Gallery, GridBox, Landing, NotFound, Projects, SmartPower, ThoughtJournal, Quizzer } from './pages';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Navbar } from './components';
 
 function App() {
   return (
     <>
+
       <SpeedInsights />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
