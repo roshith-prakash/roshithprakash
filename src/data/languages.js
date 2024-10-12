@@ -2,163 +2,163 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
 import react from "../assets/react.png";
-import next from "../assets/next.png"
-import jwt from '../assets/jwt.png'
-import node from '../assets/node.jpeg'
-import express from '../assets/express.png'
-import mongo from '../assets/mongo.png'
-import postgres from '../assets/postgres.png'
-import mysql from '../assets/mysql.png'
-import git from '../assets/git.png'
-import github from '../assets/github.png'
-import prisma from '../assets/prisma.png'
-import query from '../assets/query.png'
-import tailwind from '../assets/tailwind.png'
-import mui from '../assets/mui.png'
-import axios from '../assets/axios.png'
-import firebase from '../assets/firebase.png'
-import socket from '../assets/socket.png'
-import graphql from '../assets/graphql.png'
-import docker from '../assets/docker.png'
-import nest from '../assets/nest.png'
+import next from "../assets/next.png";
+import jwt from '../assets/jwt.png';
+import node from '../assets/node.jpeg';
+import express from '../assets/express.png';
+import mongo from '../assets/mongo.png';
+import postgres from '../assets/postgres.png';
+import mysql from '../assets/mysql.png';
+import git from '../assets/git.png';
+import github from '../assets/github.png';
+import prisma from '../assets/prisma.png';
+import query from '../assets/query.png';
+import tailwind from '../assets/tailwind.png';
+import mui from '../assets/mui.png';
+import axios from '../assets/axios.png';
+import firebase from '../assets/firebase.png';
+import socket from '../assets/socket.png';
+import graphql from '../assets/graphql.png';
+import docker from '../assets/docker.png';
+import nest from '../assets/nest.png';
 
 export const languages = [
   {
     id: 1,
     name: "HTML5",
     image: html,
-    description: "HTML 5 is used to create the layout of the webpage.",
+    description: "Markup language for creating web page structure.",
   },
   {
     id: 2,
     name: "CSS",
     image: css,
-    description: "CSS is used to enhance the UI of the webpage.",
+    description: "Style sheet language for designing web pages.",
   },
   {
     id: 3,
     name: "JavaScript",
     image: js,
-    description: "JavaScript is used to bring life to the webpage.",
+    description: "Scripting language for dynamic web content.",
   },
   {
     id: 4,
     name: "React",
     image: react,
-    description: "React is the framework that is used to create SPAs.",
+    description: "JavaScript library for building user interfaces.",
   },
   {
     id: 5,
     name: "Next JS",
     image: next,
-    description: "Next JS - A fullstack framework built on React.",
+    description: "Framework for server-rendered React applications.",
   },
   {
     id: 6,
     name: "JWT",
     image: jwt,
-    description: "JSON Web Token - Used for user authentication.",
+    description: "Token standard for secure data transmission.",
   },
   {
     id: 7,
     name: "Node JS",
     image: node,
-    description: "Node JS - the language used for developing the backend.",
+    description: "JavaScript runtime for building server applications.",
   },
   {
     id: 8,
     name: "Express JS",
     image: express,
-    description: "Express JS - the library used for creating web servers.",
+    description: "Web framework for building Node.js applications.",
   },
   {
     id: 21,
     name: "GraphQL",
     image: graphql,
-    description: "GraphQL - a query language to eliminate under/overfetching.",
+    description: "Query language for APIs to fetch data efficiently.",
   },
   {
     id: 23,
     name: "NestJS",
     image: nest,
-    description: "NestJS - a web framework for creating servers.",
+    description: "Framework for building scalable server-side applications.",
   },
   {
     id: 9,
     name: "Mongo DB",
     image: mongo,
-    description: "A NO-SQL Database used to store data as objects.",
+    description: "NoSQL database for storing data as documents.",
   },
   {
     id: 10,
     name: "MySQL",
     image: mysql,
-    description: "MySQL - A SQL based database which stores data in tables.",
+    description: "Relational database management system for structured data.",
   },
   {
     id: 11,
     name: "Postgres",
     image: postgres,
-    description: "Postgres - A SQL based database which stores data in tables.",
+    description: "Advanced SQL database with powerful features.",
   },
   {
     id: 12,
     name: "Git",
     image: git,
-    description: "Git - A code version control tool.",
+    description: "Version control system for tracking code changes.",
   },
   {
     id: 13,
     name: "Github",
     image: github,
-    description: "Github - Used along with git to store code.",
+    description: "Platform for hosting and sharing Git repositories.",
   },
   {
     id: 14,
     name: "Prisma",
     image: prisma,
-    description: "Prisma - An ORM to abstract the database layer.",
+    description: "ORM for seamless database interactions.",
   },
   {
     id: 15,
     name: "React Query",
     image: query,
-    description: "React Query - A library to optimize data fetching and API calls.",
+    description: "Data-fetching library for React applications.",
   },
   {
     id: 16,
     name: "Tailwind",
     image: tailwind,
-    description: "Tailwind CSS - A CSS library to write css more efficiently.",
+    description: "Utility-first CSS framework for rapid design.",
   },
   {
     id: 17,
     name: "Material UI",
     image: mui,
-    description: "Material UI - A library for premade UI components.",
+    description: "React components for faster UI development.",
   },
   {
     id: 18,
     name: "Axios",
     image: axios,
-    description: "Axios - A library for making API calls.",
+    description: "Promise-based HTTP client for making requests.",
   },
   {
     id: 19,
     name: "Firebase",
     image: firebase,
-    description: "Firebase - A provider for authentication and data storage.",
+    description: "Backend-as-a-service platform for web and mobile apps.",
   },
   {
     id: 20,
     name: "Socket IO",
     image: socket,
-    description: "Socket IO - A library for establishing real time socket communication channels.",
+    description: "Library for real-time, bidirectional communication.",
   },
   {
     id: 22,
     name: "Docker",
     image: docker,
-    description: "Docker - to containerize applications.",
+    description: "Platform for containerizing applications for portability.",
   },
 ];

@@ -16,17 +16,26 @@ const NotFound = () => {
 
   return (
     <>
-      <div className="min-h-[60vh] flex items-center justify-center pt-20 pb-32">
-        <div>
-          <img src={notfound} alt="Not Found" className="w-[40vw] mx-auto" />
-          <p className="text-4xl px-5 text-center mt-14">
+      <main className="min-h-[60vh] flex items-center justify-center pt-20 pb-32">
+        <div className="text-center">
+          <img
+            src={notfound}
+            alt="Not Found Illustration"
+            className="w-[40vw] mx-auto"
+          />
+          <h1 className="text-4xl font-semibold mt-8">404 - Page Not Found</h1>
+          <p className="text-2xl px-5 mt-6">
             I think we are lost. Let's go back?
           </p>
-          <div className="mt-10 flex justify-center">
-            <OutlineButton onClick={() => navigate("/")} text="Go Back Home" />
+          <div className="mt-10">
+            <OutlineButton
+              onClick={() => navigate("/")}
+              text="Go Back Home"
+              aria-label="Navigate to homepage"
+            />
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );
