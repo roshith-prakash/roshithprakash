@@ -8,5 +8,6 @@ import GridBox from "./GridBox";
 import Gallery from "./Gallery";
 import ThoughtJournal from "./ThoughtJournal";
 import Quizzer from "./Quizzer";
+import SmartSlide from "./SmartSlide";
 
-export { Landing, About, Projects, Contact, NotFound, SmartPower, GridBox, Gallery, ThoughtJournal, Quizzer }
+export { Landing, About, Projects, Contact, NotFound, SmartPower, GridBox, Gallery, ThoughtJournal, Quizzer, SmartSlide }
