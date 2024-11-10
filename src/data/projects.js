@@ -44,7 +44,7 @@ export const projects = [
         description:
             "GridBox F1: Your go-to hub for all Formula 1 stats, standings, and race insights, bringing the thrill of F1 right to your screen.",
         imageSrc:
-            "https:/res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png",
+            "https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png",
         navigateTo: "/projects/gridbox",
     },
 ];
