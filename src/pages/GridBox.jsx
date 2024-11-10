@@ -28,7 +28,7 @@ const GridBox = () => {
         {/* ---------------------------------------------------- */}
 
         <section>
-          <h1 className="text-3xl text-center font-semibold">The GridBox</h1>
+          <h1 className="text-3xl text-center font-semibold">GridBox F1</h1>
           <p className="mt-8 text-lg px-5 lg:px-10 text-center">
             The popularity of Formula 1 has been on a meteoric rise in recent
             years, capturing the hearts and minds of a global audience like
@@ -36,11 +36,11 @@ const GridBox = () => {
             charismatic drivers, Formula 1 has become a sporting spectacle that
             transcends borders and demographics. To seize the growing
             opportunity and to turn my passion for Formula 1 into something
-            real, I developed "The GridBox" - a Formula 1 Information Website.
+            real, I developed "GridBox F1" - a Formula 1 Information Website.
           </p>
           <div className="mt-10 flex justify-center">
             <CTAButton
-              onClick={() => window.open("https://thegridbox.vercel.app/")}
+              onClick={() => window.open("https://gridbox-f1.vercel.app/")}
               text="Visit the Site!"
             />
           </div>
@@ -49,14 +49,23 @@ const GridBox = () => {
         <section className="mt-20 px-5 md:px-10 lg:px-32">
           <h2 className="text-2xl font-medium">Features:</h2>
           <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>View the next race and its timings.</li>
-            <li>View Driver or Constructor Standings for any year.</li>
-            <li>View the Schedule of Races.</li>
-            <li>Read Blogs written by me.</li>
             <li>
-              View Information about the various drivers and constructors.
+              Explore Driver and Constructor Standings from past and current
+              seasons.
             </li>
-            <li>View Circuit Information and their Locations.</li>
+            <li>
+              View the complete season schedule with dates and locations for
+              each race.
+            </li>
+            <li>
+              Read in-depth articles and blogs on the latest F1 news and
+              insights.
+            </li>
+            <li>Discover drivers and constructors by season.</li>
+            <li>
+              Learn about iconic circuits, including layout details and
+              geographic locations.
+            </li>
           </ul>
         </section>
 
@@ -64,34 +73,26 @@ const GridBox = () => {
           <h2 className="text-2xl font-medium">Tasks Performed:</h2>
           <ul className="list-disc text-lg mt-5 px-6 md:px-12">
             <li>
-              Developed a React-based front-end user-facing website with
-              Material UI and React Router DOM.
+              Built a user-friendly, responsive front-end with React, Tailwind
+              CSS, ShadCN, and Tanstack Query for seamless data fetching.
             </li>
             <li>
-              Developed an Express-based server to communicate with the
-              front-end and provide the requested data.
+              Created an Express.js server to handle API requests, ensuring
+              smooth data exchange between the front-end and the database.
             </li>
             <li>
-              Developed an information storage technique that allows storing
-              data on MongoDB, ensuring maximum availability of data and minimal
-              downtime.
+              Implemented a robust data storage solution using MongoDB to ensure
+              high data availability, scalability, and minimal downtime.
             </li>
           </ul>
         </section>
 
-        <section className="mt-24 px-5 lg:px-10">
-          <figure className="w-full">
-            <video
-              alt="Gridbox"
-              src="https://res.cloudinary.com/do8rpl9l4/video/upload/v1711613929/portfolio/gridbox.mp4"
-              controls
-              className="w-full"
-            />
-            <figcaption className="text-center mt-2 text-sm">
-              A preview of the GridBox website, showcasing various features
-              related to Formula 1.
-            </figcaption>
-          </figure>
+        <section className="mt-24 px-5 lg:px-10 flex justify-center">
+          <img
+            src="https:/res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png"
+            alt="Screenshot of Quizzer AI"
+            className="w-auto max-h-96"
+          />
         </section>
       </main>
       <Footer />
