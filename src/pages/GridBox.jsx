@@ -90,7 +90,7 @@ const GridBox = () => {
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img
             src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png"
-            alt="Screenshot of Quizzer AI"
+            alt="Screenshot of GridBox"
             className="w-auto max-h-96"
           />
         </section>
