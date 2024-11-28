@@ -9,26 +9,25 @@ import { projects } from "../data/projects";
 // Reusable ProjectCard component
 const ProjectCard = ({ title, description, imageSrc, navigateTo }) => {
   const navigate = useNavigate();
+
   return (
-    <article className="group w-full rounded-xl border-2 shadow-md relative h-96 hover:scale-105 hover:shadow-2xl transition-all">
+    <div className="flex flex-col border-2 rounded-xl shadow-lg hover:scale-105 transition-all overflow-hidden">
       <img
         src={imageSrc}
         alt={`Preview of ${title}`}
-        className="h-full w-full rounded-xl"
+        className="h-full max-h-60 object-cover  rounded-t-xl aspect-auto w-full "
       />
-      <div className="absolute w-full h-full px-5 bg-grey top-0 left-0 rounded-xl opacity-80 lg:opacity-0 group-hover:opacity-90 transition-all flex justify-center items-center">
-        <div>
-          <h3 className="text-3xl text-center font-semibold">{title}</h3>
-          <p className="text-lg text-center mt-5">{description}</p>
-          <div className="mt-5 flex justify-center">
-            <OutlineButton
-              onClick={() => navigate(navigateTo)}
-              text="View More"
-            />
-          </div>
+      <div className="relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
+        <h3 className="text-3xl text-center font-semibold">{title}</h3>
+        <p className="text-lg text-center mt-5">{description}</p>
+        <div className="mt-5 flex justify-center">
+          <OutlineButton
+            onClick={() => navigate(navigateTo)}
+            text="View More"
+          />
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

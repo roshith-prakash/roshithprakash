@@ -24,9 +24,17 @@ export const projects = [
         navigateTo: "/projects/quizzer",
     },
     {
+        title: "GridBox F1",
+        description:
+            "GridBox F1: Your go-to hub for all Formula 1 stats, standings, and race insights, bringing the thrill of F1 right to your screen.",
+        imageSrc:
+            "https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png",
+        navigateTo: "/projects/gridbox",
+    },
+    {
         title: "SmartSlide AI",
         description:
-            "SmartSlide AI is an AI based presentation and document generation platform where users can create presentations with relevant content - including graphs and tables.",
+            "SmartSlide AI is an AI based presentation and document generation platform.",
         imageSrc:
             "https://res.cloudinary.com/do8rpl9l4/image/upload/v1729526872/smartslide_m5mgwt.png",
         navigateTo: "/projects/smartslide",
@@ -39,12 +47,5 @@ export const projects = [
             "https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png",
         navigateTo: "/projects/gallery",
     },
-    {
-        title: "GridBox F1",
-        description:
-            "GridBox F1: Your go-to hub for all Formula 1 stats, standings, and race insights, bringing the thrill of F1 right to your screen.",
-        imageSrc:
-            "https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png",
-        navigateTo: "/projects/gridbox",
-    },
+
 ];

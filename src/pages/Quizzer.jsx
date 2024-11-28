@@ -43,11 +43,14 @@ const Quizzer = () => {
         <section className="mt-20 px-5 md:px-10 lg:px-32">
           <h2 className="text-2xl font-medium">Features:</h2>
           <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>Creates MCQs on the user's selected topic.</li>
-            <li>Creates FlashCards on the user's selected topic.</li>
-            <li>Caches results to decrease fetch times.</li>
+            <li>Integrated Gemini AI into a Node JS server.</li>
             <li>
-              Allows users to choose the difficulty level of the questions.
+              Creates FlashCards, MCQs or True/False questions on the user's
+              selected topic.
+            </li>
+            <li>
+              Created a multiplayer mode to allow users to compete
+              simultaneously.
             </li>
           </ul>
         </section>
