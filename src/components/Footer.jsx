@@ -10,7 +10,7 @@ const Footer = () => {
     <footer
       className={` ${
         isDarkMode
-          ? "bg-secondarydarkbg"
+          ? "bg-secondarydarkbg border-t-2 border-darkmodetext"
           : "bg-gradient-to-b from-cta to-hovercta"
       }  font-inter pb-20 min-h-50vh relative text-white`}
     >
