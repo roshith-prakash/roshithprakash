@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+import { FaMediumM } from "react-icons/fa";
 import dev from "../assets/dev.svg";
 import { useDarkMode } from "../context/DarkModeContext";
 
@@ -59,6 +60,15 @@ const Footer = () => {
               aria-label="Email Roshith Prakash"
             >
               <FaEnvelope className="text-2xl" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://medium.com/@roshithprakash7"
+              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
+              aria-label="Medium Profile"
+            >
+              <FaMediumM className="text-2xl" />
             </a>
           </div>
 
