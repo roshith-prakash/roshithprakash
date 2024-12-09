@@ -16,7 +16,7 @@ const NotFound = () => {
 
   return (
     <>
-      <main className="min-h-[60vh] flex items-center justify-center pt-20 pb-32">
+      <main className="min-h-[60vh] dark:bg-darkbg dark:text-darkmodetext flex items-center justify-center pt-20 pb-32">
         <div className="text-center">
           <img
             src={notfound}

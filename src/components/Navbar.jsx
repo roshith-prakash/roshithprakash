@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import OutlineButton from "./OutlineButton";
 import logo from "../assets/logo.jpg";
+import logodark from "../assets/logodark.png";
 import CTAButton from "./CTAButton";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import { GoDownload } from "react-icons/go";
+import { useDarkMode } from "../context/DarkModeContext";
+import { IoMoon } from "react-icons/io5";
+import { IoSunnySharp } from "react-icons/io5";
 
 const Navbar = () => {
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -18,12 +23,18 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`font-inter ${
-          !open && "shadow-md"
-        } lg:shadow-md flex justify-between items-center px-10 py-5`}
+        className={`font-inter bg-white dark:bg-darkbg dark:text-white flex justify-between items-center px-10 py-5`}
       >
         <Link to="/" aria-label="Home">
-          <img src={logo} alt="Logo" className="h-12 w-12 cursor-pointer" />
+          {isDarkMode ? (
+            <img
+              src={logodark}
+              alt="Logo"
+              className="h-12 w-12 cursor-pointer"
+            />
+          ) : (
+            <img src={logo} alt="Logo" className="h-12 w-12 cursor-pointer" />
+          )}
         </Link>
 
         <div className="hidden lg:flex gap-x-8 font-medium items-center">
@@ -52,8 +63,24 @@ const Navbar = () => {
           />
         </div>
 
+        <button className="hidden lg:flex" onClick={toggleDarkMode}>
+          {isDarkMode ? (
+            <IoSunnySharp className="text-2xl hover:text-cta transition-all" />
+          ) : (
+            <IoMoon className="text-2xl hover:text-cta transition-all" />
+          )}
+        </button>
+
         {/* Hamburger Button to open the drawer */}
-        <div className="flex lg:hidden gap-x-5 font-medium items-center">
+        <div className="flex lg:hidden gap-x-10 font-medium items-center">
+          <button onClick={toggleDarkMode}>
+            {isDarkMode ? (
+              <IoSunnySharp className="text-xl hover:text-cta transition-all" />
+            ) : (
+              <IoMoon className="text-xl hover:text-cta transition-all" />
+            )}
+          </button>
+
           <RxHamburgerMenu
             onClick={() => setOpen(true)}
             className="cursor-pointer text-xl text-ink"
@@ -63,16 +90,28 @@ const Navbar = () => {
 
         {/* Drawer Menu */}
         <div
-          className={`h-screen w-full text-xl md:text-lg fixed top-0 right-0 z-50 bg-white pb-6 text-center shadow-md ${
+          className={`h-screen w-full text-xl md:text-lg fixed top-0 right-0 z-50 bg-white dark:bg-darkbg pb-6 text-center shadow-md ${
             open ? "translate-x-0" : "translate-x-[100%]"
           } transition-all duration-500`}
           role="dialog"
           aria-modal="true"
         >
           <div className="flex justify-between items-center pt-6 px-8 lg:px-10 mb-14">
-            <Link to="/" aria-label="Home">
-              <img alt="Roshith Prakash" src={logo} className="h-12 w-12" />
-            </Link>
+            <button onClick={() => handleSearch("/")} aria-label="Home">
+              {isDarkMode ? (
+                <img
+                  src={logodark}
+                  alt="Logo"
+                  className="h-12 w-12 cursor-pointer"
+                />
+              ) : (
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="h-12 w-12 cursor-pointer"
+                />
+              )}
+            </button>
             <RxCross2
               onClick={() => setOpen(false)}
               className="cursor-pointer text-2xl hover:text-cta transition-all"

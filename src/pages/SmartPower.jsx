@@ -15,14 +15,14 @@ const SmartPower = () => {
 
   return (
     <>
-      <main className="relative pt-14 pb-48">
+      <main className="relative dark:bg-darkbg dark:text-darkmodetext pt-14 pb-48">
         {/* Scroll to Top button */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
+          className="cursor-pointer border-2 border-cta dark:border-white fixed bottom-10 right-5 bg-white dark:bg-gray-800 rounded-full p-3 z-20"
           aria-label="Scroll to top"
         >
-          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+          <FaRegArrowAltCircleUp className="text-cta dark:text-white text-2xl" />
         </button>
 
         <header className="text-center">
@@ -113,7 +113,7 @@ const SmartPower = () => {
             <img
               src={smart1}
               alt="High-level design of SmartPower"
-              className="w-full"
+              className="w-full rounded"
             />
           </div>
 
@@ -121,7 +121,7 @@ const SmartPower = () => {
             <img
               src={smart2}
               alt="Circuit design of SmartPower"
-              className="w-full"
+              className="w-full rounded"
             />
           </div>
         </section>

@@ -1,11 +1,19 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import dev from "../assets/dev.svg";
+import { useDarkMode } from "../context/DarkModeContext";
 
 const Footer = () => {
+  const { isDarkMode } = useDarkMode();
   return (
-    <footer className="bg-gradient-to-b from-cta to-hovercta font-inter pb-20 min-h-50vh relative text-white">
-      <div className="absolute -top-16 w-[90vw] lg:w-[80vw] left-1/2 -translate-x-1/2 rounded-lg h-32 flex justify-around items-center bg-[#1f1e1e] text-white">
+    <footer
+      className={` ${
+        isDarkMode
+          ? "bg-secondarydarkbg"
+          : "bg-gradient-to-b from-cta to-hovercta"
+      }  font-inter pb-20 min-h-50vh relative text-white`}
+    >
+      <div className="absolute dark:border-2 dark:border-darkmodetext -top-16 w-[90vw] lg:w-[80vw] left-1/2 -translate-x-1/2 rounded-lg h-32 flex justify-around items-center bg-[#1f1e1e] text-white">
         <p className="text-xl font-medium">Let's Talk!</p>
         <a
           href="mailto:roshithprakash07@gmail.com"

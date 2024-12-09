@@ -24,16 +24,16 @@ const Contact = () => {
 
   return (
     <>
-      <main className="relative pt-20 pb-48 flex">
+      <main className="relative pt-20 pb-48 dark:bg-darkbg dark:text-darkmodetext flex">
         {/* ---------------------------------------------------- */}
 
         {/* Scroll to Top button */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
+          className="cursor-pointer border-2 border-cta dark:border-white fixed bottom-10 right-5 bg-white dark:bg-gray-800 rounded-full p-3 z-20"
           aria-label="Scroll to top"
         >
-          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+          <FaRegArrowAltCircleUp className="text-cta dark:text-white text-2xl" />
         </button>
 
         {/* ---------------------------------------------------- */}
@@ -55,7 +55,7 @@ const Contact = () => {
             className="px-10 max-w-[90%] flex flex-wrap justify-center gap-8 mt-20 mx-auto"
           >
             {/* LinkedIn */}
-            <article className="shadow-xl p-6 py-10 rounded-lg w-full md:w-52">
+            <article className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaLinkedin className="text-3xl text-[#0077B5]" />
                 LinkedIn
@@ -71,7 +71,7 @@ const Contact = () => {
             </article>
 
             {/* Email */}
-            <article className="shadow-xl  p-6 py-10 rounded-lg w-full md:w-52">
+            <article className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaEnvelope className="text-3xl text-hovercta" />
                 Email
@@ -87,9 +87,9 @@ const Contact = () => {
             </article>
 
             {/* GitHub */}
-            <article className="shadow-xl p-6 py-10 rounded-lg w-full md:w-52">
+            <article className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
-                <FaGithub className="text-3xl text-[#171515]" />
+                <FaGithub className="text-3xl text-[#171515] dark:text-darkmodetext" />
                 GitHub
               </h3>
               <div className="flex justify-center mt-4">

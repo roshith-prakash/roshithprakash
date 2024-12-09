@@ -25,14 +25,15 @@ const About = () => {
 
   return (
     <>
-      <main className="relative pt-14 pb-48">
+      <main className="bg-white dark:bg-darkbg dark:text-darkmodetext pt-14 pb-48">
+        {/* Scroll to Top button */}
         {/* Scroll to Top button */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta fixed bottom-10 right-5 bg-white rounded-full p-3 z-20"
+          className="cursor-pointer border-2 border-cta dark:border-white fixed bottom-10 right-5 bg-white dark:bg-gray-800 rounded-full p-3 z-20"
           aria-label="Scroll to top"
         >
-          <FaRegArrowAltCircleUp className="text-cta text-2xl" />
+          <FaRegArrowAltCircleUp className="text-cta dark:text-white text-2xl" />
         </button>
 
         {/* About Me Section */}
@@ -53,14 +54,14 @@ const About = () => {
         {/* Experience Section */}
         <section
           data-aos="fade-up"
-          className="mt-14 md:mt-28 lg:max-w-[90%] mx-auto"
+          className="mt-14 md:mt-28 w-full flex justify-center"
         >
-          <article className="w-full py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 lg:flex-1 px-8">
+          <article className="w-full max-w-[95%]  py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 lg:flex-1 px-8">
             <header>
               <h2 className="text-2xl font-semibold">Experience 👨‍💻</h2>
             </header>
 
-            <div className="mt-10 border-y-[1px] py-5">
+            <div className="mt-10 border-y-[1px] py-14">
               <div className="flex flex-wrap">
                 <figure className="w-full md:w-fit flex justify-center items-start px-14">
                   <img
