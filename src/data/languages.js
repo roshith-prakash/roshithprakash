@@ -71,18 +71,18 @@ export const languages = [
     image: express,
     description: "Web framework for building Node.js applications.",
   },
-  {
-    id: 21,
-    name: "GraphQL",
-    image: graphql,
-    description: "Query language for APIs to fetch data efficiently.",
-  },
-  {
-    id: 23,
-    name: "NestJS",
-    image: nest,
-    description: "Framework for building scalable server-side applications.",
-  },
+  // {
+  //   id: 21,
+  //   name: "GraphQL",
+  //   image: graphql,
+  //   description: "Query language for APIs to fetch data efficiently.",
+  // },
+  // {
+  //   id: 23,
+  //   name: "NestJS",
+  //   image: nest,
+  //   description: "Framework for building scalable server-side applications.",
+  // },
   {
     id: 9,
     name: "Mongo DB",
