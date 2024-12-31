@@ -6,10 +6,12 @@ import notfound from "../assets/notfound.svg";
 const NotFound = () => {
   const navigate = useNavigate();
 
+  // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  // Title
   useEffect(() => {
     document.title = "Page Not Found";
   }, []);

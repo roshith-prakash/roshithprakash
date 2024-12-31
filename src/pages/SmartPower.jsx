@@ -5,10 +5,12 @@ import smart2 from "../assets/smartpower2.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const SmartPower = () => {
+  // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  // Title
   useEffect(() => {
     document.title = "SmartPower | Projects";
   }, []);

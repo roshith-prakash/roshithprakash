@@ -1,41 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Footer, OutlineButton, CTAButton } from "../components";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { MdOutlineChat } from "react-icons/md";
 import { SlScreenDesktop } from "react-icons/sl";
 import { LuCode2 } from "react-icons/lu";
 import { FiDatabase } from "react-icons/fi";
-
 import hero from "../assets/hero.svg";
 import whatcode from "../assets/whatcode.png";
 import cypher from "../assets/cypher.jpeg";
 import work from "../assets/working.svg";
-
 import { languages } from "../data/languages.js";
 import { useDarkMode } from "../context/DarkModeContext.jsx";
 
 const Landing = () => {
   const navigate = useNavigate();
   const { isDarkMode } = useDarkMode();
-  const [desc, setDesc] = useState("Hover over a tool to know more!");
-  const [name, setName] = useState("");
 
+  // Scroll to Top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-  }, []);
-
+  // Title
   useEffect(() => {
     document.title = "Roshith Prakash - Full Stack Developer";
   }, []);
@@ -204,38 +192,36 @@ const Landing = () => {
 
           {/* Tools Logos */}
           <div className="mt-14 flex flex-col gap-y-2 py-10 overflow-hidden">
+            {/* Dark Mode Only */}
             <div className="hidden dark:flex border-2 border-darkmodetext h-1" />
-            <div className="flex dark:bg-white py-4 flex-nowrap gap-x-[4rem] logos-slide w-max">
+            {/* Logos */}
+            <div className="flex text-lg font-medium dark:bg-white dark:text-darkbg py-4 flex-nowrap gap-x-[4rem] logos-slide w-max">
               {languages.map((item) => (
-                <img
-                  onMouseEnter={() => {
-                    setName(item?.name);
-                    setDesc(item.description);
-                  }}
-                  src={item.image}
-                  alt={item.name}
-                  key={item.id}
-                  className="max-h-32 inline-block"
-                />
+                <div className="flex flex-col gap-y-4 font-medium">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    key={item.id}
+                    className="h-32 inline-block"
+                  />
+                  <p className="text-center">{item?.name}</p>
+                </div>
               ))}
               {languages.map((item) => (
-                <img
-                  onMouseEnter={() => {
-                    setName(item?.name);
-                    setDesc(item.description);
-                  }}
-                  src={item.image}
-                  alt={item.name}
-                  key={item.id}
-                  className="max-h-32 inline-block"
-                />
+                <div className="flex flex-col gap-y-4 font-medium">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    key={item.id}
+                    className="h-32 inline-block"
+                  />
+                  <p className="text-center">{item?.name}</p>
+                </div>
               ))}
             </div>
+            {/* Dark Mode Only */}
             <div className="hidden dark:flex border-2 border-darkmodetext h-1" />
           </div>
-          <p className="px-5 mt-10 text-center text-lg text-cta dark:text-white">
-            {name && `${name} - `} {desc}
-          </p>
         </section>
 
         {/* ---------------------------------------------------- */}

@@ -2,25 +2,18 @@ import React, { useEffect } from "react";
 import { Footer } from "../components";
 import education from "../assets/education.svg";
 import read from "../assets/read.svg";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import whatcode from "../assets/whatcode.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const About = () => {
+  // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  // Title
   useEffect(() => {
     document.title = "About | Roshith Prakash";
-  }, []);
-
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-in-sine",
-      delay: 100,
-    });
   }, []);
 
   return (

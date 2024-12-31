@@ -2,22 +2,15 @@ import React, { useEffect } from "react";
 import { Footer, OutlineButton } from "../components";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import contact from "../assets/contact.svg";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Contact = () => {
+  // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-  }, []);
-
+  // Title
   useEffect(() => {
     document.title = "Contact | Roshith Prakash";
   }, []);

@@ -3,15 +3,25 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
-
 import { About, Contact, Gallery, GridBox, Landing, NotFound, Projects, SmartPower, ThoughtJournal, Quizzer, SmartSlide } from './pages';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Navbar } from './components';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
+
+  // AOS Setting
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <>
-
       <SpeedInsights />
       <BrowserRouter>
         <Navbar />

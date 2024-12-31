@@ -18,9 +18,10 @@ import mui from '../assets/mui.png';
 import axios from '../assets/axios.png';
 import firebase from '../assets/firebase.png';
 import socket from '../assets/socket.png';
-import graphql from '../assets/graphql.png';
 import docker from '../assets/docker.png';
-import nest from '../assets/nest.png';
+// import nest from '../assets/nest.png';
+// import graphql from '../assets/graphql.png';
+
 
 export const languages = [
   {
@@ -55,7 +56,7 @@ export const languages = [
   },
   {
     id: 6,
-    name: "JWT",
+    name: "JSON Web Token",
     image: jwt,
     description: "Token standard for secure data transmission.",
   },
@@ -121,13 +122,13 @@ export const languages = [
   },
   {
     id: 15,
-    name: "React Query",
+    name: "Tanstack Query",
     image: query,
     description: "Data-fetching library for React applications.",
   },
   {
     id: 16,
-    name: "Tailwind",
+    name: "Tailwind CSS",
     image: tailwind,
     description: "Utility-first CSS framework for rapid design.",
   },

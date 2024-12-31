@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
 import { Footer, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { projects } from "../data/projects";
 
@@ -32,10 +29,6 @@ const ProjectCard = ({ title, description, imageSrc, navigateTo }) => {
 };
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({ easing: "ease-in-sine", delay: 100 });
-  }, []);
-
   return (
     <>
       <main className="relative dark:bg-darkbg dark:text-darkmodetext pt-14 pb-32">

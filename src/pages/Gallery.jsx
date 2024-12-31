@@ -4,10 +4,12 @@ import gallery from "../assets/gallery.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Gallery = () => {
+  // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  // Title
   useEffect(() => {
     document.title = "Gallery | Projects";
   }, []);

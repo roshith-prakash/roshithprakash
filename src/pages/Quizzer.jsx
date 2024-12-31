@@ -3,10 +3,12 @@ import { CTAButton, Footer } from "../components";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Quizzer = () => {
+  // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  // Title
   useEffect(() => {
     document.title = "Quizzer | Projects";
   }, []);
