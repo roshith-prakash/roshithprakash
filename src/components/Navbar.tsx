@@ -69,7 +69,11 @@ const Navbar = () => {
           />
         </div>
 
-        <button className="hidden lg:flex" onClick={toggleDarkMode}>
+        <button
+          aria-label="Change Theme"
+          className="hidden lg:flex"
+          onClick={toggleDarkMode}
+        >
           {isDarkMode ? (
             <IoSunnySharp className="text-2xl hover:text-cta transition-all" />
           ) : (
@@ -79,7 +83,7 @@ const Navbar = () => {
 
         {/* Hamburger Button to open the drawer */}
         <div className="flex lg:hidden gap-x-10 font-medium items-center">
-          <button onClick={toggleDarkMode}>
+          <button aria-label="Change Theme" onClick={toggleDarkMode}>
             {isDarkMode ? (
               <IoSunnySharp className="text-xl hover:text-cta transition-all" />
             ) : (
@@ -101,6 +105,7 @@ const Navbar = () => {
           } transition-all duration-500`}
           role="dialog"
           aria-modal="true"
+          aria-label="Drawer Menu"
         >
           <div className="flex justify-between items-center pt-6 px-8 lg:px-10 mb-14">
             <button onClick={() => handleSearch("/")} aria-label="Home">

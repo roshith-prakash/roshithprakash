@@ -13,7 +13,7 @@ import {
   SmartSlide,
 } from "./pages";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Navbar } from "./components";
+import { Navbar, SecurityHeaders } from "./components";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -30,6 +30,7 @@ function App() {
   return (
     <>
       <SpeedInsights />
+      <SecurityHeaders />
       <BrowserRouter>
         <Navbar />
         <Routes>
