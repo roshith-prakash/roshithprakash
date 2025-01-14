@@ -30,7 +30,7 @@ const Navbar = () => {
                 "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logodark_gs3pnp.png"
               }
               alt="Logo"
-              className="h-12 w-12 cursor-pointer"
+              className="h-12 cursor-pointer"
             />
           ) : (
             <img
@@ -38,7 +38,7 @@ const Navbar = () => {
                 "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logo_iem9wr.jpg"
               }
               alt="Logo"
-              className="h-12 w-12 cursor-pointer"
+              className="h-12 cursor-pointer"
             />
           )}
         </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
                     "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logodark_gs3pnp.png"
                   }
                   alt="Logo"
-                  className="h-12 w-12 cursor-pointer"
+                  className="h-12 cursor-pointer"
                 />
               ) : (
                 <img
@@ -123,7 +123,7 @@ const Navbar = () => {
                     "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logo_iem9wr.jpg"
                   }
                   alt="Logo"
-                  className="h-12 w-12 cursor-pointer"
+                  className="h-12 cursor-pointer"
                 />
               )}
             </button>
