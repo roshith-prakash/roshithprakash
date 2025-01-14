@@ -1,27 +1,28 @@
+// @ts-nocheck
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
 import react from "../assets/react.png";
 import next from "../assets/next.png";
-import jwt from '../assets/jwt.png';
-import node from '../assets/node.jpeg';
-import express from '../assets/express.png';
-import mongo from '../assets/mongo.png';
-import postgres from '../assets/postgres.png';
-import mysql from '../assets/mysql.png';
-import git from '../assets/git.png';
-import github from '../assets/github.png';
-import prisma from '../assets/prisma.png';
-import query from '../assets/query.png';
-import tailwind from '../assets/tailwind.png';
-import mui from '../assets/mui.png';
-import axios from '../assets/axios.png';
-import firebase from '../assets/firebase.png';
-import socket from '../assets/socket.png';
-import docker from '../assets/docker.png';
+import jwt from "../assets/jwt.png";
+import node from "../assets/node.jpeg";
+import express from "../assets/express.png";
+import mongo from "../assets/mongo.png";
+import postgres from "../assets/postgres.png";
+import mysql from "../assets/mysql.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import prisma from "../assets/prisma.png";
+import query from "../assets/query.png";
+import tailwind from "../assets/tailwind.png";
+import mui from "../assets/mui.png";
+import axios from "../assets/axios.png";
+import firebase from "../assets/firebase.png";
+import socket from "../assets/socket.png";
+import docker from "../assets/docker.png";
+import typescript from "../assets/typescript.png";
 // import nest from '../assets/nest.png';
 // import graphql from '../assets/graphql.png';
-
 
 export const languages = [
   {
@@ -41,6 +42,12 @@ export const languages = [
     name: "JavaScript",
     image: js,
     description: "Scripting language for dynamic web content.",
+  },
+  {
+    id: 23,
+    name: "Typescript",
+    image: typescript,
+    description: "Type-safe subset of JavaScript.",
   },
   {
     id: 4,

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { CTAButton, Footer } from "../components";
-import gallery from "../assets/gallery.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Gallery = () => {
@@ -64,7 +63,9 @@ const Gallery = () => {
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <figure className="w-auto max-h-96">
             <img
-              src={gallery}
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png"
+              }
               alt="Gallery preview showcasing various images from the Pexels API"
               className="w-full h-auto max-h-96"
             />

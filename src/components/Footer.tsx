@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import { FaMediumM } from "react-icons/fa";
-import dev from "../assets/dev.svg";
 import { useDarkMode } from "../context/DarkModeContext";
 
 const Footer = () => {
@@ -78,7 +77,9 @@ const Footer = () => {
 
         <div className="hidden flex-1 lg:flex justify-center items-center">
           <img
-            src={dev}
+            src={
+              "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843230/dev_cjmzgb.svg"
+            }
             alt="Illustration of a programmer"
             className="h-60 pointer-events-none"
           />

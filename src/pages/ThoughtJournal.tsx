@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { CTAButton, Footer } from "../components";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 

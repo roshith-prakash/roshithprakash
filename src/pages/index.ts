@@ -10,4 +10,16 @@ import ThoughtJournal from "./ThoughtJournal";
 import Quizzer from "./Quizzer";
 import SmartSlide from "./SmartSlide";
 
-export { Landing, About, Projects, Contact, NotFound, SmartPower, GridBox, Gallery, ThoughtJournal, Quizzer, SmartSlide }
+export {
+  Landing,
+  About,
+  Projects,
+  Contact,
+  NotFound,
+  SmartPower,
+  GridBox,
+  Gallery,
+  ThoughtJournal,
+  Quizzer,
+  SmartSlide,
+};

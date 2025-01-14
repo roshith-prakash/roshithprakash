@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Footer, OutlineButton, CTAButton } from "../components";
+import { useEffect } from "react";
+import { Footer, OutlineButton, CTAButton } from "../components/index.ts";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
@@ -7,12 +7,8 @@ import { MdOutlineChat } from "react-icons/md";
 import { SlScreenDesktop } from "react-icons/sl";
 import { LuCode2 } from "react-icons/lu";
 import { FiDatabase } from "react-icons/fi";
-import hero from "../assets/hero.svg";
-import whatcode from "../assets/whatcode.png";
-import cypher from "../assets/cypher.jpeg";
-import work from "../assets/working.svg";
-import { languages } from "../data/languages.js";
-import { useDarkMode } from "../context/DarkModeContext.jsx";
+import { languages } from "../data/languages.ts";
+import { useDarkMode } from "../context/DarkModeContext.tsx";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -71,7 +67,9 @@ const Landing = () => {
           </article>
           <div className="w-full pt-14 lg:pt-0 lg:flex-1 flex justify-center items-center">
             <img
-              src={hero}
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736844051/hero_ubcx9w.svg"
+              }
               alt="Programmer"
               className="w-[80%] pointer-events-none"
             />
@@ -162,7 +160,9 @@ const Landing = () => {
           <div className="flex flex-wrap justify-center gap-x-10">
             <figure>
               <img
-                src={whatcode}
+                src={
+                  "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843326/whatcode_ssrwcw.png"
+                }
                 alt="WhatCode"
                 className="h-60 pointer-events-none"
               />
@@ -170,7 +170,9 @@ const Landing = () => {
             </figure>
             <figure>
               <img
-                src={cypher}
+                src={
+                  "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736844051/cypher_rtxfcw.png"
+                }
                 alt="Cypher Blockchain"
                 className="h-60 pointer-events-none"
               />
@@ -232,7 +234,13 @@ const Landing = () => {
           className="pt-20 md:pt-36 pb-16 flex flex-wrap"
         >
           <div className="w-full md:flex-1 flex justify-center items-center">
-            <img src={work} alt="Work with me" className="w-[70%]" />
+            <img
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736844051/working_hcewvh.svg"
+              }
+              alt="Work with me"
+              className="w-[70%]"
+            />
           </div>
           <div className="w-full md:flex-1 pt-14 md:pt-8">
             <h2 className="text-center font-medium text-2xl">

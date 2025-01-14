@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Footer } from "../components";
-import smart1 from "../assets/smartpower1.png";
-import smart2 from "../assets/smartpower2.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const SmartPower = () => {
@@ -113,7 +111,9 @@ const SmartPower = () => {
         <section className="mt-24 px-5 lg:px-10 flex flex-wrap max-w-screen gap-10">
           <div className="w-full lg:flex-1">
             <img
-              src={smart1}
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843699/smartpower1_h9zqby.png"
+              }
               alt="High-level design of SmartPower"
               className="w-full rounded"
             />
@@ -121,7 +121,9 @@ const SmartPower = () => {
 
           <div className="w-full lg:flex-1">
             <img
-              src={smart2}
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843699/smartpower2_upn7ym.png"
+              }
               alt="Circuit design of SmartPower"
               className="w-full rounded"
             />

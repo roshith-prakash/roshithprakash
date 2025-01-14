@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Footer, OutlineButton } from "../components";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
-import contact from "../assets/contact.svg";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const Contact = () => {
@@ -100,7 +99,9 @@ const Contact = () => {
         {/* Illustration */}
         <aside className="hidden lg:w-[40%] lg:flex justify-center items-start pt-5">
           <img
-            src={contact}
+            src={
+              "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843375/contact_f02hjl.svg"
+            }
             alt="Contact Illustration"
             className="w-[70%] pointer-events-none"
           />

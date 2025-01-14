@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Footer, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
-import notfound from "../assets/notfound.svg";
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -21,7 +20,9 @@ const NotFound = () => {
       <main className="min-h-[60vh] dark:bg-darkbg dark:text-darkmodetext flex items-center justify-center pt-20 pb-32">
         <div className="text-center">
           <img
-            src={notfound}
+            src={
+              "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736738810/notfound_eqfykw.svg"
+            }
             alt="Not Found Illustration"
             className="w-[40vw] mx-auto"
           />

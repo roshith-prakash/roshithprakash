@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Footer } from "../components";
-import education from "../assets/education.svg";
-import read from "../assets/read.svg";
-import whatcode from "../assets/whatcode.png";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 const About = () => {
@@ -58,7 +55,9 @@ const About = () => {
               <div className="flex flex-wrap">
                 <figure className="w-full md:w-fit flex justify-center items-start px-14">
                   <img
-                    src={whatcode}
+                    src={
+                      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843326/whatcode_ssrwcw.png"
+                    }
                     alt="WhatCode"
                     className="max-h-60 md:max-h-44 lg:max-h-52 pointer-events-none"
                   />
@@ -106,7 +105,13 @@ const About = () => {
           className="flex mt-14 md:mt-28 lg:max-w-[90%] mx-auto"
         >
           <div className="flex-1 hidden md:flex justify-center items-center">
-            <img src={education} alt="Education" className="w-[60%]" />
+            <img
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843325/education_cbyorl.svg"
+              }
+              alt="Education"
+              className="w-[60%]"
+            />
           </div>
           <article className="w-full py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 md:w-[60%] lg:flex-1 px-8">
             <header>
@@ -177,7 +182,9 @@ const About = () => {
 
           <div className="flex-1 hidden md:flex justify-center items-center">
             <img
-              src={read}
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843326/read_igb29p.svg"
+              }
               alt="Personal Info"
               className="w-[60%] [transform:rotateY(180deg)]"
             />

@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import OutlineButton from "./OutlineButton";
-import logo from "../assets/logo.jpg";
-import logodark from "../assets/logodark.png";
 import CTAButton from "./CTAButton";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
@@ -28,12 +26,20 @@ const Navbar = () => {
         <Link to="/" aria-label="Home">
           {isDarkMode ? (
             <img
-              src={logodark}
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logodark_gs3pnp.png"
+              }
               alt="Logo"
               className="h-12 w-12 cursor-pointer"
             />
           ) : (
-            <img src={logo} alt="Logo" className="h-12 w-12 cursor-pointer" />
+            <img
+              src={
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logo_iem9wr.jpg"
+              }
+              alt="Logo"
+              className="h-12 w-12 cursor-pointer"
+            />
           )}
         </Link>
 
@@ -100,13 +106,17 @@ const Navbar = () => {
             <button onClick={() => handleSearch("/")} aria-label="Home">
               {isDarkMode ? (
                 <img
-                  src={logodark}
+                  src={
+                    "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logodark_gs3pnp.png"
+                  }
                   alt="Logo"
                   className="h-12 w-12 cursor-pointer"
                 />
               ) : (
                 <img
-                  src={logo}
+                  src={
+                    "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logo_iem9wr.jpg"
+                  }
                   alt="Logo"
                   className="h-12 w-12 cursor-pointer"
                 />
@@ -124,7 +134,7 @@ const Navbar = () => {
               onClick={() => handleSearch("/")}
               className="hover:text-cta transition-all cursor-pointer w-fit"
               role="button"
-              tabIndex="0"
+              tabIndex={0}
               aria-label="Go to Home"
             >
               Home
@@ -133,7 +143,7 @@ const Navbar = () => {
               onClick={() => handleSearch("/about")}
               className="hover:text-cta transition-all cursor-pointer w-fit"
               role="button"
-              tabIndex="0"
+              tabIndex={0}
               aria-label="Go to About"
             >
               About
@@ -142,7 +152,7 @@ const Navbar = () => {
               onClick={() => handleSearch("/projects")}
               className="hover:text-cta transition-all cursor-pointer w-fit"
               role="button"
-              tabIndex="0"
+              tabIndex={0}
               aria-label="Go to Projects"
             >
               Projects
@@ -151,7 +161,7 @@ const Navbar = () => {
               onClick={() => handleSearch("/contact")}
               className="hover:text-cta transition-all cursor-pointer w-fit"
               role="button"
-              tabIndex="0"
+              tabIndex={0}
               aria-label="Go to Contact"
             >
               Contact
