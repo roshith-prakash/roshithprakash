@@ -1,6 +1,12 @@
-import React from "react";
+import { MouseEventHandler } from "react";
 
-const CTAButton = ({ text, onClick }) => {
+const CTAButton = ({
+  text,
+  onClick,
+}: {
+  text: string | React.ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+}) => {
   return (
     <button
       onClick={onClick}

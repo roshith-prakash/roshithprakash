@@ -13,7 +13,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
-  const handleSearch = (link) => {
+  const handleSearch = (link: string) => {
     navigate(link);
     setOpen(false);
   };
@@ -56,17 +56,19 @@ const Navbar = () => {
           <Link to="/contact" className="hover:text-cta transition-all">
             Contact
           </Link>
-          <OutlineButton
-            onClick={() => {
-              window.open("roshithprakash_resume.pdf");
-            }}
-            text={
-              <div className="flex gap-x-2 items-center">
-                Resume
-                <GoDownload className="text-lg" />
-              </div>
-            }
-          />
+          <Link to="roshithprakash_resume.pdf" target="_blank">
+            <OutlineButton
+              // onClick={() => {
+              //   window.open("roshithprakash_resume.pdf");
+              // }}
+              text={
+                <div className="flex gap-x-2 items-center">
+                  Resume
+                  <GoDownload className="text-lg" />
+                </div>
+              }
+            />
+          </Link>
         </div>
 
         <button
@@ -172,17 +174,16 @@ const Navbar = () => {
               Contact
             </p>
 
-            <CTAButton
-              onClick={() => {
-                window.open("roshithprakash_resume.pdf");
-              }}
-              text={
-                <div className="flex gap-x-2 items-center">
-                  Resume
-                  <GoDownload className="text-lg" />
-                </div>
-              }
-            />
+            <Link to="roshithprakash_resume.pdf" target="_blank">
+              <CTAButton
+                text={
+                  <div className="flex gap-x-2 items-center">
+                    Resume
+                    <GoDownload className="text-lg" />
+                  </div>
+                }
+              />
+            </Link>
           </div>
 
           <div className="text-sm w-full absolute bottom-24 lg:bottom-10 left-1/2 -translate-x-1/2 pl-1">

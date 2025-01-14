@@ -1,6 +1,12 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 
-const OutlineButton = ({ text, onClick }) => {
+const OutlineButton = ({
+  text,
+  onClick,
+}: {
+  text: string | React.ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+}) => {
   return (
     <button
       onClick={onClick}
