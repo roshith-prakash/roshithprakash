@@ -10,7 +10,6 @@ const SecurityHeaders = () => {
           default-src 'self'; 
           style-src 'self' 'unsafe-inline'; 
           script-src 'self'; 
-          img-src 'self' data:; 
           font-src 'self'; 
           connect-src 'self'; 
           frame-ancestors 'none';"
