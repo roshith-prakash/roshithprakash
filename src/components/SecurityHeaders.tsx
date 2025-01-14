@@ -6,37 +6,31 @@ const SecurityHeaders = () => {
       {/* Content Security Policy (CSP) */}
       <meta
         http-equiv="Content-Security-Policy"
-        content="
-          default-src 'self'; 
-          style-src 'self' 'unsafe-inline'; 
-          script-src 'self'; 
-          font-src 'self'; 
-          connect-src 'self'; 
-          frame-ancestors 'none';"
+        content="style-src 'self' 'unsafe-inline';"
       />
 
-      {/* Prevent MIME type sniffing */}
-      <meta name="X-Content-Type-Options" content="nosniff" />
+      {/* X-Content-Type-Options */}
+      <meta http-equiv="X-Content-Type-Options" content="nosniff" />
 
-      {/* Prevent Clickjacking */}
-      <meta name="X-Frame-Options" content="DENY" />
+      {/* X-Frame-Options */}
+      <meta http-equiv="X-Frame-Options" content="DENY" />
 
-      {/* Enable Cross-Site Scripting (XSS) Protection */}
-      <meta name="X-XSS-Protection" content="1; mode=block" />
+      {/* X-XSS-Protection */}
+      <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
 
       {/* Referrer Policy */}
       <meta name="referrer" content="no-referrer" />
 
-      {/* Permissions Policy */}
+      {/* Feature Policy */}
       <meta
         http-equiv="Permissions-Policy"
-        content="geolocation=(self), microphone=(), camera=(), autoplay=()"
+        content="geolocation=(self), microphone=()"
       />
 
-      {/* HTTP Strict Transport Security (HSTS) */}
+      {/* Strict-Transport-Security */}
       <meta
-        name="Strict-Transport-Security"
-        content="max-age=31536000; includeSubDomains; preload"
+        http-equiv="Strict-Transport-Security"
+        content="max-age=31536000; includeSubDomains"
       />
     </Helmet>
   );
