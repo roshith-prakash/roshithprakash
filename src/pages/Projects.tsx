@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, imageSrc, navigateTo }) => {
       <img
         src={imageSrc}
         alt={`Preview of ${title}`}
-        className="h-72 object-cover rounded-t-xl w-full "
+        className="h-72 lg:h-60 object-cover lg:object-contain rounded-t-xl w-full "
       />
       <div className="relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
         <h3 className="text-3xl text-center font-semibold">{title}</h3>
