@@ -13,7 +13,8 @@ module.exports = {
         "white": "#ffffff",
         "heading": "#1e1e1f",
         "grey": "#f5f5f5",
-        "error": "#f23f3f"
+        "error": "#f23f3f",
+        "darkmodeCTA": "#b458ff"
       },
       fontFamily: {
         'inter': ['Inter', 'system-ui'],

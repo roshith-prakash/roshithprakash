@@ -48,7 +48,7 @@ const Landing = () => {
           <article className="w-full lg:flex-1 px-5">
             <h1 className="text-5xl pt-20 lg:pt-40 font-semibold font-dmSans text-heading dark:text-darkmodetext text-center">
               Hey, I am{" "}
-              <span className="text-hovercta dark:text-cta">
+              <span className="text-hovercta dark:text-darkmodeCTA">
                 <Typewriter typeSpeed={70} words={["Roshith Prakash"]} />{" "}
               </span>
             </h1>
@@ -103,7 +103,7 @@ const Landing = () => {
           {/* Floating Cards Section */}
           <div className="absolute z-5 mt-10 left-1/2 -translate-x-1/2 flex flex-wrap w-[95%] lg:w-[90%] justify-around gap-x-6 gap-y-4">
             <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext rounded-xl py-8 px-2">
-              <div className="bg-hovercta p-4 rounded-full w-fit mx-auto">
+              <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
                 <SlScreenDesktop className="text-white text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
@@ -117,7 +117,7 @@ const Landing = () => {
               </p>
             </article>
             <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext rounded-xl py-8 px-2">
-              <div className="bg-hovercta p-4 rounded-full w-fit mx-auto">
+              <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
                 <LuCode2 className="text-white text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
@@ -131,7 +131,7 @@ const Landing = () => {
               </p>
             </article>
             <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext rounded-xl py-8 px-2">
-              <div className="bg-hovercta p-4 rounded-full w-fit mx-auto">
+              <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
                 <FiDatabase className="text-white text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
