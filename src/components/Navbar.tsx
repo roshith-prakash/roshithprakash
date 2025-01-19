@@ -44,23 +44,32 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden lg:flex gap-x-8 font-medium items-center">
-          <Link to="/" className="hover:text-cta transition-all">
+          <Link
+            to="/"
+            className="hover:text-cta dark:hover:text-darkmodeCTA transition-all"
+          >
             Home
           </Link>
-          <Link to="/about" className="hover:text-cta transition-all">
+          <Link
+            to="/about"
+            className="hover:text-cta dark:hover:text-darkmodeCTA transition-all"
+          >
             About Me
           </Link>
-          <Link to="/projects" className="hover:text-cta transition-all">
+          <Link
+            to="/projects"
+            className="hover:text-cta dark:hover:text-darkmodeCTA transition-all"
+          >
             Projects
           </Link>
-          <Link to="/contact" className="hover:text-cta transition-all">
+          <Link
+            to="/contact"
+            className="hover:text-cta dark:hover:text-darkmodeCTA transition-all"
+          >
             Contact
           </Link>
           <Link to="roshithprakash_resume.pdf" target="_blank">
             <OutlineButton
-              // onClick={() => {
-              //   window.open("roshithprakash_resume.pdf");
-              // }}
               text={
                 <div className="flex gap-x-2 items-center">
                   Resume
@@ -77,7 +86,7 @@ const Navbar = () => {
           onClick={toggleDarkMode}
         >
           {isDarkMode ? (
-            <IoSunnySharp className="text-2xl hover:text-cta transition-all" />
+            <IoSunnySharp className="text-2xl hover:text-darkmodeCTA transition-all" />
           ) : (
             <IoMoon className="text-2xl hover:text-cta transition-all" />
           )}
