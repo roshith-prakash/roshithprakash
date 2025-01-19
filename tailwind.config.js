@@ -20,9 +20,6 @@ module.exports = {
         'inter': ['Inter', 'system-ui'],
         'dmSans': ['DM Sans', 'system-ui']
       },
-      backgroundImage: {
-        'smallScreen': "url('./assets/bg.jpg')",
-      }
     },
 
   },

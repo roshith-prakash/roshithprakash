@@ -194,8 +194,8 @@ const Landing = () => {
 
           {/* Tools Logos */}
           <div className="mt-14 flex flex-col gap-y-2 py-10 overflow-hidden">
-            {/* Dark Mode Only */}
-            <div className="hidden dark:flex border-2 border-darkmodetext h-1" />
+            {/* Bordered line for film reel effect */}
+            <div className="flex border-2 border-black dark:border-darkmodetext h-2 dark:h-1" />
             {/* Logos */}
             <div className="flex text-lg font-medium dark:bg-white dark:text-darkbg py-4 flex-nowrap gap-x-[4rem] logos-slide w-max">
               {languages.map((item) => (
@@ -221,8 +221,8 @@ const Landing = () => {
                 </div>
               ))}
             </div>
-            {/* Dark Mode Only */}
-            <div className="hidden dark:flex border-2 border-darkmodetext h-1" />
+            {/* Bordered line for film reel effect */}
+            <div className="flex border-2 border-black dark:border-darkmodetext h-2 dark:h-1" />
           </div>
         </section>
 

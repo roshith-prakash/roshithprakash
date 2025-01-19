@@ -107,7 +107,7 @@ const About = () => {
           <div className="flex-1 hidden md:flex justify-center items-center">
             <img
               src={
-                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843325/education_cbyorl.svg"
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737267595/education_or1k0g.svg"
               }
               alt="Education"
               className="w-[60%]"
@@ -183,7 +183,7 @@ const About = () => {
           <div className="flex-1 hidden md:flex justify-center items-center">
             <img
               src={
-                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843326/read_igb29p.svg"
+                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737268085/hobby.svg"
               }
               alt="Personal Info"
               className="w-[60%] [transform:rotateY(180deg)]"
