@@ -28,11 +28,10 @@ const Quizzer = () => {
         <header className="text-center">
           <h1 className="text-3xl font-semibold">Quizzer AI</h1>
           <p className="mt-8 text-lg px-5 lg:px-10">
-            Quizzer AI is an interactive quiz platform where users can quiz
-            themselves on any topic. Questions are generated using Generative
-            AI. Technologies used for developing the project: React JS, Gemini,
-            Tanstack Query, Tailwind CSS, Axios, Node JS, Express JS, powered by
-            the Pexels API.
+            Quizzer AI is an interactive AI-powered quiz app that generates
+            dynamic and engaging quizzes on any topic. Built with Google's
+            Gemini AI, Quizzer AI offers personalized quizzes to enhance
+            learning and test your knowledge.
           </p>
           <div className="mt-10">
             <CTAButton
@@ -42,20 +41,34 @@ const Quizzer = () => {
           </div>
         </header>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Features:</h2>
-          <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>Integrated Gemini AI into a Node JS server.</li>
-            <li>
-              Creates FlashCards, MCQs or True/False questions on the user's
-              selected topic.
-            </li>
-            <li>
-              Created a multiplayer mode to allow users to compete
-              simultaneously.
-            </li>
-          </ul>
-        </section>
+        <div className="mt-20 px-10 lg:px-32 flex flex-wrap md:justify-around gap-y-14">
+          <section className="md:flex-1">
+            <h2 className="text-2xl font-medium">Technologies used:</h2>
+            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+              <li>React (Vite + TypeScript)</li>
+              <li>Tanstack Query</li>
+              <li>Tailwind CSS</li>
+              <li>Node JS + Express</li>
+              <li>Socket.IO</li>
+              <li>Gemini AI</li>
+            </ul>
+          </section>
+
+          <section className="md:flex-1">
+            <h2 className="text-2xl font-medium">Features:</h2>
+            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+              <li>Integrated Gemini AI into a Node JS server.</li>
+              <li>
+                Creates FlashCards, MCQs or True/False questions on the user's
+                selected topic.
+              </li>
+              <li>
+                Created a multiplayer mode to allow users to compete
+                simultaneously.
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img

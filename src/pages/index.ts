@@ -9,6 +9,7 @@ import Gallery from "./Gallery";
 import ThoughtJournal from "./ThoughtJournal";
 import Quizzer from "./Quizzer";
 import SmartSlide from "./SmartSlide";
+import MusicPlayer from "./MusicPlayer";
 
 export {
   Landing,
@@ -22,4 +23,5 @@ export {
   ThoughtJournal,
   Quizzer,
   SmartSlide,
+  MusicPlayer,
 };

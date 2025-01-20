@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { CTAButton, Footer } from "../components";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
-const ThoughtJournal = () => {
+const MusicPlayer = () => {
   // Scroll to top
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -26,18 +26,15 @@ const ThoughtJournal = () => {
         </button>
 
         <header className="text-center">
-          <h1 className="text-3xl font-semibold">The Thought Journal</h1>
+          <h1 className="text-3xl font-semibold">Music Player</h1>
           <p className="mt-8 text-lg px-5 lg:px-10">
-            A blog platform with social media features designed for sharing
-            ideas, stories, and insights. Connect with readers, spark
-            conversations, and build your community with this intuitive and
-            expressive platform.
+            A Music Player Application built using React + Vite.
           </p>
         </header>
 
         <div className="mt-10 flex justify-center">
           <CTAButton
-            onClick={() => window.open("https://thethoughtjournal.vercel.app/")}
+            onClick={() => window.open("https://music-player-rp.vercel.app/")}
             text="Visit the Site!"
           />
         </div>
@@ -46,32 +43,27 @@ const ThoughtJournal = () => {
           <section>
             <h2 className="text-2xl font-medium">Technologies used:</h2>
             <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-              <li>React (Vite + TypeScript)</li>
-              <li>Tanstack Query</li>
-              <li>Tailwind CSS</li>
+              <li>React (Vite)</li>
               <li>Firebase Auth</li>
-              <li>Node JS + Express</li>
-              <li>Prisma ORM</li>
-              <li>Multer + Cloudinary SDK</li>
+              <li>Tailwind CSS</li>
+              <li>Axios</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-medium">Features:</h2>
             <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-              <li>Write blogs using a rich text editor.</li>
-              <li>Signup / Login using Google Account.</li>
-              <li>Create and Manage your Journal profile.</li>
-              <li>Search posts based on title, category or key words.</li>
-              <li>Like & comment on posts.</li>
-              <li>View the accounts that you follow / are following you.</li>
+              <li>Play & listen to songs.</li>
+              <li>Filter songs based on search.</li>
+              <li>Filter between all songs & top songs.</li>
+              <li>Login with Google.</li>
             </ul>
           </section>
         </div>
 
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img
-            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1718722273/thoughtjournal_llrbq9.png"
+            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1737356962/musicplayer_bnr4vg.png"
             alt="The Thought Journal interface"
             className="w-auto max-h-96"
           />
@@ -82,4 +74,4 @@ const ThoughtJournal = () => {
   );
 };
 
-export default ThoughtJournal;
+export default MusicPlayer;

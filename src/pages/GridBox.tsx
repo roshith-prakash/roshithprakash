@@ -48,51 +48,47 @@ const GridBox = () => {
           </div>
         </section>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Features:</h2>
-          <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>
-              Explore Driver and Constructor Standings from past and current
-              seasons.
-            </li>
-            <li>
-              View the complete season schedule with dates and locations for
-              each race.
-            </li>
-            <li>
-              Read in-depth articles and blogs on the latest F1 news and
-              insights.
-            </li>
-            <li>Discover drivers and constructors by season.</li>
-            <li>
-              Learn about iconic circuits, including layout details and
-              geographic locations.
-            </li>
-          </ul>
-        </section>
+        <div className="mt-20 px-10 lg:px-32 flex flex-wrap md:justify-around gap-y-14">
+          <section className="md:flex-1">
+            <h2 className="text-2xl font-medium">Technologies used:</h2>
+            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+              <li>React (Vite + TypeScript)</li>
+              <li>Tanstack Query</li>
+              <li>Tailwind CSS</li>
+              <li>Node JS + Express</li>
+              <li>Prisma ORM</li>
+              <li>Jolpica API</li>
+            </ul>
+          </section>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Tasks Performed:</h2>
-          <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>
-              Built a user-friendly, responsive front-end with React, Tailwind
-              CSS, ShadCN, and Tanstack Query for seamless data fetching.
-            </li>
-            <li>
-              Created an Express.js server to handle API requests, ensuring
-              smooth data exchange between the front-end and the database.
-            </li>
-            <li>
-              Implemented a robust data storage solution using MongoDB to ensure
-              high data availability, scalability, and minimal downtime.
-            </li>
-          </ul>
-        </section>
+          <section className="md:flex-1">
+            <h2 className="text-2xl font-medium">Features:</h2>
+            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+              <li>
+                Explore Driver and Constructor Standings from past and current
+                seasons.
+              </li>
+              <li>
+                View the complete season schedule with dates and locations for
+                each race.
+              </li>
+              <li>
+                Read in-depth articles and blogs on the latest F1 news and
+                insights.
+              </li>
+              <li>Discover drivers and constructors by season.</li>
+              <li>
+                Learn about iconic circuits, including layout details and
+                geographic locations.
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img
             src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png"
-            alt="Screenshot of GridBox"
+            alt="GridBox F1"
             className="w-auto max-h-96"
           />
         </section>

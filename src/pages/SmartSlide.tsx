@@ -35,7 +35,6 @@ const SmartSlide = () => {
             designed to save time and enhance productivity, making it ideal for
             students, educators, and professionals who need to create
             presentations quickly without sacrificing quality or creativity.
-            Developed using React JS, Node JS, Express JS and Gemini AI.
           </p>
           <div className="mt-10">
             <CTAButton
@@ -45,27 +44,41 @@ const SmartSlide = () => {
           </div>
         </header>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Features:</h2>
-          <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>
-              AI-Driven Content Generation: Automatically generate slide content
-              by providing a topic, saving time on research and formatting.
-            </li>
-            <li>
-              User-Friendly Interface: A simple and intuitive UI that allows for
-              quick navigation and seamless slide editing.
-            </li>
-            <li>
-              Responsive Design: Optimized for desktop and mobile devices,
-              ensuring a smooth experience on any screen size.
-            </li>
-            <li>
-              Downloadable Presentations: Easily download your completed slide
-              decks for offline use or sharing.
-            </li>
-          </ul>
-        </section>
+        <div className="mt-20 px-10 lg:px-32 flex flex-wrap md:justify-around gap-y-14">
+          <section className="md:flex-1">
+            <h2 className="text-2xl font-medium">Technologies used:</h2>
+            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+              <li>React (Vite + TypeScript)</li>
+              <li>Tanstack Query</li>
+              <li>Tailwind CSS</li>
+              <li>Node JS + Express</li>
+              <li>Gemini AI</li>
+              <li>Pptxgenjs & Docx</li>
+            </ul>
+          </section>
+          <section className="md:flex-1">
+            <h2 className="text-2xl font-medium">Features:</h2>
+            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+              <li>
+                AI-Driven Content Generation: Automatically generate slide
+                content by providing a topic, saving time on research and
+                formatting.
+              </li>
+              <li>
+                User-Friendly Interface: A simple and intuitive UI that allows
+                for quick navigation and seamless slide editing.
+              </li>
+              <li>
+                Responsive Design: Optimized for desktop and mobile devices,
+                ensuring a smooth experience on any screen size.
+              </li>
+              <li>
+                Downloadable Presentations: Easily download your completed slide
+                decks for offline use or sharing.
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img

@@ -1,10 +1,17 @@
-import { Footer, OutlineButton } from "../components";
+import { CTAButton, Footer, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { projects } from "../data/projects";
+import { useEffect } from "react";
 
 // Reusable ProjectCard component
-const ProjectCard = ({ title, description, imageSrc, navigateTo }) => {
+const ProjectCard = ({
+  title,
+  description,
+  imageSrc,
+  navigateTo,
+  siteLink,
+}) => {
   const navigate = useNavigate();
 
   return (
@@ -12,15 +19,24 @@ const ProjectCard = ({ title, description, imageSrc, navigateTo }) => {
       <img
         src={imageSrc}
         alt={`Preview of ${title}`}
-        className="h-72 lg:h-60 object-cover lg:object-contain rounded-t-xl w-full "
+        className={`h-72 ${
+          title === "SmartPower" && "h-48"
+        } object-cover lg:object-contain rounded-t-xl w-full `}
       />
       <div className="relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
         <h3 className="text-3xl text-center font-semibold">{title}</h3>
         <p className="text-lg text-center mt-5">{description}</p>
-        <div className="mt-5 flex justify-center">
+        <div className="mt-5 flex flex-wrap gap-x-10 gap-y-5 justify-center">
+          {siteLink && (
+            <CTAButton
+              onClick={() => window.open(siteLink)}
+              text="Visit the site"
+            />
+          )}
+
           <OutlineButton
             onClick={() => navigate(navigateTo)}
-            text="View More"
+            text="Know More"
           />
         </div>
       </div>
@@ -29,6 +45,11 @@ const ProjectCard = ({ title, description, imageSrc, navigateTo }) => {
 };
 
 const Projects = () => {
+  // Set Page title
+  useEffect(() => {
+    document.title = "Projects | Roshith Prakash";
+  }, []);
+
   return (
     <>
       <main className="relative dark:bg-darkbg dark:text-darkmodetext pt-14 pb-32">
@@ -56,11 +77,12 @@ const Projects = () => {
         >
           {projects.map((project) => (
             <ProjectCard
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              imageSrc={project.imageSrc}
-              navigateTo={project.navigateTo}
+              key={project?.title}
+              title={project?.title}
+              description={project?.description}
+              imageSrc={project?.imageSrc}
+              navigateTo={project?.navigateTo}
+              siteLink={project?.siteLink}
             />
           ))}
         </section>

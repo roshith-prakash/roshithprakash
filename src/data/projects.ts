@@ -6,6 +6,7 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1718722273/thoughtjournal_llrbq9.png",
     navigateTo: "/projects/thoughtjournal",
+    siteLink: "https://thethoughtjournal.vercel.app/",
   },
   {
     title: "Quizzer AI",
@@ -14,6 +15,7 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png",
     navigateTo: "/projects/quizzer",
+    siteLink: "https://quizzer-ai.vercel.app/",
   },
   {
     title: "GridBox F1",
@@ -22,6 +24,7 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png",
     navigateTo: "/projects/gridbox",
+    siteLink: "https://gridbox-f1.vercel.app/",
   },
 
   {
@@ -31,14 +34,7 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1729526872/smartslide_m5mgwt.png",
     navigateTo: "/projects/smartslide",
-  },
-  {
-    title: "The Gallery",
-    description:
-      "The Gallery is a photo gallery website displaying images using the Pexels API.",
-    imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png",
-    navigateTo: "/projects/gallery",
+    siteLink: "https://smartslide-ai.vercel.app/",
   },
   {
     title: "SmartPower",
@@ -47,5 +43,22 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627110/portfolio/smartpower.png",
     navigateTo: "/projects/smartpower",
+  },
+  {
+    title: "The Gallery",
+    description:
+      "The Gallery is a photo gallery website displaying images using the Pexels API.",
+    imageSrc:
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png",
+    navigateTo: "/projects/gallery",
+    siteLink: "https://gallery-roshithprakash.vercel.app/",
+  },
+  {
+    title: "Music Player App",
+    description: "Created a Music Player Application with React.",
+    imageSrc:
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737356962/musicplayer_bnr4vg.png",
+    navigateTo: "/projects/musicplayer",
+    siteLink: "https://music-player-rp.vercel.app/",
   },
 ];

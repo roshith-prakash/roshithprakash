@@ -101,6 +101,14 @@ const SmartPower = () => {
           </ul>
         </section>
 
+        <section className="mt-20 px-5 md:px-10 lg:px-32">
+          <h2 className="text-2xl font-medium">Technologies used:</h2>
+          <p className=" text-lg mt-5 px-6 md:px-12">
+            React Native, Node JS, Express JS, MySQL, Python, Raspberry Pi,
+            Socket IO.
+          </p>
+        </section>
+
         <div className="mt-20 border-y-2 py-5">
           <p className="px-5 text-center text-lg font-medium">
             Note: The project has been dismantled and is no longer available to
