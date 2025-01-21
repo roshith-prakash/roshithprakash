@@ -15,28 +15,30 @@ const ProjectCard = ({
   const navigate = useNavigate();
 
   return (
-    <div className="flex dark:bg-secondarydarkbg flex-col border-2 rounded-xl shadow-lg hover:scale-105 transition-all overflow-hidden">
+    <div className="min-w-80 flex dark:bg-secondarydarkbg flex-col border-2 rounded-xl shadow-lg hover:scale-105 transition-all overflow-hidden">
       <img
         src={imageSrc}
         alt={`Preview of ${title}`}
-        className={`h-72 ${
-          title === "SmartPower" && "h-48"
+        className={`${
+          title === "SmartPower" ? "h-48" : "h-72"
         } object-cover lg:object-contain rounded-t-xl w-full `}
       />
-      <div className="relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
+      <div className="min-h-80 md:min-h-auto relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
         <h3 className="text-3xl text-center font-semibold">{title}</h3>
         <p className="text-lg text-center mt-5">{description}</p>
-        <div className="mt-5 flex flex-wrap gap-x-10 gap-y-5 justify-center">
+        <div className="mt-5 flex flex-wrap md:gap-x-5 lg:gap-x-10 gap-y-5 justify-center">
           {siteLink && (
             <CTAButton
               onClick={() => window.open(siteLink)}
-              text="Visit the site"
+              text="Explore App!"
+              className="w-full md:w-auto"
             />
           )}
 
           <OutlineButton
             onClick={() => navigate(navigateTo)}
-            text="Know More"
+            text="Learn More!"
+            className="w-full md:w-auto"
           />
         </div>
       </div>
@@ -73,7 +75,7 @@ const Projects = () => {
 
         <section
           data-aos="fade-up"
-          className="mt-14 max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-y-10 md:gap-x-5 lg:gap-x-14"
+          className="mt-14 max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-between gap-y-10 md:gap-x-5 lg:gap-x-14"
         >
           {projects.map((project) => (
             <ProjectCard

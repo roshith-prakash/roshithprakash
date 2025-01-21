@@ -47,7 +47,7 @@ const Contact = () => {
             className="px-10 max-w-[90%] flex flex-wrap justify-center gap-8 mt-20 mx-auto"
           >
             {/* LinkedIn */}
-            <article className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
+            <div className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaLinkedin className="text-3xl text-[#0077B5]" />
                 LinkedIn
@@ -60,10 +60,10 @@ const Contact = () => {
                   text="Let's Connect!"
                 />
               </div>
-            </article>
+            </div>
 
             {/* Email */}
-            <article className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
+            <div className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaEnvelope className="text-3xl text-hovercta" />
                 Email
@@ -73,13 +73,13 @@ const Contact = () => {
                   onClick={() => {
                     window.open("mailto:roshithprakash07@gmail.com");
                   }}
-                  text="Let's Talk!"
+                  text="Send an Email!"
                 />
               </div>
-            </article>
+            </div>
 
             {/* GitHub */}
-            <article className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
+            <div className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaGithub className="text-3xl text-[#171515] dark:text-darkmodetext" />
                 GitHub
@@ -89,15 +89,15 @@ const Contact = () => {
                   onClick={() => {
                     window.open("https://github.com/roshith-prakash");
                   }}
-                  text="View my Profile"
+                  text="View my Repos!"
                 />
               </div>
-            </article>
+            </div>
           </div>
         </section>
 
         {/* Illustration */}
-        <aside className="hidden lg:w-[40%] lg:flex justify-center items-start pt-5">
+        <div className="hidden lg:w-[40%] lg:flex justify-center items-start pt-5">
           <img
             src={
               "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843375/contact_f02hjl.svg"
@@ -105,7 +105,7 @@ const Contact = () => {
             alt="Contact Illustration"
             className="w-[70%] pointer-events-none"
           />
-        </aside>
+        </div>
       </main>
       <Footer />
     </>

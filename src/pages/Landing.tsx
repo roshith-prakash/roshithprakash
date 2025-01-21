@@ -61,7 +61,7 @@ const Landing = () => {
                 onClick={() => {
                   navigate("/about");
                 }}
-                text="Know More About Me"
+                text="Discover More About Me"
               />
             </div>
           </article>
