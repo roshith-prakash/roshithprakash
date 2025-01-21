@@ -1,8 +1,12 @@
 import { useEffect } from "react";
-import { Footer, OutlineButton, CTAButton } from "../components/index.ts";
+import {
+  Footer,
+  OutlineButton,
+  CTAButton,
+  ScrollToTop,
+} from "../components/index.ts";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
-import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { MdOutlineChat } from "react-icons/md";
 import { SlScreenDesktop } from "react-icons/sl";
 import { LuCode2 } from "react-icons/lu";
@@ -30,13 +34,7 @@ const Landing = () => {
         {/* ---------------------------------------------------- */}
 
         {/* Scroll to Top button */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta dark:border-white fixed bottom-10 right-5 bg-white dark:bg-darkbg rounded-full p-3 z-20"
-          aria-label="Scroll to top"
-        >
-          <FaRegArrowAltCircleUp className="text-cta dark:text-white text-2xl" />
-        </button>
+        <ScrollToTop />
 
         {/* ---------------------------------------------------- */}
 

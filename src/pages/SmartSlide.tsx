@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import { CTAButton, Footer } from "../components";
-import { FaRegArrowAltCircleUp } from "react-icons/fa";
+import { CTAButton, Footer, ScrollToTop } from "../components";
 
 const SmartSlide = () => {
   // Scroll to top
@@ -17,13 +16,7 @@ const SmartSlide = () => {
     <>
       <main className="relative dark:bg-darkbg dark:text-darkmodetext pt-14 pb-48">
         {/* Scroll to Top button */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer border-2 border-cta dark:border-white fixed bottom-10 right-5 bg-white dark:bg-gray-800 rounded-full p-3 z-20"
-          aria-label="Scroll to top"
-        >
-          <FaRegArrowAltCircleUp className="text-cta dark:text-white text-2xl" />
-        </button>
+        <ScrollToTop />
 
         <header className="text-center">
           <h1 className="text-3xl font-semibold">SmartSlide AI</h1>
