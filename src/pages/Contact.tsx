@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Footer, OutlineButton, ScrollToTop } from "../components";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 

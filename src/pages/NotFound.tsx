@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Footer, OutlineButton } from "../components";
 import { useNavigate } from "react-router-dom";
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { CTAButton, Footer, ScrollToTop } from "../components";
 
 const Quizzer = () => {
