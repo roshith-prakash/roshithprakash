@@ -10,6 +10,7 @@ import ThoughtJournal from "./ThoughtJournal";
 import Quizzer from "./Quizzer";
 import SmartSlide from "./SmartSlide";
 import MusicPlayer from "./MusicPlayer";
+import StyledComponents from "./StyledComponents";
 
 export {
   Landing,
@@ -24,4 +25,5 @@ export {
   Quizzer,
   SmartSlide,
   MusicPlayer,
+  StyledComponents,
 };

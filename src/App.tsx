@@ -12,6 +12,7 @@ import {
   Quizzer,
   SmartSlide,
   MusicPlayer,
+  StyledComponents,
 } from "./pages";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Navbar, SecurityHeaders } from "./components";
@@ -45,6 +46,10 @@ function App() {
           <Route path="/projects/quizzer" element={<Quizzer />} />
           <Route path="/projects/smartslide" element={<SmartSlide />} />
           <Route path="/projects/musicplayer" element={<MusicPlayer />} />
+          <Route
+            path="/projects/styled-components"
+            element={<StyledComponents />}
+          />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

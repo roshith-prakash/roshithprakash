@@ -45,6 +45,15 @@ export const projects = [
     navigateTo: "/projects/smartpower",
   },
   {
+    title: "Styled Components",
+    description:
+      "Reusable and Customizable styled components created with Tailwind CSS",
+    imageSrc:
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737649658/Screenshot_2025-01-23_215657_ekyskz.png",
+    navigateTo: "/projects/styled-components",
+    siteLink: "https://styled-component-library.vercel.app/",
+  },
+  {
     title: "The Gallery",
     description:
       "The Gallery is a photo gallery website displaying images using the Pexels API.",
