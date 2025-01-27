@@ -26,7 +26,15 @@ export const projects = [
     navigateTo: "/projects/gridbox",
     siteLink: "https://gridbox-f1.vercel.app/",
   },
-
+  {
+    title: "Re-use-it!",
+    description:
+      "Re-use-it! is a web library containing Reusable and Customizable React components created with Tailwind CSS.",
+    imageSrc:
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737998189/reuseit_jgqxkq.png",
+    navigateTo: "/projects/re-use-it",
+    siteLink: "https://re-use-it.vercel.app/",
+  },
   {
     title: "SmartSlide AI",
     description:
@@ -44,15 +52,7 @@ export const projects = [
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627110/portfolio/smartpower.png",
     navigateTo: "/projects/smartpower",
   },
-  {
-    title: "Styled Components",
-    description:
-      "Reusable and Customizable styled components created with Tailwind CSS",
-    imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737649658/Screenshot_2025-01-23_215657_ekyskz.png",
-    navigateTo: "/projects/styled-components",
-    siteLink: "https://styled-component-library.vercel.app/",
-  },
+
   {
     title: "The Gallery",
     description:
