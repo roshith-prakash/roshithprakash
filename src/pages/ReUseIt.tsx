@@ -60,7 +60,7 @@ const ReUseIt = () => {
         </div>
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img
-            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1737998189/reuseit_jgqxkq.png"
+            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1738659332/Screenshot_2025-02-04_142440_ci5q29.png"
             alt="Styled Components"
             className="w-auto max-h-96"
           />

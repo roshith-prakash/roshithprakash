@@ -31,7 +31,7 @@ export const projects = [
     description:
       "Re-use-it! is a web library containing Reusable and Customizable React components created with Tailwind CSS.",
     imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737998189/reuseit_jgqxkq.png",
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1738659332/Screenshot_2025-02-04_142440_ci5q29.png",
     navigateTo: "/projects/re-use-it",
     siteLink: "https://re-use-it.vercel.app/",
   },
