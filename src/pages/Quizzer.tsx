@@ -18,15 +18,15 @@ const Quizzer = () => {
         {/* Scroll to Top button */}
         <ScrollToTop />
 
-        <header className="text-center">
-          <h1 className="text-3xl font-semibold">Quizzer AI</h1>
-          <p className="mt-8 text-lg px-5 lg:px-10">
+        <header className="text-center space-y-14">
+          <h1 className="text-4xl font-extrabold tracking-wide">Quizzer AI</h1>
+          <p className="text-lg px-5 lg:px-20">
             Quizzer AI is an interactive AI-powered quiz app that generates
-            dynamic and engaging quizzes on any topic. Built with Google's
+            dynamic and engaging quizzes on any topic. Powered by Google's
             Gemini AI, Quizzer AI offers personalized quizzes to enhance
             learning and test your knowledge.
           </p>
-          <div className="mt-10">
+          <div>
             <CTAButton
               onClick={() => window.open("https://quizzer-ai.vercel.app/")}
               text="Visit the Site!"
@@ -34,10 +34,12 @@ const Quizzer = () => {
           </div>
         </header>
 
-        <div className="mt-20 px-10 lg:px-32 flex flex-wrap md:justify-around gap-y-14">
-          <section className="md:flex-1">
-            <h2 className="text-2xl font-medium">Technologies used:</h2>
-            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+        <div className="mt-20 px-8 lg:px-32 grid grid-cols-1 md:grid-cols-2 gap-10">
+          <section className="bg-grey dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">
+              Technologies Used
+            </h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
               <li>React (Vite + TypeScript)</li>
               <li>Tanstack Query</li>
               <li>Tailwind CSS</li>
@@ -47,28 +49,31 @@ const Quizzer = () => {
             </ul>
           </section>
 
-          <section className="md:flex-1">
-            <h2 className="text-2xl font-medium">Features:</h2>
-            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+          <section className="bg-grey dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">Features</h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
               <li>Integrated Gemini AI into a Node JS server.</li>
               <li>
-                Creates FlashCards, MCQs or True/False questions on the user's
-                selected topic.
+                Generates FlashCards, MCQs, or True/False questions on the
+                user's selected topic.
               </li>
-              <li>
-                Created a multiplayer mode to allow users to compete
-                simultaneously.
-              </li>
+              <li>Multiplayer mode allows users to compete simultaneously.</li>
             </ul>
           </section>
         </div>
 
-        <section className="mt-24 px-5 lg:px-10 flex justify-center">
-          <img
-            src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png"
-            alt="Screenshot of Quizzer AI"
-            className="w-auto max-h-96"
-          />
+        <section className="mt-20 flex flex-col items-center">
+          <div className="relative bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl">
+            <img
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png"
+              alt="Screenshot of Quizzer AI"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          <p className="mt-6 text-gray-600 text-center">
+            Experience AI-powered quizzes with an intuitive and interactive
+            interface.
+          </p>
         </section>
       </main>
       <Footer />

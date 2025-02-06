@@ -15,13 +15,13 @@ const ReUseIt = () => {
   return (
     <>
       <main className="relative dark:bg-darkbg dark:text-darkmodetext pt-14 pb-48">
-        {/* ---------------------------------------------------- */}z
         {/* Scroll to Top button */}
         <ScrollToTop />
-        {/* ---------------------------------------------------- */}
-        <section>
-          <h1 className="text-3xl text-center font-semibold">Re-use-it!</h1>
-          <p className="mt-8 text-lg px-5 lg:px-10 text-center">
+
+        {/* Header Section */}
+        <header className="text-center space-y-10">
+          <h1 className="text-4xl font-extrabold tracking-wide">Re-use-it!</h1>
+          <p className="text-lg px-6 lg:px-20">
             A collection of reusable and customizable React components styled
             with Tailwind CSS. These components are designed to provide a
             consistent look and feel across your applications while being
@@ -33,31 +33,75 @@ const ReUseIt = () => {
               text="Visit the Site!"
             />
           </div>
-        </section>
-        <h2 className="mt-20 text-2xl font-medium text-center">Components</h2>
-        <div className="pt-5 px-10 lg:px-32 flex flex-wrap justify-evenly gap-y-14">
-          <section className="md:flex-1 flex flex-col items-center">
-            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-              <li>Primary Button</li>
-              <li>Secondary Button</li>
-              <li>Error</li>
-              <li>Text Input</li>
-              <li>Navbar</li>
-              <li>Card</li>
-            </ul>
-          </section>
+        </header>
 
-          <section className="md:flex-1 flex flex-col items-center">
-            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-              <li>Password Input</li>
-              <li>Loading Placeholder</li>
-              <li>Timeline</li>
-              <li>Security Headers</li>
-              <li>Footer</li>
-              <li>Table</li>
-            </ul>
-          </section>
+        {/* Components Section */}
+        <h2 className="mt-20 text-2xl font-medium text-center">Components</h2>
+        <div className="pt-5 px-10 lg:px-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6">
+          {[
+            "Accordion",
+            "Accordion Group",
+            "Avatar",
+            "Badge",
+            "Card",
+            "Carousel",
+            "Checkbox",
+            "Drawer",
+            "Footer",
+            "Loading Placeholder",
+            "Modal",
+            "Navbar",
+            "Password Input",
+            "Primary Button",
+            "Progress Bar",
+            "Radio Button",
+            "Secondary Button",
+            "Security Headers",
+            "Select",
+            "Slider",
+            "Switch",
+            "Table",
+            "Text Input",
+            "Text Area",
+            "Timeline",
+            "Toggle",
+            "Tooltip",
+          ].map((component) => (
+            <div
+              key={component}
+              className="bg-gray-100 dark:bg-secondarydarkbg p-4 rounded-xl shadow-md text-center"
+            >
+              {component}
+            </div>
+          ))}
         </div>
+
+        {/* Code Snippets Section */}
+        <h2 className="mt-20 text-2xl font-medium text-center">
+          Code Snippets
+        </h2>
+        <div className="pt-5 px-10 lg:px-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6">
+          {[
+            "useDebounce Hook",
+            "Regex Functions",
+            "Shuffle Array",
+            "Minutes to Read",
+            "Format Number (Intl)",
+            "Axios Instance",
+            "Multer Configuration",
+            "Cloudinary SDK Configuration",
+            "Image Compression",
+          ].map((snippet) => (
+            <div
+              key={snippet}
+              className="bg-gray-100 dark:bg-secondarydarkbg p-4 rounded-xl shadow-md text-center"
+            >
+              {snippet}
+            </div>
+          ))}
+        </div>
+
+        {/* Screenshot Section */}
         <section className="mt-24 px-5 lg:px-10 flex justify-center">
           <img
             src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1738659332/Screenshot_2025-02-04_142440_ci5q29.png"

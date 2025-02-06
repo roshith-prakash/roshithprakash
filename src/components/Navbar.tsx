@@ -7,6 +7,7 @@ import { GoDownload } from "react-icons/go";
 import { useDarkMode } from "../context/DarkModeContext";
 import { IoMoon } from "react-icons/io5";
 import { IoSunnySharp } from "react-icons/io5";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -43,7 +44,7 @@ const Navbar = () => {
           )}
         </Link>
 
-        <div className="hidden lg:flex gap-x-8 font-medium items-center">
+        <div className="hidden translate-x-14  lg:flex gap-x-8 font-medium items-center">
           <Link
             to="/"
             className="hover:text-cta dark:hover:text-darkmodeCTA transition-all"
@@ -80,17 +81,38 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <button
-          aria-label="Change Theme"
-          className="hidden lg:flex"
-          onClick={toggleDarkMode}
-        >
-          {isDarkMode ? (
-            <IoSunnySharp className="text-2xl hover:text-darkmodeCTA transition-all" />
-          ) : (
-            <IoMoon className="text-2xl hover:text-cta transition-all" />
-          )}
-        </button>
+        <div className="hidden lg:flex items-center gap-x-6">
+          <a
+            href="https://github.com/roshith-prakash"
+            target="_blank"
+            rel="noreferrer"
+            className=" hover:text-cta dark:last:hover:text-darkmodeCTA transition-all cursor-pointer rounded-full "
+            aria-label="Visit GitHub Profile"
+          >
+            <FaGithub className="text-2xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/roshith-prakash/"
+            target="_blank"
+            rel="noreferrer"
+            className=" hover:text-cta dark:last:hover:text-darkmodeCTA transition-all cursor-pointer rounded-full "
+            aria-label="Visit LinkedIn Profile"
+          >
+            <FaLinkedin className="text-2xl" />
+          </a>
+
+          <button
+            aria-label="Change Theme"
+            className="hidden lg:flex"
+            onClick={toggleDarkMode}
+          >
+            {isDarkMode ? (
+              <IoSunnySharp className="text-2xl hover:text-darkmodeCTA transition-all" />
+            ) : (
+              <IoMoon className="text-2xl hover:text-cta transition-all" />
+            )}
+          </button>
+        </div>
 
         {/* Hamburger Button to open the drawer */}
         <div className="flex lg:hidden gap-x-10 font-medium items-center">

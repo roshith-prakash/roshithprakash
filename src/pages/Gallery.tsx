@@ -15,20 +15,17 @@ const Gallery = () => {
   return (
     <>
       <main className="relative dark:bg-darkbg dark:text-darkmodetext pt-14 pb-48">
-        {/* ---------------------------------------------------- */}
-
         {/* Scroll to Top button */}
         <ScrollToTop />
 
-        {/* ---------------------------------------------------- */}
-
-        <section>
-          <h1 className="text-3xl text-center font-semibold">The Gallery</h1>
-          <p className="mt-8 text-lg px-5 lg:px-10 text-center">
+        {/* Header Section */}
+        <header className="text-center space-y-14">
+          <h1 className="text-4xl font-extrabold tracking-wide">The Gallery</h1>
+          <p className="text-lg px-5 lg:px-20">
             Developed a Single Page App (SPA) React JS application to search and
             display images from the Internet as required by the user.
           </p>
-          <div className="mt-10 flex justify-center">
+          <div>
             <CTAButton
               onClick={() =>
                 window.open("https://gallery-roshithprakash.vercel.app/")
@@ -36,12 +33,16 @@ const Gallery = () => {
               text="Visit the Site!"
             />
           </div>
-        </section>
+        </header>
 
-        <div className="mt-20 px-10 lg:px-32 flex flex-wrap md:justify-around gap-y-14">
-          <section className="md:flex-1">
-            <h2 className="text-2xl font-medium">Technologies used:</h2>
-            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+        {/* Technologies and Features Sections */}
+        <div className="mt-20 px-8 lg:px-32 grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Technologies Section */}
+          <section className="bg-grey dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">
+              Technologies Used
+            </h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
               <li>React</li>
               <li>Tanstack Query</li>
               <li>Pexels API</li>
@@ -49,33 +50,33 @@ const Gallery = () => {
             </ul>
           </section>
 
-          <section className="md:flex-1">
-            <h2 className="text-2xl font-medium">Features:</h2>
-            <ul className="list-disc text-lg mt-5 px-6 md:px-12">
+          {/* Features Section */}
+          <section className="bg-grey dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">Features</h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
               <li>Displays curated images for the day.</li>
               <li>Allows users to search for images using prompts.</li>
               <li>
-                Allows users to view images in a larger resolution by clicking
-                on the image (For Smaller Screens).
+                Click on images to view them in a larger resolution (for smaller
+                screens).
               </li>
             </ul>
           </section>
         </div>
 
-        <section className="mt-24 px-5 lg:px-10 flex justify-center">
-          <figure className="w-auto max-h-96">
+        {/* Image Section */}
+        <section className="mt-20 flex flex-col items-center">
+          <div className="relative bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl">
             <img
-              src={
-                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png"
-              }
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png"
               alt="Gallery preview showcasing various images from the Pexels API"
-              className="w-full h-auto max-h-96"
+              className="w-full h-auto object-cover"
             />
-            <figcaption className="text-center mt-2 text-sm">
-              A preview of the Gallery app, showcasing images fetched from the
-              Pexels API.
-            </figcaption>
-          </figure>
+          </div>
+          <figcaption className="mt-6 text-gray-600 text-center">
+            A preview of the Gallery app, showcasing images fetched from the
+            Pexels API.
+          </figcaption>
         </section>
       </main>
       <Footer />

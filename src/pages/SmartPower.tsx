@@ -18,11 +18,12 @@ const SmartPower = () => {
         {/* Scroll to Top button */}
         <ScrollToTop />
 
-        <header className="text-center">
-          <h1 className="text-3xl font-semibold">
+        {/* Header Section */}
+        <header className="text-center space-y-10">
+          <h1 className="text-4xl font-extrabold tracking-wide">
             SmartPower (Final Year Project)
           </h1>
-          <p className="mt-8 text-lg px-5 lg:px-10">
+          <p className="text-lg px-6 lg:px-20">
             The majority of the modern world depends on an energy delivery
             system that, according to the existing state of affairs, is
             ineffective and unable to keep up with the expanding needs.
@@ -35,7 +36,7 @@ const SmartPower = () => {
             for utilities. The smart grid philosophy is in turn derived from the
             ‘smart city’ concept which focuses on automation of tasks and
             overall increased efficiency in all areas. The recording of energy
-            consumption data is a tedious and time consuming manual process
+            consumption data is a tedious and time-consuming manual process,
             which has been automated in the developed system. The SmartPower
             system allows for the digital transfer of energy consumption data at
             regular intervals and allows for a more granular measurement of
@@ -53,55 +54,72 @@ const SmartPower = () => {
           </p>
         </header>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Features:</h2>
-          <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>
-              Eliminates the repeated manual task of recording power usage.
-            </li>
-            <li>
-              Allows for the granular storage of readings which can be later
-              aggregated and analyzed as required.
-            </li>
-            <li>Allows users to view readings in real time.</li>
-            <li>
-              Allows the representation of data collected in a graphical format.
-            </li>
-            <li>Allows for the prediction of future usage.</li>
-            <li>
-              Allows the user to turn on/off devices regardless of their
-              location.
-            </li>
-          </ul>
-        </section>
+        <div className="mt-20 flex flex-wrap justify-center gap-14 ">
+          {/* Features Section */}
+          <div className="bg-grey max-w-xl dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">Features</h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
+              <li>
+                Eliminates the repeated manual task of recording power usage.
+              </li>
+              <li>
+                Allows for the granular storage of readings which can be later
+                aggregated and analyzed as required.
+              </li>
+              <li>Allows users to view readings in real time.</li>
+              <li>
+                Allows the representation of data collected in a graphical
+                format.
+              </li>
+              <li>Allows for the prediction of future usage.</li>
+              <li>
+                Allows the user to turn on/off devices regardless of their
+                location.
+              </li>
+            </ul>
+          </div>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Tasks Performed:</h2>
-          <ul className="list-disc text-lg mt-5 px-6 md:px-12">
-            <li>
-              Developed an IoT-based smart electricity meter to measure and
-              store electrical usage using Raspberry Pi.
-            </li>
-            <li>
-              Developed an Express-based server to communicate with the user and
-              perform automated functions to receive and store data from the
-              smart meters, predict future usage, etc. Deployed on Google Cloud.
-            </li>
-            <li>
-              Developed a React Native-based Android app to allow users to
-              access the stored data, view predictions, etc.
-            </li>
-          </ul>
-        </section>
+          {/* Tasks Performed Section */}
+          <div className="bg-grey max-w-xl dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">
+              Tasks Performed
+            </h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
+              <li>
+                Developed an IoT-based smart electricity meter to measure and
+                store electrical usage using Raspberry Pi.
+              </li>
+              <li>
+                Developed an Express-based server to communicate with the user
+                and perform automated functions to receive and store data from
+                the smart meters, predict future usage, etc. Deployed on Google
+                Cloud.
+              </li>
+              <li>
+                Developed a React Native-based Android app to allow users to
+                access the stored data, view predictions, etc.
+              </li>
+            </ul>
+          </div>
 
-        <section className="mt-20 px-5 md:px-10 lg:px-32">
-          <h2 className="text-2xl font-medium">Technologies used:</h2>
-          <p className=" text-lg mt-5 px-6 md:px-12">
-            React Native, Node JS, Express JS, MySQL, Python, Raspberry Pi,
-            Socket IO.
-          </p>
-        </section>
+          {/* Technologies Section */}
+          <div className="bg-grey w-full max-w-xl md:w-fit dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h2 className="text-2xl font-semibold mb-4 text-cta">
+              Technologies Used
+            </h2>
+            <ul className="list-disc text-lg pl-6 space-y-2">
+              <li>React Native</li>
+              <li>Node JS</li>
+              <li>Express JS</li>
+              <li>MySQL</li>
+              <li>Python</li>
+              <li>Raspberry Pi</li>
+              <li>Socket IO</li>
+            </ul>
+          </div>
+        </div>
 
+        {/* Project Note Section */}
         <div className="mt-20 border-y-2 py-5">
           <p className="px-5 text-center text-lg font-medium">
             Note: The project has been dismantled and is no longer available to
@@ -109,12 +127,11 @@ const SmartPower = () => {
           </p>
         </div>
 
+        {/* Image Section */}
         <section className="mt-24 px-5 lg:px-10 flex flex-wrap max-w-screen gap-10">
           <div className="w-full lg:flex-1">
             <img
-              src={
-                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843699/smartpower1_h9zqby.png"
-              }
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843699/smartpower1_h9zqby.png"
               alt="High-level design of SmartPower"
               className="w-full rounded"
             />
@@ -122,9 +139,7 @@ const SmartPower = () => {
 
           <div className="w-full lg:flex-1">
             <img
-              src={
-                "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843699/smartpower2_upn7ym.png"
-              }
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843699/smartpower2_upn7ym.png"
               alt="Circuit design of SmartPower"
               className="w-full rounded"
             />
