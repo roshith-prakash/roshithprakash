@@ -36,6 +36,14 @@ export const projects = [
     siteLink: "https://re-use-it.vercel.app/",
   },
   {
+    title: "Re-use-it! CLI",
+    description:
+      "CLI to integrate components directly into your project.",
+    imageSrc:
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1739191832/cli_vkltcw.png",
+    siteLink: "https://www.npmjs.com/package/reuseit",
+  },
+  {
     title: "SmartSlide AI",
     description:
       "SmartSlide AI is an AI based presentation and document generation platform.",

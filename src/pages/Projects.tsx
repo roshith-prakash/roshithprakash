@@ -34,11 +34,13 @@ const ProjectCard = ({
             />
           )}
 
-          <OutlineButton
-            onClick={() => navigate(navigateTo)}
-            text="Learn More!"
-            className="w-full md:w-auto"
-          />
+          {navigateTo && (
+            <OutlineButton
+              onClick={() => navigate(navigateTo)}
+              text="Learn More!"
+              className="w-full md:w-auto"
+            />
+          )}
         </div>
       </div>
     </div>
