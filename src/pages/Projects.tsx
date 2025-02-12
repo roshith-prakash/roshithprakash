@@ -19,8 +19,8 @@ const ProjectCard = ({
         src={imageSrc}
         alt={`Preview of ${title}`}
         className={`${
-          title === "SmartPower" ? "h-48" : "h-72"
-        } object-cover lg:object-contain rounded-t-xl w-full `}
+          title === "SmartPower" ? "max-h-48" : "max-h-72"
+        } object-cover w-full `}
       />
       <div className="min-h-80 md:min-h-auto relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
         <h3 className="text-3xl text-center font-semibold">{title}</h3>

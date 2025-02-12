@@ -38,7 +38,7 @@ export const projects = [
   {
     title: "Re-use-it! CLI",
     description:
-      "CLI to integrate components directly into your project.",
+      "CLI to integrate Re-use-it! components & snippets directly into your project, speeding the development flow.",
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1739191832/cli_vkltcw.png",
     siteLink: "https://www.npmjs.com/package/reuseit",
