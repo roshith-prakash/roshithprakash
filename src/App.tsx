@@ -13,6 +13,7 @@ import {
   SmartSlide,
   MusicPlayer,
   ReUseIt,
+  GridManager,
 } from "./pages";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Navbar, SecurityHeaders } from "./components";
@@ -47,6 +48,7 @@ function App() {
           <Route path="/projects/smartslide" element={<SmartSlide />} />
           <Route path="/projects/musicplayer" element={<MusicPlayer />} />
           <Route path="/projects/re-use-it" element={<ReUseIt />} />
+          <Route path="/projects/gridmanager" element={<GridManager />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

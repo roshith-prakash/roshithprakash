@@ -11,6 +11,7 @@ import Quizzer from "./Quizzer";
 import SmartSlide from "./SmartSlide";
 import MusicPlayer from "./MusicPlayer";
 import ReUseIt from "./ReUseIt";
+import GridManager from "./GridManager";
 
 export {
   Landing,
@@ -26,4 +27,5 @@ export {
   SmartSlide,
   MusicPlayer,
   ReUseIt,
+  GridManager,
 };
