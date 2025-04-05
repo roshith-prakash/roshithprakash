@@ -82,10 +82,10 @@ const Landing = () => {
           className={`${
             isDarkMode
               ? "bg-secondarydarkbg"
-              : "bg-gradient-to-b from-cta to-hovercta"
-          }  relative text-white py-20 pb-28`}
+              : "bg-gradient-to-b from-hovercta to-hovercta/90"
+          }  relative text-darkmodetext py-20 pb-28`}
         >
-          <h2 className="text-center font-semibold mx-auto px-5 lg:max-w-[60%] text-2xl">
+          <h2 className="text-center  text-white font-semibold mx-auto px-5 lg:max-w-[60%] text-2xl">
             Hi, I am Roshith. Pleasure to meet you.
           </h2>
           <p className="text-center font-medium mx-auto mt-8 px-5 mb-10 md:max-w-[90%] lg:max-w-[70%] text-grey text-lg">
@@ -100,9 +100,9 @@ const Landing = () => {
 
           {/* Floating Cards Section */}
           <div className="absolute z-5 mt-10 left-1/2 -translate-x-1/2 flex flex-wrap w-[95%] lg:w-[90%] justify-around gap-x-6 gap-y-4">
-            <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext rounded-xl py-8 px-2">
+            <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext/25 rounded-xl py-8 px-2">
               <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
-                <SlScreenDesktop className="text-white text-3xl" />
+                <SlScreenDesktop className="text-darkmodetext text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
                 Front-End Development
@@ -114,9 +114,9 @@ const Landing = () => {
                 simplicity and readability in code.
               </p>
             </article>
-            <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext rounded-xl py-8 px-2">
+            <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext/25 rounded-xl py-8 px-2">
               <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
-                <LuCode2 className="text-white text-3xl" />
+                <LuCode2 className="text-darkmodetext text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
                 Back-End Development
@@ -128,9 +128,9 @@ const Landing = () => {
                 prefer using an ORM like Prisma to simplify database management.
               </p>
             </article>
-            <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext rounded-xl py-8 px-2">
+            <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext/25 rounded-xl py-8 px-2">
               <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
-                <FiDatabase className="text-white text-3xl" />
+                <FiDatabase className="text-darkmodetext text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
                 Database Management

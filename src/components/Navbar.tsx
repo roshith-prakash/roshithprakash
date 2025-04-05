@@ -1,6 +1,6 @@
 import { useState } from "react";
-import OutlineButton from "./OutlineButton";
-import CTAButton from "./CTAButton";
+import OutlineButton from "./SecondaryButton";
+import CTAButton from "./PrimaryButton";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import { GoDownload } from "react-icons/go";
@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`font-inter bg-white dark:bg-darkbg dark:text-white flex justify-between items-center px-10 py-5`}
+        className={`font-inter bg-white dark:bg-darkbg dark:text-darkmodetext flex justify-between items-center px-10 py-5`}
       >
         <Link to="/" aria-label="Home">
           {isDarkMode ? (

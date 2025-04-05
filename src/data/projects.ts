@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Grid Manager",
     description:
-      "Grid Manager is a fantasy F1 app which allows you to compete by creating your fantasy F1 teams",
+      "Grid Manager is a fantasy F1 app which allows you to compete by creating your fantasy F1 teams.",
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1743669362/Screenshot_2025-04-03_140349_c6fhp0.png",
     navigateTo: "/projects/gridmanager",
@@ -69,7 +69,6 @@ export const projects = [
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1711627110/portfolio/smartpower.png",
     navigateTo: "/projects/smartpower",
   },
-
   {
     title: "The Gallery",
     description:
@@ -80,8 +79,8 @@ export const projects = [
     siteLink: "https://gallery-roshithprakash.vercel.app/",
   },
   {
-    title: "Music Player App",
-    description: "Created a Music Player Application with React.",
+    title: "Music Player",
+    description: "A Music Player Application created with React.",
     imageSrc:
       "https://res.cloudinary.com/do8rpl9l4/image/upload/v1737356962/musicplayer_bnr4vg.png",
     navigateTo: "/projects/musicplayer",

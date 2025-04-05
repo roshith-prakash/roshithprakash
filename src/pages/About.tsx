@@ -38,12 +38,12 @@ const About = () => {
           data-aos="fade-up"
           className="mt-14 md:mt-28 w-full flex justify-center"
         >
-          <article className="w-full max-w-[95%]  py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 lg:flex-1 px-8">
+          <article className="w-full max-w-[95%]  py-10 mx-2 shadow-md border-[1px] dark:border-white/25 rounded-xl md:shadow-none md:border-none md:py-0 lg:flex-1 px-8">
             <header>
               <h2 className="text-2xl font-semibold">Experience 👨‍💻</h2>
             </header>
 
-            <div className="mt-10 border-y-[1px] py-14">
+            <div className="mt-10 border-y-[1px] dark:border-white/25 py-14">
               <div className="flex flex-wrap">
                 <figure className="w-full md:w-fit flex justify-center items-start px-14">
                   <img
@@ -105,13 +105,13 @@ const About = () => {
               className="w-[60%]"
             />
           </div>
-          <article className="w-full py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 md:w-[60%] lg:flex-1 px-8">
+          <article className="w-full py-10 mx-2 shadow-md border-[1px] dark:border-white/25 rounded-xl md:shadow-none md:border-none md:py-0 md:w-[60%] lg:flex-1 px-8">
             <header>
               <h2 className="text-2xl font-semibold">Education 🎓</h2>
             </header>
 
             <div className="mt-10">
-              <section className="border-b-[1px] pb-5">
+              <section className="border-b-[1px] dark:border-white/25 pb-5">
                 <h3 className="text-xl font-medium">
                   BSc.(I.T.) | Bhavans College (Autonomous), Mumbai
                 </h3>
@@ -119,13 +119,13 @@ const About = () => {
                   Grade : A+ | CGPA : 9.78 out of 10
                 </p>
               </section>
-              <section className="border-b-[1px] py-5">
+              <section className="border-b-[1px] dark:border-white/25 py-5">
                 <h3 className="text-xl font-medium">
                   HSC Science (I.T.) | Bhavans College, Mumbai
                 </h3>
                 <p className="text-lg mt-3">Percentage : 77.78%</p>
               </section>
-              <section className="border-b-[1px] py-5">
+              <section className="border-b-[1px] dark:border-white/25 py-5">
                 <h3 className="text-xl font-medium">
                   SSC | Marol Education Academy's High School, Mumbai
                 </h3>
@@ -140,7 +140,7 @@ const About = () => {
           data-aos="fade-up"
           className="flex mt-14 md:mt-28 lg:max-w-[90%] mx-auto"
         >
-          <article className="w-full py-10 mx-2 shadow-md border-[1px] rounded-xl md:shadow-none md:border-none md:py-0 md:w-[60%] lg:flex-1 px-8">
+          <article className="w-full py-10 mx-2 shadow-md border-[1px] dark:border-white/25 rounded-xl md:shadow-none md:border-none md:py-0 md:w-[60%] lg:flex-1 px-8">
             <header>
               <h2 className="text-2xl font-semibold">
                 Some Things About Me 😀
@@ -148,23 +148,23 @@ const About = () => {
             </header>
 
             <div className="mt-10">
-              <section className="border-b-[1px] pb-5">
+              <section className="border-b-[1px] dark:border-white/25 pb-5">
                 <p className="text-lg">Name: Roshith Prakash</p>
               </section>
-              <section className="border-b-[1px] py-5">
+              <section className="border-b-[1px] dark:border-white/25 py-5">
                 <p className="text-lg">
                   Date of Birth: 7<sup>th</sup> January 2003
                 </p>
               </section>
-              <section className="border-b-[1px] py-5">
+              <section className="border-b-[1px] dark:border-white/25 py-5">
                 <p className="text-lg">Location: Andheri, Mumbai</p>
               </section>
-              <section className="border-b-[1px] py-5">
+              <section className="border-b-[1px] dark:border-white/25 py-5">
                 <p className="text-lg">
                   Languages: English, Hindi, Marathi, Malayalam
                 </p>
               </section>
-              <section className="border-b-[1px] py-5">
+              <section className="border-b-[1px] dark:border-white/25 py-5">
                 <p className="text-lg">
                   Interests: Writing, Football, Formula 1, Gaming
                 </p>

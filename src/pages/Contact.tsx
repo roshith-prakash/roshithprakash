@@ -41,12 +41,12 @@ const Contact = () => {
             className="px-10 max-w-[90%] flex flex-wrap justify-center gap-8 mt-20 mx-auto"
           >
             {/* LinkedIn */}
-            <div className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
+            <div className="shadow-xl dark:border-2 dark:border-darkmodetext/25 p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaLinkedin className="text-3xl text-[#0077B5]" />
                 LinkedIn
               </h3>
-              <div className="flex justify-center mt-4">
+              <div className="flex justify-center mt-8">
                 <OutlineButton
                   onClick={() => {
                     window.open("https://www.linkedin.com/in/roshith-prakash/");
@@ -57,12 +57,12 @@ const Contact = () => {
             </div>
 
             {/* Email */}
-            <div className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
+            <div className="shadow-xl dark:border-2 dark:border-darkmodetext/25 p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
-                <FaEnvelope className="text-3xl text-hovercta" />
+                <FaEnvelope className="text-3xl text-hovercta dark:text-cta" />
                 Email
               </h3>
-              <div className="flex justify-center mt-4">
+              <div className="flex justify-center mt-8">
                 <OutlineButton
                   onClick={() => {
                     window.open("mailto:roshithprakash07@gmail.com");
@@ -73,12 +73,12 @@ const Contact = () => {
             </div>
 
             {/* GitHub */}
-            <div className="shadow-xl dark:border-2 dark:border-darkmodetext p-6 py-10 rounded-lg w-full md:w-52">
+            <div className="shadow-xl dark:border-2 dark:border-darkmodetext/25 p-6 py-10 rounded-lg w-full md:w-52">
               <h3 className="text-2xl flex gap-x-3 justify-center items-center">
                 <FaGithub className="text-3xl text-[#171515] dark:text-darkmodetext" />
                 GitHub
               </h3>
-              <div className="flex justify-center mt-4">
+              <div className="flex justify-center mt-8">
                 <OutlineButton
                   onClick={() => {
                     window.open("https://github.com/roshith-prakash");

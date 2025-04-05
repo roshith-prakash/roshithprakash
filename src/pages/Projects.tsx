@@ -14,13 +14,11 @@ const ProjectCard = ({
   const navigate = useNavigate();
 
   return (
-    <div className="min-w-80 flex dark:bg-secondarydarkbg flex-col border-2 rounded-xl shadow-lg hover:scale-105 transition-all overflow-hidden">
+    <div className="min-w-80 flex dark:bg-secondarydarkbg flex-col border-2 dark:border-white/25 rounded-xl shadow-lg hover:scale-105 transition-all overflow-hidden">
       <img
         src={imageSrc}
         alt={`Preview of ${title}`}
-        className={`${
-          title === "SmartPower" ? "max-h-48" : "max-h-72"
-        } object-cover w-full `}
+        className={`max-h-72 object-cover h-full bg-darkbg w-full `}
       />
       <div className="min-h-80 md:min-h-auto relative w-full h-full flex flex-col justify-evenly px-5 z-5 py-10 rounded-t-xl transition-all items-center">
         <h3 className="text-3xl text-center font-semibold">{title}</h3>
