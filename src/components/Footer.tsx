@@ -9,7 +9,7 @@ const Footer = () => {
         isDarkMode
           ? "bg-secondarydarkbg border-t-2 border-darkmodetext"
           : "bg-gradient-to-b from-hovercta to-hovercta/95"
-      }  font-inter pb-20 min-h-50vh relative text-darkmodetext`}
+      }  font-inter pb-20 min-h-50vh relative text-white`}
     >
       <div className="absolute dark:border-2 dark:border-darkmodetext -top-16 w-[90vw] lg:w-[80vw] left-1/2 -translate-x-1/2 rounded-lg h-32 flex justify-around items-center bg-[#1f1e1e] text-darkmodetext">
         <p className="text-xl font-medium">Let's Talk!</p>
@@ -37,7 +37,7 @@ const Footer = () => {
               href="https://github.com/roshith-prakash"
               target="_blank"
               rel="noreferrer"
-              className="p-3 text-darkmodetext hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
+              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
               aria-label="Visit GitHub Profile"
             >
               <FaGithub className="text-2xl" />
@@ -46,14 +46,14 @@ const Footer = () => {
               href="https://www.linkedin.com/in/roshith-prakash/"
               target="_blank"
               rel="noreferrer"
-              className="p-3 text-darkmodetext hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
+              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
               aria-label="Visit LinkedIn Profile"
             >
               <FaLinkedin className="text-2xl" />
             </a>
             <a
               href="mailto:roshithprakash07@gmail.com"
-              className="p-3 text-darkmodetext hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
+              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
               aria-label="Email Roshith Prakash"
             >
               <FaEnvelope className="text-2xl" />
@@ -62,7 +62,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
               href="https://x.com/roshith_prakash"
-              className="p-3 text-darkmodetext hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
+              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
               aria-label="X Profile"
             >
               <FaXTwitter className="text-2xl" />
