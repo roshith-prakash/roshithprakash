@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Grid Manager is a fantasy F1 app which allows you to compete by creating your fantasy F1 teams.",
     imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1743669362/Screenshot_2025-04-03_140349_c6fhp0.png",
+      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1744109729/Screenshot_2025-04-03_140349_c6fhp0.png",
     navigateTo: "/projects/gridmanager",
     siteLink: "https://grid-manager.vercel.app/",
   },
