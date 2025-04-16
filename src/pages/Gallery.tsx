@@ -9,7 +9,7 @@ const Gallery = () => {
 
   // Title
   useEffect(() => {
-    document.title = "Gallery | Projects";
+    document.title = "Clarivis | Projects";
   }, []);
 
   return (
@@ -20,16 +20,14 @@ const Gallery = () => {
 
         {/* Header Section */}
         <header className="text-center space-y-14">
-          <h1 className="text-4xl font-extrabold tracking-wide">The Gallery</h1>
+          <h1 className="text-4xl font-extrabold tracking-wide">Clarivis</h1>
           <p className="text-lg px-5 lg:px-20">
             Developed a Single Page App (SPA) React JS application to search and
-            display images from the Internet as required by the user.
+            display images /videos from the Internet as required by the user.
           </p>
           <div>
             <CTAButton
-              onClick={() =>
-                window.open("https://gallery-roshithprakash.vercel.app/")
-              }
+              onClick={() => window.open("https://clarivis.vercel.app/")}
               text="Visit the Site!"
             />
           </div>
@@ -55,10 +53,9 @@ const Gallery = () => {
             <h2 className="text-2xl font-semibold mb-4 text-cta">Features</h2>
             <ul className="list-disc text-lg pl-6 space-y-2">
               <li>Displays curated images for the day.</li>
-              <li>Allows users to search for images using prompts.</li>
+              <li>Allows users to search for images / videos using prompts.</li>
               <li>
-                Click on images to view them in a larger resolution (for smaller
-                screens).
+                Click on images / videos to view them in a larger resolution.
               </li>
             </ul>
           </section>
@@ -68,14 +65,14 @@ const Gallery = () => {
         <section className="mt-20 flex flex-col items-center">
           <div className="relative bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl">
             <img
-              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png"
-              alt="Gallery preview showcasing various images from the Pexels API"
+              src="https://res.cloudinary.com/dvwdsxirc/image/upload/v1744815122/Screenshot_2025-04-16_201957_damyjf.png"
+              alt="Clarivis preview showcasing various images from the Pexels API"
               className="w-full h-auto object-cover"
             />
           </div>
           <figcaption className="mt-6 text-gray-600 text-center">
-            A preview of the Gallery app, showcasing images fetched from the
-            Pexels API.
+            A preview of the Clarivis, showcasing images fetched from the Pexels
+            API.
           </figcaption>
         </section>
       </main>

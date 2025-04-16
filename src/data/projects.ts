@@ -70,13 +70,13 @@ export const projects = [
     navigateTo: "/projects/smartpower",
   },
   {
-    title: "The Gallery",
+    title: "Clarivis",
     description:
-      "The Gallery is a photo gallery website displaying images using the Pexels API.",
+      "Clarivis is a photo and video gallery website displaying content using the Pexels API.",
     imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1721305978/gallery_gp7xyl.png",
-    navigateTo: "/projects/gallery",
-    siteLink: "https://gallery-roshithprakash.vercel.app/",
+      "https://res.cloudinary.com/dvwdsxirc/image/upload/v1744815122/Screenshot_2025-04-16_201957_damyjf.png",
+    navigateTo: "/projects/clarivis",
+    siteLink: "https://clarivis.vercel.app/",
   },
   {
     title: "Music Player",

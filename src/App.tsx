@@ -42,7 +42,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/smartpower" element={<SmartPower />} />
           <Route path="/projects/gridbox" element={<GridBox />} />
-          <Route path="/projects/gallery" element={<Gallery />} />
+          <Route path="/projects/clarivis" element={<Gallery />} />
           <Route path="/projects/thoughtjournal" element={<ThoughtJournal />} />
           <Route path="/projects/quizzer" element={<Quizzer />} />
           <Route path="/projects/smartslide" element={<SmartSlide />} />
