@@ -65,7 +65,7 @@ const Quizzer = () => {
         <section className="mt-20 flex flex-col items-center">
           <div className="relative bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl">
             <img
-              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png"
+              src="https://res.cloudinary.com/dvwdsxirc/image/upload/v1746777494/Screenshot_2025-05-09_132802_njmtrk.png"
               alt="Screenshot of Quizzer AI"
               className="w-full h-auto object-cover"
             />

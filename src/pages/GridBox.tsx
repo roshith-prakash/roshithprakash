@@ -79,7 +79,7 @@ const GridBox = () => {
         <section className="mt-20 flex flex-col items-center">
           <div className="relative bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl">
             <img
-              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png"
+              src="https://res.cloudinary.com/dvwdsxirc/image/upload/v1746777404/Screenshot_2025-05-09_132500_wp4c1u.png"
               alt="GridBox F1 interface"
               className="w-full h-auto object-cover"
             />

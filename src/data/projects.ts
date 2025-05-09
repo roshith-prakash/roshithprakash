@@ -22,7 +22,7 @@ export const projects = [
     description:
       "Quizzer AI is an interactive quiz platform where users can quiz themselves on any topic with AI-generated questions.",
     imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1723285531/Screenshot_2024-08-10_155404_z7dtjc.png",
+      "https://res.cloudinary.com/dvwdsxirc/image/upload/v1746777494/Screenshot_2025-05-09_132802_njmtrk.png",
     navigateTo: "/projects/quizzer",
     siteLink: "https://quizzer-ai.vercel.app/",
   },
@@ -31,7 +31,7 @@ export const projects = [
     description:
       "GridBox F1: Your go-to hub for all Formula 1 stats, standings, and race insights, bringing the thrill of F1 right to your screen.",
     imageSrc:
-      "https://res.cloudinary.com/do8rpl9l4/image/upload/v1731263317/Screenshot_2024-11-10_235811_uv9wlq.png",
+      "https://res.cloudinary.com/dvwdsxirc/image/upload/v1746777404/Screenshot_2025-05-09_132500_wp4c1u.png",
     navigateTo: "/projects/gridbox",
     siteLink: "https://gridbox-f1.vercel.app/",
   },
