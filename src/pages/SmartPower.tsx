@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Footer, ScrollToTop } from "../components";
+import { ScrollToTop } from "../components";
 
 const SmartPower = () => {
   // Scroll to top
@@ -146,7 +146,6 @@ const SmartPower = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CTAButton, Footer, ScrollToTop } from "../components";
+import { CTAButton, ScrollToTop } from "../components";
 
 const ThoughtJournal = () => {
   // Scroll to top
@@ -81,7 +81,6 @@ const ThoughtJournal = () => {
           </p>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

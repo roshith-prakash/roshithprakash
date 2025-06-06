@@ -16,7 +16,7 @@ import {
   GridManager,
 } from "./pages";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Navbar, SecurityHeaders } from "./components";
+import { Footer, Navbar, SecurityHeaders } from "./components";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -52,6 +52,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <div className="dark:bg-darkbg pt-20">
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   );

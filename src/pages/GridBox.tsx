@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CTAButton, Footer, ScrollToTop } from "../components";
+import { CTAButton, ScrollToTop } from "../components";
 
 const GridBox = () => {
   // Scroll to top
@@ -90,7 +90,6 @@ const GridBox = () => {
           </p>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

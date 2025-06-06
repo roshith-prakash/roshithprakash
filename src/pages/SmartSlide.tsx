@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CTAButton, Footer, ScrollToTop } from "../components";
+import { CTAButton, ScrollToTop } from "../components";
 
 const SmartSlide = () => {
   // Scroll to top
@@ -97,7 +97,6 @@ const SmartSlide = () => {
           </p>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

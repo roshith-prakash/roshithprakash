@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-import {
-  Footer,
-  OutlineButton,
-  CTAButton,
-  ScrollToTop,
-} from "../components/index.ts";
+import { OutlineButton, CTAButton, ScrollToTop } from "../components/index.ts";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineChat } from "react-icons/md";
@@ -265,7 +260,6 @@ const Landing = () => {
 
         {/* ---------------------------------------------------- */}
       </main>
-      <Footer />
     </>
   );
 };

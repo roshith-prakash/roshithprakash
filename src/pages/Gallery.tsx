@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CTAButton, Footer, ScrollToTop } from "../components";
+import { CTAButton, ScrollToTop } from "../components";
 
 const Gallery = () => {
   // Scroll to top
@@ -76,7 +76,6 @@ const Gallery = () => {
           </figcaption>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

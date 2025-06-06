@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CTAButton, Footer, ScrollToTop } from "../components";
+import { CTAButton, ScrollToTop } from "../components";
 
 const ReUseIt = () => {
   // Scroll to top
@@ -110,7 +110,6 @@ const ReUseIt = () => {
           />
         </section>
       </main>
-      <Footer />
     </>
   );
 };
