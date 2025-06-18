@@ -52,7 +52,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <div className="dark:bg-darkbg pt-20">
+        <div className="dark:bg-darkbg ">
           <Footer />
         </div>
       </BrowserRouter>

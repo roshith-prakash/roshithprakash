@@ -1,90 +1,102 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaXTwitter } from "react-icons/fa6";
-import { useDarkMode } from "../context/DarkModeContext";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
-const Footer = () => {
-  const { isDarkMode } = useDarkMode();
+export default function Footer() {
   return (
-    <footer
-      className={` ${
-        isDarkMode
-          ? "bg-secondarydarkbg border-t-2 border-darkmodetext"
-          : "bg-gradient-to-b from-hovercta to-hovercta/95"
-      }  font-inter pb-20 min-h-50vh relative text-white`}
-    >
-      <div className="absolute dark:border-2 dark:border-darkmodetext -top-16 w-[90vw] lg:w-[80vw] left-1/2 -translate-x-1/2 rounded-lg h-32 flex justify-around items-center bg-[#1f1e1e] text-darkmodetext">
-        <p className="text-xl font-medium">Let's Talk!</p>
-        <a
-          href="mailto:roshithprakash07@gmail.com"
-          className="px-5 flex items-center gap-x-2 py-2 font-medium text-darkmodetext hover:bg-white hover:text-black transition-all cursor-pointer rounded-full border-2 border-white"
-          aria-label="Email Roshith Prakash"
-        >
-          <FaEnvelope className="text-lg" />
-          Email Me!
-        </a>
-      </div>
-
-      <div className="pt-36 font-medium flex flex-col lg:flex-row">
-        <div className="flex-1">
-          <p className="text-2xl text-center">
-            &#8220;Ad Astra Per Aspera&#8221;
-          </p>
-          <p className="text-center mt-2 text-xl">
-            Learning something new every day!
-          </p>
-
-          <div className="flex justify-center gap-x-8 mt-10">
-            <a
-              href="https://github.com/roshith-prakash"
-              target="_blank"
-              rel="noreferrer"
-              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
-              aria-label="Visit GitHub Profile"
-            >
-              <FaGithub className="text-2xl" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/roshith-prakash/"
-              target="_blank"
-              rel="noreferrer"
-              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
-              aria-label="Visit LinkedIn Profile"
-            >
-              <FaLinkedin className="text-2xl" />
-            </a>
+    <footer className="bg-white text-gray-900 dark:bg-darkbg dark:text-white border-t border-gray-200 dark:border-gray-800">
+      {/* CTA Section */}
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="border rounded-lg p-8 mb-16 bg-gray-50 border-gray-200 dark:bg-white/5 dark:border-gray-800">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-center md:text-left">
+              <h3 className="text-2xl font-semibold mb-1">
+                Let's work together!
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Have a project in mind?
+              </p>
+            </div>
             <a
               href="mailto:roshithprakash07@gmail.com"
-              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
+              className="flex items-center gap-2 px-6 py-3 bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-100 rounded-lg font-medium transition-colors"
               aria-label="Email Roshith Prakash"
             >
-              <FaEnvelope className="text-2xl" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://x.com/roshith_prakash"
-              className="p-3 text-white hover:bg-white hover:text-cta transition-all cursor-pointer rounded-full border-2 border-white"
-              aria-label="X Profile"
-            >
-              <FaXTwitter className="text-2xl" />
+              <Mail className="w-4 h-4" />
+              Send email
             </a>
           </div>
-
-          <p className="mt-14 text-center">Developed by Roshith Prakash.</p>
-          <p className="mt-3 text-center">2024.</p>
         </div>
 
-        <div className="hidden flex-1 lg:flex justify-center items-center">
-          <img
-            src={
-              "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843230/dev_cjmzgb.svg"
-            }
-            alt="Illustration of a programmer"
-            className="h-60 pointer-events-none"
-          />
+        {/* Main Content */}
+        <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-12 md:items-start">
+          {/* Left Column */}
+          <div className="space-y-8">
+            <div className="text-center md:text-left">
+              <blockquote className="text-2xl font-medium mb-2">
+                "Ad Astra Per Aspera"
+              </blockquote>
+              <p className="text-gray-600 dark:text-gray-400">
+                Learning something new every day!
+              </p>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex gap-4">
+              {[
+                {
+                  icon: Github,
+                  href: "https://github.com/roshith-prakash",
+                  label: "GitHub",
+                },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/roshith-prakash/",
+                  label: "LinkedIn",
+                },
+                {
+                  icon: Mail,
+                  href: "mailto:roshithprakash07@gmail.com",
+                  label: "Email",
+                },
+                {
+                  icon: Twitter,
+                  href: "https://x.com/roshith_prakash",
+                  label: "Twitter",
+                },
+              ].map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="p-3 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 dark:border-gray-800 dark:hover:bg-white/10 dark:hover:border-white/5 transition-colors"
+                  aria-label={`Visit ${label}`}
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Column - Illustration */}
+          <div className="hidden md:flex justify-end">
+            <img
+              src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843230/dev_cjmzgb.svg"
+              alt="Developer illustration"
+              className="h-48 w-auto opacity-80"
+            />
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            © {new Date().getFullYear()} Roshith Prakash. All rights reserved.
+          </p>
+          <p className="text-sm text-gray-500 dark:text-white/50">
+            Built with React & Tailwind CSS.
+          </p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
