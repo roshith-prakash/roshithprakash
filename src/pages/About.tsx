@@ -18,11 +18,8 @@ export default function AboutPage() {
       <section className="relative pt-20 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative inline-block mb-6">
-            <div className="w-32 h-32 mx-auto overflow-hidden p-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 ">
+            <div className="w-32 h-32 mx-auto overflow-hidden p-1 rounded-full bg-gradient-to-br from-cta/90 to-hovercta/90 ">
               <img src={dp} className="rounded-full" alt="Roshith" />
-              {/* <div className="w-full h-full rounded-full bg-white/75 dark:bg-black/75 flex items-center justify-center">
-                <User className="w-16 h-16 text-blue-500" />
-              </div> */}
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">

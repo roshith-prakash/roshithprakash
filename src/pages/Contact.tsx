@@ -28,7 +28,7 @@ export default function ContactPage() {
       <section className="relative pt-20 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cta/90 to-hovercta/90 rounded-full mb-6">
               <MessageCircle className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
@@ -45,7 +45,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               {/* LinkedIn Card */}
               <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap gap-y-5 items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#0077B5]/10 rounded-xl flex items-center justify-center">
                       <Linkedin className="w-6 h-6 text-[#0077B5]" />
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   </div>
                   <button
                     onClick={handleLinkedInClick}
-                    className="px-6 py-2 bg-[#0077B5] text-white rounded-lg hover:bg-[#005885] transition-colors duration-200 flex items-center gap-2 font-medium"
+                    className="px-6 py-2 w-full md:w-fit bg-[#0077B5] text-white rounded-lg hover:bg-[#005885] transition-colors duration-200 flex justify-center items-center gap-2 font-medium"
                   >
                     Connect
                     <Send className="w-4 h-4" />
@@ -71,7 +71,7 @@ export default function ContactPage() {
 
               {/* Email Card */}
               <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap gap-y-5 items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center">
                       <Mail className="w-6 h-6 text-red-500" />
@@ -87,7 +87,7 @@ export default function ContactPage() {
                   </div>
                   <button
                     onClick={handleEmailClick}
-                    className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center gap-2 font-medium"
+                    className="px-6 py-2 w-full md:w-fit bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-200 flex justify-center items-center gap-2 font-medium"
                   >
                     Email Me
                     <Send className="w-4 h-4" />
@@ -97,7 +97,7 @@ export default function ContactPage() {
 
               {/* GitHub Card */}
               <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap gap-y-5 items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-slate-900/10 dark:bg-slate-100/10 rounded-xl flex items-center justify-center">
                       <Github className="w-6 h-6 text-slate-900 dark:text-slate-100" />
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   </div>
                   <button
                     onClick={handleGitHubClick}
-                    className="px-6 py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg hover:bg-slate-700 dark:hover:bg-slate-200 transition-colors duration-200 flex items-center gap-2 font-medium"
+                    className="px-6 py-2 w-full md:w-fit bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg hover:bg-slate-700 dark:hover:bg-slate-200 transition-colors duration-200 flex justify-center items-center gap-2 font-medium"
                   >
                     View Code
                     <Send className="w-4 h-4" />

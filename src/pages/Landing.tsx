@@ -96,7 +96,7 @@ const Landing = () => {
           {/* Floating Cards Section */}
           <div className="absolute z-5 mt-10 left-1/2 -translate-x-1/2 flex flex-wrap w-[95%] lg:w-[90%] justify-around gap-x-6 gap-y-4">
             <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext/25 rounded-xl py-8 px-2">
-              <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
+              <div className="bg-gradient-to-br from-cta/90 to-hovercta/90 p-4 rounded-full w-fit mx-auto">
                 <SlScreenDesktop className="text-darkmodetext text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
@@ -110,7 +110,7 @@ const Landing = () => {
               </p>
             </article>
             <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext/25 rounded-xl py-8 px-2">
-              <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
+              <div className="bg-gradient-to-br from-cta/90 to-hovercta/90 p-4 rounded-full w-fit mx-auto">
                 <LuCode2 className="text-darkmodetext text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
@@ -124,7 +124,7 @@ const Landing = () => {
               </p>
             </article>
             <article className="text-heading w-full lg:flex-1 bg-white dark:bg-darkbg dark:text-darkmodetext border-2 dark:border-darkmodetext/25 rounded-xl py-8 px-2">
-              <div className="bg-hovercta dark:bg-cta p-4 rounded-full w-fit mx-auto">
+              <div className="bg-gradient-to-br from-cta/90 to-hovercta/90 p-4 rounded-full w-fit mx-auto">
                 <FiDatabase className="text-darkmodetext text-3xl" />
               </div>
               <h3 className="text-xl font-medium text-center mt-5">
@@ -188,7 +188,7 @@ const Landing = () => {
           {/* Tools Logos */}
           <div className="mt-14 flex flex-col gap-y-2 py-10 overflow-hidden">
             {/* Bordered line for film reel effect */}
-            <div className="flex border-2 border-black dark:border-darkmodetext h-2 dark:h-1" />
+            <div className="flex border-2 border-black/25 dark:border-darkmodetext h-2 dark:h-1" />
             {/* Logos */}
             <div className="flex text-lg font-medium dark:bg-white dark:text-darkbg py-4 flex-nowrap gap-x-[4rem] logos-slide w-max">
               {languages.map((item) => (
@@ -215,7 +215,7 @@ const Landing = () => {
               ))}
             </div>
             {/* Bordered line for film reel effect */}
-            <div className="flex border-2 border-black dark:border-darkmodetext h-2 dark:h-1" />
+            <div className="flex border-2 border-black/25 dark:border-darkmodetext h-2 dark:h-1" />
           </div>
         </section>
 

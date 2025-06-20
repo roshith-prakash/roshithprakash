@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cta/90 to-hovercta/90 rounded-full mb-6">
             <Folder className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
