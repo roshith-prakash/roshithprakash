@@ -55,7 +55,7 @@ export default function ContactPage() {
                         LinkedIn
                       </h3>
                       <p className="text-slate-600 dark:text-slate-400">
-                        Professional networking
+                        /in/roshith-prakash
                       </p>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                         GitHub
                       </h3>
                       <p className="text-slate-600 dark:text-slate-400">
-                        View my repositories
+                        github.com/roshith-prakash
                       </p>
                     </div>
                   </div>
