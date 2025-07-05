@@ -18,7 +18,7 @@ const Quizzer = () => {
         {/* Scroll to Top button */}
         <ScrollToTop />
 
-        <header className="textspace-y-14">
+        <header className="text-center space-y-14">
           <h1 className="text-4xl font-extrabold tracking-wide">Quizzer AI</h1>
           <p className="text-lg px-5 lg:px-20">
             Quizzer AI is an interactive AI-powered quiz app that generates

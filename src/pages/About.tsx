@@ -222,7 +222,7 @@ export default function AboutPage() {
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5 text-slate-500" />
                 <span className="text-slate-700 dark:text-slate-300">
-                  <strong>Date of Birth:</strong> 7th January 2003
+                  <strong>Date of Birth:</strong> 7<sup>th</sup> January 2003
                 </span>
               </div>
               <div className="flex items-center gap-3">

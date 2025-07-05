@@ -54,7 +54,7 @@ const SmartPower = () => {
           </p>
         </header>
 
-        <div className="mt-20 flex flex-wrap justify-center gap-14 ">
+        <div className="mt-20 flex flex-wrap px-5 justify-center gap-14 ">
           {/* Features Section */}
           <div className="bg-grey max-w-xl dark:bg-secondarydarkbg p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
             <h2 className="text-2xl font-semibold mb-4 text-cta">Features</h2>
