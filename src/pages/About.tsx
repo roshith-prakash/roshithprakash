@@ -147,17 +147,33 @@ export default function AboutPage() {
 
           <div className="grid gap-6">
             <div className="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border border-slate-200 dark:border-white/10">
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                    MCA | NMIMS MPSTME, Mumbai
+                  </h3>
+                  <div className="flex mt-3 items-center gap-4">
+                    <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-white border border-cta dark:border-cta rounded-full text-sm font-medium">
+                      Ongoing
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border border-slate-200 dark:border-white/10">
+              <div className="flex items-start justify-between ">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                     BSc.(I.T.) | Bhavans College (Autonomous), Mumbai
                   </h3>
                   <div className="flex mt-3 items-center gap-4">
+                    <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-white border border-cta dark:border-cta rounded-full text-sm font-medium">
+                      CGPA: 9.78/10
+                    </span>
+
                     <span className="px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800 rounded-full text-sm font-medium">
                       Grade: A+
-                    </span>
-                    <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-cta border border-cta dark:border-cta rounded-full text-sm font-medium">
-                      CGPA: 9.78/10
                     </span>
                   </div>
                 </div>
@@ -168,7 +184,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                 HSC Science (I.T.) | Bhavans College, Mumbai
               </h3>
-              <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-cta border border-cta dark:border-cta rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-white border border-cta dark:border-cta rounded-full text-sm font-medium">
                 Percentage : 77.78%
               </span>
             </div>
@@ -177,7 +193,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                 SSC | Marol Education Academy's High School, Mumbai
               </h3>
-              <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-cta border border-cta dark:border-cta rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-white border border-cta dark:border-cta rounded-full text-sm font-medium">
                 Percentage : 92%
               </span>
             </div>
