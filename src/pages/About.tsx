@@ -154,6 +154,10 @@ export default function AboutPage() {
                   </h3>
                   <div className="flex mt-3 items-center gap-4">
                     <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-white border border-cta dark:border-cta rounded-full text-sm font-medium">
+                      CGPA: 10.0
+                    </span>
+
+                    <span className="px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800 rounded-full text-sm font-medium">
                       Ongoing
                     </span>
                   </div>
@@ -169,7 +173,7 @@ export default function AboutPage() {
                   </h3>
                   <div className="flex mt-3 items-center gap-4">
                     <span className="px-3 py-1 bg-cta/5 dark:bg-cta/20 text-cta dark:text-white border border-cta dark:border-cta rounded-full text-sm font-medium">
-                      CGPA: 9.78/10
+                      CGPA: 9.78
                     </span>
 
                     <span className="px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800 rounded-full text-sm font-medium">
