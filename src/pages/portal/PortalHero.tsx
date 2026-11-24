@@ -23,6 +23,14 @@ export default function PortalHero() {
   const titleLeftX = travelProgress * -82; // vw (ensures entire word clears the left edge completely)
   const titleRightX = travelProgress * 82; // vw (ensures entire word clears the right edge completely)
 
+  // Revealed Background Statement (emerges as "Roshith Prakash" clears the screen)
+  // Fades in between progress 0.32 and 0.54, scales from small (0.75) to large (1.1), and STAYS visible
+  const quoteOpacity = Math.min(1, Math.max(0, (progress - 0.32) / 0.22));
+  const quoteScale = 0.75 + 0.35 * Math.min(1, Math.max(0, (progress - 0.32) / 0.42));
+
+  // Corner helper pins fade out as the portal opens to give full focus to the reveal
+  const pinsOpacity = Math.max(0, 1 - progress * 2.2);
+
   // Two glowing accent dots at center parting toward opposite corners
   const dotAmberX = -40 * progress; // vw
   const dotAmberY = -35 * progress; // vh
@@ -85,6 +93,27 @@ export default function PortalHero() {
               "radial-gradient(ellipse at center, transparent 40%, rgba(10, 12, 14, 0.88) 100%)",
           }}
         />
+
+        {/* Layer 3.5: Revealed Background Statement (emerges as name clears, growing small to large, stays visible) */}
+        <div
+          id="hero-quote-reveal"
+          className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-12 pointer-events-none select-none z-10"
+          style={{
+            opacity: quoteOpacity,
+            transform: `scale(${quoteScale})`,
+            willChange: "transform, opacity",
+          }}
+        >
+          <div className="max-w-2xl flex flex-col items-center">
+            <h2 className="font-syne font-semibold text-3xl sm:text-5xl md:text-6xl text-[#EDE7DC] leading-[1.14] tracking-[-0.025em] drop-shadow-[0_4px_30px_rgba(0,0,0,0.95)]">
+              Turning coffee &amp; Mumbai midnights into code<span style={{ color: "var(--amber)" }}>.</span>
+            </h2>
+            <p className="font-sora text-xs sm:text-sm text-[#9EA5A8] mt-4 uppercase tracking-[0.2em] flex items-center gap-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E8913C]" />
+              Always learning · Constantly building
+            </p>
+          </div>
+        </div>
 
         {/* Layer 4: Two solid panels (left & right) */}
         <div
@@ -176,18 +205,30 @@ export default function PortalHero() {
           </h1>
         </div>
 
-        {/* Corner Metadata Pins */}
-        <div className="absolute top-20 left-8 md:left-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#9EA5A8] select-none z-30">
+        {/* Corner Metadata Pins (fade as the portal opens) */}
+        <div
+          className="absolute top-20 left-8 md:left-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#9EA5A8] select-none z-30 pointer-events-none"
+          style={{ opacity: pinsOpacity, willChange: "opacity" }}
+        >
           Full Stack Developer
         </div>
-        <div className="absolute top-20 right-8 md:right-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#9EA5A8] select-none z-30">
+        <div
+          className="absolute top-20 right-8 md:right-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#9EA5A8] select-none z-30 pointer-events-none"
+          style={{ opacity: pinsOpacity, willChange: "opacity" }}
+        >
           Mumbai · India
         </div>
-        <div className="absolute bottom-8 left-8 md:left-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#6C7378] select-none z-30 flex items-center gap-2">
+        <div
+          className="absolute bottom-8 left-8 md:left-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#6C7378] select-none z-30 flex items-center gap-2 pointer-events-none"
+          style={{ opacity: pinsOpacity, willChange: "opacity" }}
+        >
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#E8913C]" />
           Scroll to unveil portal
         </div>
-        <div className="absolute bottom-8 right-8 md:right-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#9EA5A8] select-none z-30">
+        <div
+          className="absolute bottom-8 right-8 md:right-12 font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#9EA5A8] select-none z-30 pointer-events-none"
+          style={{ opacity: pinsOpacity, willChange: "opacity" }}
+        >
           MERN Stack
         </div>
       </div>

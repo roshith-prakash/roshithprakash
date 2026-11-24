@@ -71,21 +71,22 @@ export default function SkillsAndExp() {
           </div>
 
           <div className="divide-y divide-[rgba(237,231,220,0.13)] border-y border-[rgba(237,231,220,0.13)]">
-            {languages.map((item) => {
+            {languages.map((item, index) => {
               const category = item.category || skillCategories[item.name] || "Tool";
               return (
                 <div
                   key={item.id}
-                  className="py-3.5 px-2 grid grid-cols-12 items-center hover:bg-[#101317] transition-colors group"
+                  className="py-3.5 px-3 flex items-center justify-between hover:bg-[#101317] transition-colors group"
                 >
-                  <div className="col-span-3 sm:col-span-2 font-sora text-[10.5px] uppercase tracking-[0.13em] text-[#6C7378] flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#E8913C] inline-block opacity-70 group-hover:opacity-100" />
-                    Stack
+                  <div className="flex items-center gap-4 sm:gap-6">
+                    <span className="font-mono text-xs text-[#6C7378] group-hover:text-[#E8913C] transition-colors w-6 select-none">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-syne font-semibold text-base sm:text-xl text-[#EDE7DC] group-hover:text-[#E8913C] transition-colors">
+                      {item.name}
+                    </span>
                   </div>
-                  <div className="col-span-6 sm:col-span-7 font-syne font-semibold text-base sm:text-xl text-[#EDE7DC] group-hover:text-[#E8913C] transition-colors">
-                    {item.name}
-                  </div>
-                  <div className="col-span-3 sm:col-span-3 text-right font-sora text-[10.5px] uppercase tracking-[0.13em] text-[#9EA5A8]">
+                  <div className="font-sora text-[10.5px] uppercase tracking-[0.13em] text-[#9EA5A8]">
                     {category}
                   </div>
                 </div>
