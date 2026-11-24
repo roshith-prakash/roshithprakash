@@ -1,15 +1,6 @@
-import Navbar from "./Navbar";
-import OutlineButton from "./SecondaryButton";
-import CTAButton from "./PrimaryButton";
-import Footer from "./Footer";
 import SecurityHeaders from "./SecurityHeaders";
-import ScrollToTop from "./ScrollToTop";
+import PortalNav from "./PortalNav";
+import CaseStudyLayout from "./CaseStudyLayout";
 
-export {
-  Navbar,
-  OutlineButton,
-  CTAButton,
-  Footer,
-  SecurityHeaders,
-  ScrollToTop,
-};
+export { SecurityHeaders, PortalNav, CaseStudyLayout };
+export default SecurityHeaders;
