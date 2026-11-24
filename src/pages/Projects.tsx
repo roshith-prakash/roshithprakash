@@ -1,129 +1,149 @@
-import { Eye, Code, Folder } from "lucide-react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
+import PortalNav from "../components/PortalNav";
+import CloseFold from "./portal/CloseFold";
 import { projects } from "../data/projects";
-import { useNavigate } from "react-router-dom";
+import { useReveal } from "../hooks/useReveal";
 
-export default function ProjectsPage() {
-  const navigate = useNavigate();
+interface ProjectItem {
+  title: string;
+  description: string;
+  imageSrc: string;
+  navigateTo?: string;
+  siteLink?: string;
+}
+
+function ProjectCard({ project, index }: { project: ProjectItem; index: number }) {
+  const { ref, revealed } = useReveal(0.08);
+
   return (
-    <div className="min-h-screen dark:bg-darkbg">
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cta/90 to-hovercta/90 rounded-full mb-6">
-            <Folder className="w-8 h-8 text-white" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-            My Projects
-          </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            To live is to learn, and to learn is to develop. Let's take a look
-            at some of my work and the solutions I've built.
+    <article
+      ref={ref}
+      className={`rounded-2xl overflow-hidden flex flex-col justify-between border border-[rgba(237,231,220,0.13)] hover:border-[#E8913C] transition-all duration-300 will-reveal ${
+        revealed ? "revealed" : ""
+      }`}
+      style={{
+        backgroundColor: "var(--ground-2)",
+        transitionDelay: `${(index % 2) * 120}ms`,
+        boxShadow: "0 18px 40px rgba(0,0,0,0.45)",
+      }}
+    >
+      {/* 16:9 screenshot image */}
+      <div className="relative w-full aspect-video overflow-hidden bg-[#0A0C0E]">
+        <img
+          src={project.imageSrc}
+          alt={`Screenshot of ${project.title}`}
+          className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#101317] via-transparent to-transparent opacity-60 pointer-events-none" />
+      </div>
+
+      {/* Card body */}
+      <div className="p-6 sm:p-8 flex flex-col flex-grow justify-between gap-6">
+        <div className="space-y-3">
+          <h2 className="font-syne font-bold text-xl sm:text-2xl text-[#EDE7DC]">
+            {project.title}
+          </h2>
+          <p className="font-sora text-sm text-[#9EA5A8] line-clamp-2 leading-relaxed">
+            {project.description}
           </p>
         </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">
-                10
-              </div>
-              <div className="text-slate-600 dark:text-slate-400 text-sm">
-                Projects
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">
-                9
-              </div>
-              <div className="text-slate-600 dark:text-slate-400 text-sm">
-                Live Apps
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">
-                5+
-              </div>
-              <div className="text-slate-600 dark:text-slate-400 text-sm">
-                Technologies
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-1">
-                2
-              </div>
-              <div className="text-slate-600 dark:text-slate-400 text-sm">
-                AI Projects
-              </div>
-            </div>
+        {/* Bottom row: Amber internal arrow link and Teal external site link */}
+        <div className="pt-4 border-t border-[rgba(237,231,220,0.13)] flex items-center justify-between gap-4">
+          <div>
+            {project.navigateTo ? (
+              <Link
+                to={project.navigateTo}
+                className="font-sora text-xs uppercase tracking-[0.13em] text-[#E8913C] flex items-center gap-1.5 hover:underline"
+              >
+                Case Study <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            ) : (
+              <span className="font-sora text-xs uppercase tracking-[0.13em] text-[#6C7378]">
+                CLI Package
+              </span>
+            )}
+          </div>
+
+          <div>
+            {project.siteLink && (
+              <a
+                href={project.siteLink}
+                target="_blank"
+                rel="noreferrer"
+                className="font-sora text-xs uppercase tracking-[0.13em] text-[#2E6B72] hover:text-[#42959e] flex items-center gap-1.5 hover:underline transition-colors"
+              >
+                Live Site <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
+            )}
           </div>
         </div>
-      </section>
+      </div>
+    </article>
+  );
+}
 
-      {/* Projects Grid */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
-                {/* Project Image - Fixed height */}
-                <div className="relative overflow-hidden h-48">
-                  <img
-                    src={project?.imageSrc || "/placeholder.svg"}
-                    alt={`Preview of ${project?.title}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+export default function Projects() {
+  const heroReveal = useReveal(0.1);
 
-                {/* Project Content - Flex column with space between to push buttons to bottom */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <div>
-                    <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-cta dark:group-hover:text-darkmodeCTA transition-colors">
-                        {project?.title}
-                      </h3>
-                      <Folder className="w-5 h-5 text-slate-400 flex-shrink-0" />
-                    </div>
+  useEffect(() => {
+    document.title = "Projects — Roshith Prakash";
+    window.scrollTo(0, 0);
+  }, []);
 
-                    <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                      {project?.description}
-                    </p>
-                  </div>
+  return (
+    <div
+      className="relative w-full min-h-screen selection:bg-[#E8913C] selection:text-[#0A0C0E]"
+      style={{
+        backgroundColor: "var(--ground)",
+        color: "var(--ink)",
+        fontFamily: "'Sora', system-ui, sans-serif",
+      }}
+    >
+      <PortalNav />
 
-                  {/* Action Buttons - Fixed at bottom with mt-auto */}
-                  <div className="flex gap-3 mt-auto pt-6">
-                    {project?.siteLink && (
-                      <button
-                        onClick={() => {
-                          window.open(project?.siteLink, "_blank");
-                        }}
-                        className="flex-1 bg-gradient-to-r from-cta to-hovercta text-white px-4 py-2 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 font-medium text-sm"
-                      >
-                        <Eye className="w-4 h-4" />
-                        Explore App
-                      </button>
-                    )}
-
-                    {project?.navigateTo && (
-                      <button
-                        onClick={() => {
-                          navigate(project?.navigateTo);
-                        }}
-                        className="flex-1 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-lg hover:border-cta hover:text-cta dark:hover:border-white dark:hover:text-cta dark:hover:bg-white transition-all duration-200 flex items-center justify-center gap-2 font-medium text-sm"
-                      >
-                        <Code className="w-4 h-4" />
-                        Learn More
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Hero Strip (55–70vh) */}
+      <header
+        ref={heroReveal.ref}
+        className={`min-h-[60vh] max-h-[70vh] flex flex-col justify-end px-6 md:px-16 lg:px-24 pb-14 pt-28 border-b border-[rgba(237,231,220,0.13)] will-reveal ${
+          heroReveal.revealed ? "revealed" : ""
+        }`}
+      >
+        <div className="max-w-5xl mx-auto w-full">
+          <p className="font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#6C7378] flex items-center gap-2 mb-4">
+            <span className="w-4 h-[1px] bg-[#E8913C]" />
+            Work
+          </p>
+          <h1
+            className="font-syne font-extrabold text-[#EDE7DC] tracking-[-0.03em] leading-[1.05] mb-4"
+            style={{ fontSize: "clamp(2.75rem, 6.5vw, 5.5rem)" }}
+          >
+            Projects<span style={{ color: "var(--amber)" }}>.</span>
+          </h1>
+          <p className="font-sora text-base sm:text-xl text-[#9EA5A8] tracking-[-0.01em] max-w-2xl leading-relaxed">
+            To live is to learn, and to learn is to develop. A curated collection
+            of web applications, AI platforms, and full-stack systems.
+          </p>
         </div>
-      </section>
+      </header>
+
+      {/* Main Grid Section */}
+      <main className="max-w-5xl mx-auto px-6 md:px-16 lg:px-24 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={index}
+            />
+          ))}
+        </div>
+      </main>
+
+      <CloseFold />
     </div>
   );
 }

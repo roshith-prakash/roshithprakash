@@ -1,219 +1,141 @@
-"use client";
+import { useEffect } from "react";
+import { ArrowUpRight } from "lucide-react";
+import PortalNav from "../components/PortalNav";
+import CloseFold from "./portal/CloseFold";
+import { useReveal } from "../hooks/useReveal";
 
-import {
-  Github,
-  Linkedin,
-  Mail,
-  MessageCircle,
-  Send,
-  User,
-} from "lucide-react";
+export default function Contact() {
+  const heroReveal = useReveal(0.1);
+  const rowsReveal = useReveal(0.1);
 
-export default function ContactPage() {
-  const handleLinkedInClick = () => {
-    window.open("https://www.linkedin.com/in/roshith-prakash/", "_blank");
-  };
-
-  const handleEmailClick = () => {
-    window.open("mailto:roshithprakash07@gmail.com", "_blank");
-  };
-
-  const handleGitHubClick = () => {
-    window.open("https://github.com/roshith-prakash", "_blank");
-  };
+  useEffect(() => {
+    document.title = "Contact — Roshith Prakash";
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="min-h-screen dark:bg-darkbg">
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cta/90 to-hovercta/90 rounded-full mb-6">
-              <MessageCircle className="w-8 h-8 text-white" />
+    <div
+      className="relative w-full min-h-screen selection:bg-[#E8913C] selection:text-[#0A0C0E]"
+      style={{
+        backgroundColor: "var(--ground)",
+        color: "var(--ink)",
+        fontFamily: "'Sora', system-ui, sans-serif",
+      }}
+    >
+      <PortalNav />
+
+      {/* Hero Strip (55–70vh) */}
+      <header
+        ref={heroReveal.ref}
+        className={`min-h-[60vh] max-h-[70vh] flex flex-col justify-end px-6 md:px-16 lg:px-24 pb-14 pt-28 border-b border-[rgba(237,231,220,0.13)] will-reveal ${
+          heroReveal.revealed ? "revealed" : ""
+        }`}
+      >
+        <div className="max-w-5xl mx-auto w-full">
+          <p className="font-sora text-[10.5px] uppercase tracking-[0.15em] text-[#6C7378] flex items-center gap-2 mb-4">
+            <span className="w-4 h-[1px] bg-[#E8913C]" />
+            Contact
+          </p>
+          <h1
+            className="font-syne font-extrabold text-[#EDE7DC] tracking-[-0.03em] leading-[1.05] mb-4"
+            style={{ fontSize: "clamp(2.75rem, 6.5vw, 5.5rem)" }}
+          >
+            Let's build something<span style={{ color: "var(--amber)" }}>.</span>
+          </h1>
+          <p className="font-sora text-base sm:text-xl text-[#9EA5A8] tracking-[-0.01em] max-w-2xl leading-relaxed">
+            Interested in collaborating, discussing new engineering
+            opportunities, or exploring ideas? Reach out directly through any of
+            the channels below.
+          </p>
+        </div>
+      </header>
+
+      {/* Main Section */}
+      <main className="max-w-5xl mx-auto px-6 md:px-16 lg:px-24 py-20">
+        <div
+          ref={rowsReveal.ref}
+          className={`space-y-12 will-reveal ${
+            rowsReveal.revealed ? "revealed" : ""
+          }`}
+        >
+          {/* Three Hairline-Ruled Rows */}
+          <div className="divide-y divide-[rgba(237,231,220,0.13)] border-y border-[rgba(237,231,220,0.13)]">
+            {/* 1. LinkedIn */}
+            <div className="py-8 px-2 grid grid-cols-1 md:grid-cols-12 gap-6 items-center hover:bg-[#101317] -mx-2 transition-colors">
+              <div className="md:col-span-8 space-y-1">
+                <h2 className="font-syne font-bold text-xl sm:text-2xl text-[#EDE7DC]">
+                  LinkedIn
+                </h2>
+                <p className="font-sora text-sm text-[#9EA5A8]">
+                  /in/roshith-prakash · Professional background, career timeline, and recommendations
+                </p>
+              </div>
+              <div className="md:col-span-4 flex md:justify-end">
+                <a
+                  href="https://www.linkedin.com/in/roshith-prakash/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-2.5 rounded-full font-sora text-xs uppercase tracking-[0.13em] border border-[#E8913C] text-[#E8913C] hover:border-[#EDE7DC] hover:text-[#EDE7DC] bg-transparent transition-colors inline-flex items-center gap-2"
+                >
+                  Connect <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-              Let's Work Together
-            </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-              Interested in collaborating? I'd love to hear from you! Choose
-              your preferred way to get in touch.
+
+            {/* 2. Email */}
+            <div className="py-8 px-2 grid grid-cols-1 md:grid-cols-12 gap-6 items-center hover:bg-[#101317] -mx-2 transition-colors">
+              <div className="md:col-span-8 space-y-1">
+                <h2 className="font-syne font-bold text-xl sm:text-2xl text-[#EDE7DC]">
+                  Email
+                </h2>
+                <p className="font-sora text-sm text-[#9EA5A8]">
+                  roshithprakash07@gmail.com · Direct inbox for roles, inquiries, and technical discussions
+                </p>
+              </div>
+              <div className="md:col-span-4 flex md:justify-end">
+                <a
+                  href="mailto:roshithprakash07@gmail.com"
+                  className="px-6 py-2.5 rounded-full font-sora text-xs uppercase tracking-[0.13em] border border-[#E8913C] text-[#E8913C] hover:border-[#EDE7DC] hover:text-[#EDE7DC] bg-transparent transition-colors inline-flex items-center gap-2"
+                >
+                  Send Email <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+
+            {/* 3. GitHub */}
+            <div className="py-8 px-2 grid grid-cols-1 md:grid-cols-12 gap-6 items-center hover:bg-[#101317] -mx-2 transition-colors">
+              <div className="md:col-span-8 space-y-1">
+                <h2 className="font-syne font-bold text-xl sm:text-2xl text-[#EDE7DC]">
+                  GitHub
+                </h2>
+                <p className="font-sora text-sm text-[#9EA5A8]">
+                  github.com/roshith-prakash · Source repositories, open-source projects, and commit history
+                </p>
+              </div>
+              <div className="md:col-span-4 flex md:justify-end">
+                <a
+                  href="https://github.com/roshith-prakash"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-2.5 rounded-full font-sora text-xs uppercase tracking-[0.13em] border border-[#E8913C] text-[#E8913C] hover:border-[#EDE7DC] hover:text-[#EDE7DC] bg-transparent transition-colors inline-flex items-center gap-2"
+                >
+                  View Code <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Fine print line */}
+          <div className="pt-2">
+            <p className="font-sora text-xs text-[#6C7378] tracking-[0.02em] leading-relaxed">
+              Available for full-time software engineering roles and
+              collaborations · Replies typically sent within 24 to 48 hours.
             </p>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Contact Cards */}
-            <div className="space-y-6">
-              {/* LinkedIn Card */}
-              <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex flex-wrap gap-y-5 items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-[#0077B5]/10 rounded-xl flex items-center justify-center">
-                      <Linkedin className="w-6 h-6 text-[#0077B5]" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                        LinkedIn
-                      </h3>
-                      <p className="text-slate-600 dark:text-slate-400">
-                        /in/roshith-prakash
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    onClick={handleLinkedInClick}
-                    className="px-6 py-2 w-full md:w-fit bg-[#0077B5] text-white rounded-lg hover:bg-[#005885] transition-colors duration-200 flex justify-center items-center gap-2 font-medium"
-                  >
-                    Connect
-                    <Send className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Email Card */}
-              <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex flex-wrap gap-y-5 items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-red-500" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                        Email
-                      </h3>
-                      <p className="text-slate-600 dark:text-slate-400">
-                        roshithprakash07@gmail.com
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    onClick={handleEmailClick}
-                    className="px-6 py-2 w-full md:w-fit bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-200 flex justify-center items-center gap-2 font-medium"
-                  >
-                    Email Me
-                    <Send className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-
-              {/* GitHub Card */}
-              <div className="group bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex flex-wrap gap-y-5 items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-slate-900/10 dark:bg-slate-100/10 rounded-xl flex items-center justify-center">
-                      <Github className="w-6 h-6 text-slate-900 dark:text-slate-100" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                        GitHub
-                      </h3>
-                      <p className="text-slate-600 dark:text-slate-400">
-                        github.com/roshith-prakash
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    onClick={handleGitHubClick}
-                    className="px-6 py-2 w-full md:w-fit bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg hover:bg-slate-700 dark:hover:bg-slate-200 transition-colors duration-200 flex justify-center items-center gap-2 font-medium"
-                  >
-                    View Code
-                    <Send className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Illustration/Info Section */}
-            <div className="hidden lg:block">
-              <div className="bg-gradient-to-br from-cta/90 to-hovercta/90 rounded-3xl p-8 text-white">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <User className="w-12 h-12 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">Ready to Connect?</h3>
-                  <p className="text-blue-100 mb-6 leading-relaxed">
-                    I'm always excited to discuss new opportunities, collaborate
-                    on interesting projects, or simply have a conversation about
-                    technology and development.
-                  </p>
-                  <div className="space-y-3 text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <span className="text-blue-100">Quick response time</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <span className="text-blue-100">
-                        Open to freelance work
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <span className="text-blue-100">
-                        Available for full-time roles
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+      </main>
 
-      {/* Additional Contact Info */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white dark:bg-white/5 rounded-2xl shadow-lg border border-slate-200 dark:border-white/10 p-8">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                Let's Start a Conversation
-              </h2>
-              <p className="text-slate-600 dark:text-slate-400">
-                Whether you have a project in mind, want to collaborate, or just
-                want to say hello, I'd love to hear from you.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center p-4">
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <MessageCircle className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                </div>
-                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
-                  Quick Response
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  I typically respond within 24 hours
-                </p>
-              </div>
-
-              <div className="text-center p-4">
-                <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <User className="w-6 h-6 text-green-600 dark:text-green-400" />
-                </div>
-                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
-                  Professional
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Serious about quality and deadlines
-                </p>
-              </div>
-
-              <div className="text-center p-4">
-                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <Send className="w-6 h-6 text-purple-600 dark:text-purple-400" />
-                </div>
-                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
-                  Collaborative
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Love working with teams and clients
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CloseFold />
     </div>
   );
 }

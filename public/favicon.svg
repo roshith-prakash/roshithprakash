@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="veil" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#101317" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0A0C0E" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+  <!-- Background ground card with subtle hairline border -->
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="#0A0C0E" stroke="rgba(237,231,220,0.13)" stroke-width="2.5"/>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#veil)"/>
+
+  <!-- Glyphs in warm bone ink #EDE7DC -->
+  <g fill="#EDE7DC">
+    <path d="M70 0V640H843Q934 640 1006.5 619.5Q1079 599 1121.5 551.0Q1164 503 1164 420Q1164 365 1144.0 329.0Q1124 293 1089.0 273.0Q1054 253 1009 244Q1000 242 992 241Q1010 239 1026 237Q1090 228 1115.5 204.5Q1141 181 1141 137V0H891V107Q891 137 879.5 152.5Q868 168 829.5 174.0Q791 180 711 180H320V0ZM320 347H843Q873 347 893.5 357.0Q914 367 914 395Q914 421 893.5 430.5Q873 440 843 440H320Z" transform="matrix(0.172000 0 0 -0.172000 37.232 311.040)" />
+    <path d="M318 165V0H68V640H762Q837 640 902.5 629.5Q968 619 1017.0 592.0Q1066 565 1094.0 516.0Q1122 467 1122.0 390.0Q1122 313 1094.0 268.0Q1066 223 1017.0 201.0Q968 179 902.5 172.0Q837 165 762 165ZM318 340H801Q831 340 851.5 349.5Q872 359 872 390Q872 422 851.5 431.0Q831 440 801 440H318Z" transform="matrix(0.172000 0 0 -0.172000 217.744 311.040)" />
+  </g>
+
+  <!-- Signature amber dot #E8913C -->
+  <circle cx="444.73" cy="291.04" r="18.00" fill="#E8913C" />
+</svg>
