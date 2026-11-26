@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{html,js,jsx,ts,tsx}"],
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -25,10 +29,10 @@ export default {
         portalTeal: "#2E6B72",
       },
       fontFamily: {
-        inter: ["Inter", "system-ui"],
-        dmSans: ["DM Sans", "system-ui"],
-        syne: ["Syne", "system-ui"],
-        sora: ["Sora", "system-ui"],
+        inter: ["var(--font-inter)", "system-ui", "sans-serif"],
+        dmSans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        syne: ["var(--font-syne)", "system-ui", "sans-serif"],
+        sora: ["var(--font-sora)", "system-ui", "sans-serif"],
       },
     },
   },

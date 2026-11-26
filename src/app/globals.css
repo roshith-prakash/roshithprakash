@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ground: #0A0C0E;
+  --ground-2: #101317;
+  --ink: #EDE7DC;
+  --ink-2: #9EA5A8;
+  --muted: #6C7378;
+  --amber: #E8913C;
+  --teal: #2E6B72;
+  --hair: rgba(237, 231, 220, 0.13);
+}
+
+html {
+  background-color: var(--ground);
+  color: var(--ink);
+}
+
+/* Portal animations and reveal utility classes */
+@media (prefers-reduced-motion: no-preference) {
+  .will-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .will-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .will-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+.logos-slide {
+  animation: 30s slide infinite linear;
+}

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef, useCallback } from "react";
 
 export interface DeckState {
@@ -13,7 +15,9 @@ export function useDeck(totalCards: number) {
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [isThrowing, setIsThrowing] = useState(false);
-  const [throwDirection, setThrowDirection] = useState<"left" | "right" | null>(null);
+  const [throwDirection, setThrowDirection] = useState<"left" | "right" | null>(
+    null
+  );
 
   const startPos = useRef({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
@@ -48,7 +52,7 @@ export function useDeck(totalCards: number) {
     (e: React.PointerEvent) => {
       if (!isDragging || isThrowingRef.current) return;
       const dx = e.clientX - startPos.current.x;
-      const dy = (e.clientY - startPos.current.y) * 0.3; // subtle vertical slack
+      const dy = (e.clientY - startPos.current.y) * 0.3;
       setDragOffset({ x: dx, y: dy });
     },
     [isDragging]
@@ -74,7 +78,6 @@ export function useDeck(totalCards: number) {
       } else if (dragOffset.x < -threshold) {
         throwCard("left");
       } else {
-        // spring back
         setDragOffset({ x: 0, y: 0 });
       }
     },
@@ -135,4 +138,3 @@ export function useDeck(totalCards: number) {
     goToCard,
   };
 }
-

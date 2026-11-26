@@ -1,33 +1,16 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import PortalNav from "./PortalNav";
-import CloseFold from "../pages/portal/CloseFold";
-import { useReveal } from "../hooks/useReveal";
+import CloseFold from "./portal/CloseFold";
+import { useReveal } from "@/hooks/useReveal";
+import type { CaseStudyData } from "@/data/caseStudies";
 
-export interface CaseStudyTechItem {
-  name: string;
-  category?: string;
-}
-
-export interface CaseStudyExtraSection {
-  title: string;
-  items: string[];
-}
-
-export interface CaseStudyProps {
-  title: string;
-  oneLiner: string;
-  techChipText: string;
-  siteLink?: string;
-  imageSrc: string;
+export type CaseStudyProps = Omit<CaseStudyData, "slug"> & {
   imageAlt?: string;
-  overview: string | string[];
-  note?: string;
-  features: string[];
-  techStack: CaseStudyTechItem[];
-  extraSections?: CaseStudyExtraSection[];
-}
+};
 
 export default function CaseStudyLayout({
   title,
@@ -46,22 +29,16 @@ export default function CaseStudyLayout({
   const overviewReveal = useReveal(0.1);
   const featuresReveal = useReveal(0.1);
   const stackReveal = useReveal(0.1);
-  const extraReveal = useReveal(0.1);
-
-  useEffect(() => {
-    document.title = `${title} — Case Study`;
-    window.scrollTo(0, 0);
-  }, [title]);
+  const extraReveal = useReveal<HTMLDivElement>(0.1);
 
   const overviewParagraphs = Array.isArray(overview) ? overview : [overview];
 
   return (
     <div
-      className="relative w-full min-h-screen selection:bg-[#E8913C] selection:text-[#0A0C0E]"
+      className="relative w-full min-h-screen font-sora selection:bg-[#E8913C] selection:text-[#0A0C0E]"
       style={{
         backgroundColor: "var(--ground)",
         color: "var(--ink)",
-        fontFamily: "'Sora', system-ui, sans-serif",
       }}
     >
       <PortalNav />
@@ -136,11 +113,14 @@ export default function CaseStudyLayout({
 
           {/* Screenshot Container - Full Image Preserved */}
           <div className="relative w-full bg-[#101317]">
-            <img
+            <Image
               src={imageSrc}
               alt={imageAlt || `${title} preview`}
+              width={1860}
+              height={920}
+              sizes="(max-width: 1024px) 100vw, 900px"
+              priority
               className="w-full h-auto block object-contain"
-              loading="lazy"
             />
           </div>
         </div>
@@ -246,7 +226,7 @@ export default function CaseStudyLayout({
           </div>
         </section>
 
-        {/* Optional Extra Sections (e.g. Components Catalog, Tasks Performed) */}
+        {/* Optional Extra Sections */}
         {extraSections && extraSections.length > 0 && (
           <div
             ref={extraReveal.ref}
@@ -285,7 +265,7 @@ export default function CaseStudyLayout({
         {/* Bottom Navigation Links */}
         <section className="py-16 flex flex-wrap items-center justify-between gap-4">
           <Link
-            to="/projects"
+            href="/projects"
             className="px-6 py-2.5 rounded-full font-sora text-xs uppercase tracking-[0.13em] border border-[rgba(237,231,220,0.13)] text-[#EDE7DC] hover:border-[#E8913C] hover:text-[#E8913C] transition-all inline-flex items-center gap-2"
           >
             <ArrowLeft className="w-3.5 h-3.5" /> All Projects

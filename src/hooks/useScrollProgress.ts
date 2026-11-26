@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 
 export function useScrollProgress(runwayRatio = 1.5) {
@@ -44,4 +46,3 @@ export function useScrollProgress(runwayRatio = 1.5) {
 
   return { progress, reducedMotion };
 }
-

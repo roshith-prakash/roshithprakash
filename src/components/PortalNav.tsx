@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 
 export default function PortalNav() {
@@ -27,7 +29,7 @@ export default function PortalNav() {
       >
         {/* Wordmark */}
         <Link
-          to="/"
+          href="/"
           className="font-syne font-semibold text-[15px] text-[#EDE7DC] tracking-[-0.02em] select-none hover:opacity-90 transition-opacity"
         >
           Roshith Prakash<span style={{ color: "var(--amber)" }}>.</span>
@@ -36,19 +38,19 @@ export default function PortalNav() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           <Link
-            to="/about"
+            href="/about"
             className="font-sora text-[10.5px] uppercase tracking-[0.13em] text-[#9EA5A8] hover:text-[#E8913C] transition-colors"
           >
             About
           </Link>
           <Link
-            to="/projects"
+            href="/projects"
             className="font-sora text-[10.5px] uppercase tracking-[0.13em] text-[#9EA5A8] hover:text-[#E8913C] transition-colors"
           >
             Projects
           </Link>
           <Link
-            to="/contact"
+            href="/contact"
             className="font-sora text-[10.5px] uppercase tracking-[0.13em] text-[#9EA5A8] hover:text-[#E8913C] transition-colors"
           >
             Contact
@@ -59,18 +61,7 @@ export default function PortalNav() {
         <div className="hidden md:flex items-center">
           <button
             onClick={scrollToClose}
-            className="font-sora text-[11px] uppercase tracking-[0.13em] px-4 py-1.5 rounded-full transition-all duration-300"
-            style={{
-              color: "var(--amber)",
-              border: "1px solid var(--amber)",
-              background: "transparent",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "rgba(232, 145, 60, 0.1)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "transparent";
-            }}
+            className="font-sora text-[11px] uppercase tracking-[0.13em] px-4 py-1.5 rounded-full transition-all duration-300 border border-[#E8913C] text-[#E8913C] bg-transparent hover:bg-[rgba(232,145,60,0.1)]"
           >
             Get in Touch
           </button>
@@ -93,28 +84,28 @@ export default function PortalNav() {
         }`}
       >
         <Link
-          to="/"
+          href="/"
           onClick={() => setOpen(false)}
           className="font-syne text-2xl text-[#EDE7DC]"
         >
           Roshith Prakash<span style={{ color: "var(--amber)" }}>.</span>
         </Link>
         <Link
-          to="/about"
+          href="/about"
           onClick={() => setOpen(false)}
           className="font-sora text-sm uppercase tracking-[0.14em] text-[#9EA5A8] hover:text-[#E8913C]"
         >
           About
         </Link>
         <Link
-          to="/projects"
+          href="/projects"
           onClick={() => setOpen(false)}
           className="font-sora text-sm uppercase tracking-[0.14em] text-[#9EA5A8] hover:text-[#E8913C]"
         >
           Projects
         </Link>
         <Link
-          to="/contact"
+          href="/contact"
           onClick={() => setOpen(false)}
           className="font-sora text-sm uppercase tracking-[0.14em] text-[#9EA5A8] hover:text-[#E8913C]"
         >
@@ -122,11 +113,7 @@ export default function PortalNav() {
         </Link>
         <button
           onClick={scrollToClose}
-          className="font-sora text-xs uppercase tracking-[0.14em] px-6 py-2.5 rounded-full mt-4"
-          style={{
-            color: "var(--amber)",
-            border: "1px solid var(--amber)",
-          }}
+          className="font-sora text-xs uppercase tracking-[0.14em] px-6 py-2.5 rounded-full mt-4 border border-[#E8913C] text-[#E8913C]"
         >
           Get in Touch
         </button>
@@ -134,4 +121,3 @@ export default function PortalNav() {
     </>
   );
 }
-
