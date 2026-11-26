@@ -42,6 +42,7 @@ export function useDeck(totalCards: number) {
 
   const handlePointerDown = useCallback((e: React.PointerEvent) => {
     if (isThrowingRef.current) return;
+    if ((e.target as HTMLElement).closest("a, button")) return;
     const target = e.currentTarget as HTMLElement;
     target.setPointerCapture(e.pointerId);
     startPos.current = { x: e.clientX, y: e.clientY };
